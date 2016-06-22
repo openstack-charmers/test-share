@@ -1,0 +1,24 @@
+Filesystem                                                             Size  Used Avail Use% Mounted on
+udev                                                                    20G     0   20G   0% /dev
+tmpfs                                                                  4.0G  217M  3.8G   6% /run
+/dev/dasdb1                                                             37G  4.1G   32G  12% /
+tmpfs                                                                   20G   88K   20G   1% /dev/shm
+tmpfs                                                                  5.0M     0  5.0M   0% /run/lock
+tmpfs                                                                   20G     0   20G   0% /sys/fs/cgroup
+tmpfs                                                                  4.0G     0  4.0G   0% /run/user/1000
+stack/containers/juju-bbf06ce4-9d67-4890-8066-0ed1fd2ebc8a-machine-0    23G  2.6G   20G  12% /var/lib/lxd/containers/juju-bbf06ce4-9d67-4890-8066-0ed1fd2ebc8a-machine-0.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-1    23G  2.7G   20G  13% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-1.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-2    23G  2.7G   20G  13% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-2.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-0    23G  2.7G   20G  13% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-0.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-3    21G  1.4G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-3.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-8    22G  1.4G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-8.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-4    22G  1.6G   20G   8% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-4.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-5    22G  1.5G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-5.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-6    22G  1.4G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-6.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-7    22G  1.8G   20G   9% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-7.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-10   22G  1.5G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-10.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11   23G  2.9G   20G  13% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-12   22G  1.5G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-12.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-13   21G  1.3G   20G   6% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-13.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9    22G  1.5G   20G   8% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9.zfs
+stack/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-14   22G  1.4G   20G   7% /var/lib/lxd/containers/juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-14.zfs

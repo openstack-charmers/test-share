@@ -1,0 +1,35 @@
++---------------------------+-------------------------------+
+| Property                  | Value                         |
++---------------------------+-------------------------------+
+| cpu_info_arch             | s390x                         |
+| cpu_info_features         | []                            |
+| cpu_info_model            | host                          |
+| cpu_info_topology_cells   | 1                             |
+| cpu_info_topology_cores   | 24                            |
+| cpu_info_topology_sockets | 1                             |
+| cpu_info_topology_threads | 1                             |
+| cpu_info_vendor           | None                          |
+| current_workload          | 0                             |
+| disk_available_least      | -1                            |
+| free_disk_gb              | 2                             |
+| free_ram_mb               | 37531                         |
+| host_ip                   | 10.0.8.2                      |
+| hypervisor_hostname       | juju-d6c7dbcf-b18b-4189-873e- |
+|                           | 8c1cdc4929ea-machine-11.lxd   |
+| hypervisor_type           | QEMU                          |
+| hypervisor_version        | 2005000                       |
+| id                        | 1                             |
+| local_gb                  | 22                            |
+| local_gb_used             | 20                            |
+| memory_mb                 | 40091                         |
+| memory_mb_used            | 2560                          |
+| running_vms               | 1                             |
+| service_disabled_reason   | None                          |
+| service_host              | juju-d6c7dbcf-b18b-4189-873e- |
+|                           | 8c1cdc4929ea-machine-11       |
+| service_id                | 9                             |
+| state                     | up                            |
+| status                    | enabled                       |
+| vcpus                     | 24                            |
+| vcpus_used                | 1                             |
++---------------------------+-------------------------------+

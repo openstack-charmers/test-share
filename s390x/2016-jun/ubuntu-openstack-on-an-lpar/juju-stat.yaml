@@ -1,0 +1,686 @@
+model: default
+machines:
+  "0":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:27+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.176
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-0
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:17+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "1":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:23+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.169
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-1
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:01+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "2":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:23+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.29
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-2
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:01+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "3":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:32+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.14
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-3
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:18+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "4":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:42+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.166
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-4
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:18+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "5":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:45+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.193
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-5
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:50+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "6":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:58:01+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.143
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-6
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:49+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "7":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:58:16+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.100
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-7
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:50+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "8":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:57:36+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.46
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-8
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:18+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "9":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 18:00:11+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.45
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:59:15+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "10":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:58:37+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.157
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-10
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:57:50+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "11":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:58:48+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.2
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:58:14+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "12":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 17:59:14+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.32
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-12
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:58:28+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "13":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 18:00:02+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.12
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-13
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 17:58:51+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+  "14":
+    juju-status:
+      current: started
+      since: 22 Jun 2016 18:16:26+01:00
+      version: 2.0-beta7
+    dns-name: 10.0.8.20
+    instance-id: juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-14
+    machine-status:
+      current: running
+      message: Running
+      since: 22 Jun 2016 18:16:15+01:00
+    series: xenial
+    hardware: arch=s390x cpu-cores=0 mem=0M
+services:
+  ceph:
+    charm: cs:xenial/ceph-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready and clustered
+      since: 22 Jun 2016 20:09:12+01:00
+    relations:
+      client:
+      - cinder-ceph
+      - glance
+      - nova-compute
+      mon:
+      - ceph
+      radosgw:
+      - ceph-radosgw
+    units:
+      ceph/0:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 22 Jun 2016 20:09:12+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:09:12+01:00
+          version: 2.0-beta7
+        machine: "0"
+        public-address: 10.0.8.176
+      ceph/1:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 22 Jun 2016 20:09:12+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:09:12+01:00
+          version: 2.0-beta7
+        machine: "1"
+        public-address: 10.0.8.169
+      ceph/2:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 22 Jun 2016 20:09:12+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:09:12+01:00
+          version: 2.0-beta7
+        machine: "2"
+        public-address: 10.0.8.29
+  ceph-radosgw:
+    charm: cs:xenial/ceph-radosgw-4
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:17+01:00
+    relations:
+      cluster:
+      - ceph-radosgw
+      identity-service:
+      - keystone
+      mon:
+      - ceph
+    units:
+      ceph-radosgw/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:17+01:00
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 22 Jun 2016 20:10:58+01:00
+          version: 2.0-beta7
+        machine: "3"
+        open-ports:
+        - 80/tcp
+        public-address: 10.0.8.14
+  cinder:
+    charm: cs:xenial/cinder-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:16+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - nova-cloud-controller
+      cluster:
+      - cinder
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      shared-db:
+      - mysql
+      storage-backend:
+      - cinder-ceph
+    units:
+      cinder/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:16+01:00
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 22 Jun 2016 20:10:58+01:00
+          version: 2.0-beta7
+        machine: "4"
+        public-address: 10.0.8.166
+        subordinates:
+          cinder-ceph/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 22 Jun 2016 18:09:31+01:00
+            juju-status:
+              current: idle
+              since: 22 Jun 2016 20:09:18+01:00
+              version: 2.0-beta7
+            upgrading-from: cs:xenial/cinder-ceph-1
+            public-address: 10.0.8.166
+  cinder-ceph:
+    charm: cs:xenial/cinder-ceph-1
+    exposed: false
+    service-status: {}
+    relations:
+      ceph:
+      - ceph
+      storage-backend:
+      - cinder
+    subordinate-to:
+    - cinder
+  glance:
+    charm: cs:xenial/glance-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:19+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph
+      cluster:
+      - glance
+      identity-service:
+      - keystone
+      image-service:
+      - cinder
+      - nova-cloud-controller
+      - nova-compute
+      shared-db:
+      - mysql
+    units:
+      glance/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:19+01:00
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 22 Jun 2016 20:10:58+01:00
+          version: 2.0-beta7
+        machine: "5"
+        open-ports:
+        - 9292/tcp
+        public-address: 10.0.8.193
+  heat:
+    charm: cs:xenial/heat-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:10:22+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - heat
+      identity-service:
+      - keystone
+      shared-db:
+      - mysql
+    units:
+      heat/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:10:22+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:10:22+01:00
+          version: 2.0-beta7
+        machine: "14"
+        open-ports:
+        - 8000/tcp
+        - 8004/tcp
+        public-address: 10.0.8.20
+  keystone:
+    charm: cs:xenial/keystone-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:50+01:00
+    relations:
+      cluster:
+      - keystone
+      identity-service:
+      - ceph-radosgw
+      - cinder
+      - glance
+      - heat
+      - neutron-api
+      - nova-cloud-controller
+      - openstack-dashboard
+      shared-db:
+      - mysql
+    units:
+      keystone/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:50+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:11:01+01:00
+          version: 2.0-beta7
+        machine: "6"
+        public-address: 10.0.8.143
+  mysql:
+    charm: cs:xenial/percona-cluster-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:08:50+01:00
+    relations:
+      cluster:
+      - mysql
+      shared-db:
+      - cinder
+      - glance
+      - heat
+      - keystone
+      - neutron-api
+      - nova-cloud-controller
+    units:
+      mysql/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:08:50+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:08:50+01:00
+          version: 2.0-beta7
+        machine: "7"
+        public-address: 10.0.8.100
+  neutron-api:
+    charm: cs:xenial/neutron-api-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:19+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-api
+      identity-service:
+      - keystone
+      neutron-api:
+      - nova-cloud-controller
+      neutron-plugin-api:
+      - neutron-gateway
+      - neutron-openvswitch
+      shared-db:
+      - mysql
+    units:
+      neutron-api/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:19+01:00
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 22 Jun 2016 20:10:58+01:00
+          version: 2.0-beta7
+        machine: "8"
+        open-ports:
+        - 9696/tcp
+        public-address: 10.0.8.46
+  neutron-gateway:
+    charm: cs:xenial/neutron-gateway-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:10:15+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-gateway
+      neutron-plugin-api:
+      - neutron-api
+      quantum-network-service:
+      - nova-cloud-controller
+    units:
+      neutron-gateway/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:10:15+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:10:15+01:00
+          version: 2.0-beta7
+        machine: "9"
+        public-address: 10.0.8.45
+  neutron-openvswitch:
+    charm: cs:xenial/neutron-openvswitch-2
+    exposed: false
+    service-status: {}
+    relations:
+      amqp:
+      - rabbitmq-server
+      neutron-plugin:
+      - nova-compute
+      neutron-plugin-api:
+      - neutron-api
+    subordinate-to:
+    - nova-compute
+  nova-cloud-controller:
+    charm: cs:xenial/nova-cloud-controller-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:10:04+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - cinder
+      cloud-compute:
+      - nova-compute
+      cluster:
+      - nova-cloud-controller
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      neutron-api:
+      - neutron-api
+      quantum-network-service:
+      - neutron-gateway
+      shared-db:
+      - mysql
+    units:
+      nova-cloud-controller/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:10:04+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:10:04+01:00
+          version: 2.0-beta7
+        machine: "10"
+        open-ports:
+        - 8774/tcp
+        public-address: 10.0.8.157
+  nova-compute:
+    charm: cs:xenial/nova-compute-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:10:29+01:00
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph
+      cloud-compute:
+      - nova-cloud-controller
+      compute-peer:
+      - nova-compute
+      image-service:
+      - glance
+      neutron-plugin:
+      - neutron-openvswitch
+    units:
+      nova-compute/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:10:29+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:10:29+01:00
+          version: 2.0-beta7
+        machine: "11"
+        public-address: 10.0.8.2
+        subordinates:
+          neutron-openvswitch/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 22 Jun 2016 18:12:00+01:00
+            juju-status:
+              current: idle
+              since: 22 Jun 2016 20:06:43+01:00
+              version: 2.0-beta7
+            upgrading-from: cs:xenial/neutron-openvswitch-2
+            public-address: 10.0.8.2
+  openstack-dashboard:
+    charm: cs:xenial/openstack-dashboard-1
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:06:13+01:00
+    relations:
+      cluster:
+      - openstack-dashboard
+      identity-service:
+      - keystone
+    units:
+      openstack-dashboard/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:06:13+01:00
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 22 Jun 2016 20:10:58+01:00
+          version: 2.0-beta7
+        machine: "12"
+        open-ports:
+        - 80/tcp
+        - 443/tcp
+        public-address: 10.0.8.32
+  rabbitmq-server:
+    charm: cs:xenial/rabbitmq-server-3
+    exposed: false
+    service-status:
+      current: active
+      message: Unit is ready
+      since: 22 Jun 2016 20:10:00+01:00
+    relations:
+      amqp:
+      - cinder
+      - glance
+      - heat
+      - neutron-api
+      - neutron-gateway
+      - neutron-openvswitch
+      - nova-cloud-controller
+      - nova-compute
+      cluster:
+      - rabbitmq-server
+    units:
+      rabbitmq-server/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 22 Jun 2016 20:10:00+01:00
+        juju-status:
+          current: idle
+          since: 22 Jun 2016 20:10:01+01:00
+          version: 2.0-beta7
+        machine: "13"
+        open-ports:
+        - 5672/tcp
+        public-address: 10.0.8.12

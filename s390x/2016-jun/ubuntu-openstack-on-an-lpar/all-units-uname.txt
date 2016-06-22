@@ -1,0 +1,61 @@
+- MachineId: "0"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-0 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.176/24 brd 10.0.8.255 scope global eth0
+- MachineId: "1"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-1 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.169/24 brd 10.0.8.255 scope global eth0
+- MachineId: "2"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-2 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.29/24 brd 10.0.8.255 scope global eth0
+- MachineId: "3"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-3 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.14/24 brd 10.0.8.255 scope global eth0
+- MachineId: "4"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-4 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.166/24 brd 10.0.8.255 scope global eth0
+- MachineId: "5"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-5 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.193/24 brd 10.0.8.255 scope global eth0
+- MachineId: "6"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-6 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.143/24 brd 10.0.8.255 scope global eth0
+- MachineId: "7"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-7 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.100/24 brd 10.0.8.255 scope global eth0
+- MachineId: "8"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-8 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.46/24 brd 10.0.8.255 scope global eth0
+- MachineId: "9"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.45/24 brd 10.0.8.255 scope global eth0
+- MachineId: "10"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-10 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.157/24 brd 10.0.8.255 scope global eth0
+- MachineId: "11"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 192.168.122.1/24 brd 192.168.122.255 scope global virbr0
+        inet 10.0.8.2/24 brd 10.0.8.255 scope global eth0
+- MachineId: "12"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-12 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.32/24 brd 10.0.8.255 scope global eth0
+- MachineId: "13"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-13 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.12/24 brd 10.0.8.255 scope global eth0
+- MachineId: "14"
+  Stdout: |
+    Linux juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-14 4.4.0-24-generic #43-Ubuntu SMP Wed Jun 8 19:26:02 UTC 2016 s390x s390x s390x GNU/Linux
+        inet 10.0.8.20/24 brd 10.0.8.255 scope global eth0

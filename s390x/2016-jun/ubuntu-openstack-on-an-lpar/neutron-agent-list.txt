@@ -1,0 +1,11 @@
++--------------------------------------+--------------------+------------------------------------------------------+-------------------+-------+----------------+---------------------------+
+| id                                   | agent_type         | host                                                 | availability_zone | alive | admin_state_up | binary                    |
++--------------------------------------+--------------------+------------------------------------------------------+-------------------+-------+----------------+---------------------------+
+| 57ad47c0-6995-4231-b200-010bd3f18e1b | DHCP agent         | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  | nova              | :-)   | True           | neutron-dhcp-agent        |
+| a1cd82f0-8e0f-4917-b377-70927d05bb8e | Open vSwitch agent | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11 |                   | :-)   | True           | neutron-openvswitch-agent |
+| b4e17ec1-ccf5-4e18-9945-669752cf2d1a | Open vSwitch agent | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  |                   | :-)   | True           | neutron-openvswitch-agent |
+| d1a95e73-188c-4573-b1d0-22c0977fd7ec | L3 agent           | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  | nova              | :-)   | True           | neutron-l3-agent          |
+| e0354fcd-f445-4d2a-9f21-458de74be05a | Metering agent     | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  |                   | :-)   | True           | neutron-metering-agent    |
+| f1ba4c18-05b6-4a88-8e3a-24ec803d9093 | Metadata agent     | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  |                   | :-)   | True           | neutron-metadata-agent    |
+| fa6f4219-ad76-4b42-a3ec-0688621eb8ec | Loadbalancer agent | juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  |                   | :-)   | True           | neutron-lbaas-agent       |
++--------------------------------------+--------------------+------------------------------------------------------+-------------------+-------+----------------+---------------------------+

@@ -1,0 +1,109 @@
+[Services]            
+NAME                  STATUS EXPOSED CHARM                             
+ceph                  active false   cs:xenial/ceph-1                  
+ceph-radosgw          active false   cs:xenial/ceph-radosgw-4          
+cinder                active false   cs:xenial/cinder-1                
+cinder-ceph                  false   cs:xenial/cinder-ceph-1           
+glance                active false   cs:xenial/glance-1                
+heat                  active false   cs:xenial/heat-1                  
+keystone              active false   cs:xenial/keystone-1              
+mysql                 active false   cs:xenial/percona-cluster-1       
+neutron-api           active false   cs:xenial/neutron-api-1           
+neutron-gateway       active false   cs:xenial/neutron-gateway-1       
+neutron-openvswitch          false   cs:xenial/neutron-openvswitch-2   
+nova-cloud-controller active false   cs:xenial/nova-cloud-controller-1 
+nova-compute          active false   cs:xenial/nova-compute-1          
+openstack-dashboard   active false   cs:xenial/openstack-dashboard-1   
+rabbitmq-server       active false   cs:xenial/rabbitmq-server-3       
+
+[Relations]           
+SERVICE1              SERVICE2              RELATION                TYPE        
+ceph                  ceph                  mon                     peer        
+ceph                  ceph-radosgw          mon                     regular     
+ceph                  cinder-ceph           ceph                    regular     
+ceph                  glance                ceph                    regular     
+ceph                  nova-compute          ceph                    regular     
+ceph-radosgw          ceph-radosgw          cluster                 peer        
+ceph-radosgw          keystone              identity-service        regular     
+cinder                cinder                cluster                 peer        
+cinder                cinder-ceph           storage-backend         subordinate 
+cinder                glance                image-service           regular     
+cinder                keystone              identity-service        regular     
+cinder                mysql                 shared-db               regular     
+cinder                nova-cloud-controller cinder-volume-service   regular     
+cinder                rabbitmq-server       amqp                    regular     
+glance                glance                cluster                 peer        
+glance                keystone              identity-service        regular     
+glance                mysql                 shared-db               regular     
+glance                nova-cloud-controller image-service           regular     
+glance                nova-compute          image-service           regular     
+glance                rabbitmq-server       amqp                    regular     
+heat                  heat                  cluster                 peer        
+heat                  keystone              identity-service        regular     
+heat                  mysql                 shared-db               regular     
+heat                  rabbitmq-server       amqp                    regular     
+keystone              keystone              cluster                 peer        
+keystone              mysql                 shared-db               regular     
+keystone              neutron-api           identity-service        regular     
+keystone              nova-cloud-controller identity-service        regular     
+keystone              openstack-dashboard   identity-service        regular     
+mysql                 mysql                 cluster                 peer        
+mysql                 neutron-api           shared-db               regular     
+mysql                 nova-cloud-controller shared-db               regular     
+neutron-api           neutron-api           cluster                 peer        
+neutron-api           neutron-gateway       neutron-plugin-api      regular     
+neutron-api           neutron-openvswitch   neutron-plugin-api      regular     
+neutron-api           nova-cloud-controller neutron-api             regular     
+neutron-api           rabbitmq-server       amqp                    regular     
+neutron-gateway       neutron-gateway       cluster                 peer        
+neutron-gateway       nova-cloud-controller quantum-network-service regular     
+neutron-gateway       rabbitmq-server       amqp                    regular     
+neutron-openvswitch   nova-compute          neutron-plugin          regular     
+neutron-openvswitch   rabbitmq-server       amqp                    regular     
+nova-cloud-controller nova-cloud-controller cluster                 peer        
+nova-cloud-controller nova-compute          cloud-compute           regular     
+nova-cloud-controller rabbitmq-server       amqp                    regular     
+nova-compute          neutron-openvswitch   neutron-plugin          subordinate 
+nova-compute          nova-compute          compute-peer            peer        
+nova-compute          rabbitmq-server       amqp                    regular     
+openstack-dashboard   openstack-dashboard   cluster                 peer        
+rabbitmq-server       rabbitmq-server       cluster                 peer        
+
+[Units]                 
+ID                      WORKLOAD-STATUS JUJU-STATUS VERSION   MACHINE PORTS             PUBLIC-ADDRESS MESSAGE                       
+ceph-radosgw/0          active          executing   2.0-beta7 3       80/tcp            10.0.8.14      (update-status) Unit is ready 
+ceph/0                  active          idle        2.0-beta7 0                         10.0.8.176     Unit is ready and clustered   
+ceph/1                  active          idle        2.0-beta7 1                         10.0.8.169     Unit is ready and clustered   
+ceph/2                  active          idle        2.0-beta7 2                         10.0.8.29      Unit is ready and clustered   
+cinder/0                active          executing   2.0-beta7 4                         10.0.8.166     (update-status) Unit is ready 
+  cinder-ceph/0         active          idle        2.0-beta7                           10.0.8.166     Unit is ready                 
+glance/0                active          executing   2.0-beta7 5       9292/tcp          10.0.8.193     (update-status) Unit is ready 
+heat/0                  active          idle        2.0-beta7 14      8000/tcp,8004/tcp 10.0.8.20      Unit is ready                 
+keystone/0              active          idle        2.0-beta7 6                         10.0.8.143     Unit is ready                 
+mysql/0                 active          idle        2.0-beta7 7                         10.0.8.100     Unit is ready                 
+neutron-api/0           active          executing   2.0-beta7 8       9696/tcp          10.0.8.46      (update-status) Unit is ready 
+neutron-gateway/0       active          idle        2.0-beta7 9                         10.0.8.45      Unit is ready                 
+nova-cloud-controller/0 active          idle        2.0-beta7 10      8774/tcp          10.0.8.157     Unit is ready                 
+nova-compute/0          active          idle        2.0-beta7 11                        10.0.8.2       Unit is ready                 
+  neutron-openvswitch/0 active          idle        2.0-beta7                           10.0.8.2       Unit is ready                 
+openstack-dashboard/0   active          executing   2.0-beta7 12      80/tcp,443/tcp    10.0.8.32      (update-status) Unit is ready 
+rabbitmq-server/0       active          idle        2.0-beta7 13      5672/tcp          10.0.8.12      Unit is ready                 
+
+[Machines] 
+ID         STATE   DNS        INS-ID                                               SERIES AZ 
+0          started 10.0.8.176 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-0  xenial    
+1          started 10.0.8.169 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-1  xenial    
+2          started 10.0.8.29  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-2  xenial    
+3          started 10.0.8.14  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-3  xenial    
+4          started 10.0.8.166 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-4  xenial    
+5          started 10.0.8.193 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-5  xenial    
+6          started 10.0.8.143 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-6  xenial    
+7          started 10.0.8.100 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-7  xenial    
+8          started 10.0.8.46  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-8  xenial    
+9          started 10.0.8.45  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-9  xenial    
+10         started 10.0.8.157 juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-10 xenial    
+11         started 10.0.8.2   juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-11 xenial    
+12         started 10.0.8.32  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-12 xenial    
+13         started 10.0.8.12  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-13 xenial    
+14         started 10.0.8.20  juju-d6c7dbcf-b18b-4189-873e-8c1cdc4929ea-machine-14 xenial    
+

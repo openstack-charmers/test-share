@@ -1,0 +1,49 @@
++----------+----------------+---------------------------------------------------------------------------+
+| Name     | Type           | Endpoints                                                                 |
++----------+----------------+---------------------------------------------------------------------------+
+| nova     | compute        | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.157:8774/v2/ffbd268fa3054c3b8b08b6412e54c36c   |
+|          |                |   internalURL: http://10.0.8.157:8774/v2/ffbd268fa3054c3b8b08b6412e54c36c |
+|          |                |   adminURL: http://10.0.8.157:8774/v2/ffbd268fa3054c3b8b08b6412e54c36c    |
+|          |                |                                                                           |
+| neutron  | network        | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.46:9696                                        |
+|          |                |   internalURL: http://10.0.8.46:9696                                      |
+|          |                |   adminURL: http://10.0.8.46:9696                                         |
+|          |                |                                                                           |
+| cinderv2 | volumev2       | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.166:8776/v2/ffbd268fa3054c3b8b08b6412e54c36c   |
+|          |                |   internalURL: http://10.0.8.166:8776/v2/ffbd268fa3054c3b8b08b6412e54c36c |
+|          |                |   adminURL: http://10.0.8.166:8776/v2/ffbd268fa3054c3b8b08b6412e54c36c    |
+|          |                |                                                                           |
+| glance   | image          | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.193:9292                                       |
+|          |                |   internalURL: http://10.0.8.193:9292                                     |
+|          |                |   adminURL: http://10.0.8.193:9292                                        |
+|          |                |                                                                           |
+| heat-cfn | cloudformation | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.20:8000/v1                                     |
+|          |                |   internalURL: http://10.0.8.20:8000/v1                                   |
+|          |                |   adminURL: http://10.0.8.20:8000/v1                                      |
+|          |                |                                                                           |
+| cinder   | volume         | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.166:8776/v1/ffbd268fa3054c3b8b08b6412e54c36c   |
+|          |                |   internalURL: http://10.0.8.166:8776/v1/ffbd268fa3054c3b8b08b6412e54c36c |
+|          |                |   adminURL: http://10.0.8.166:8776/v1/ffbd268fa3054c3b8b08b6412e54c36c    |
+|          |                |                                                                           |
+| heat     | orchestration  | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.20:8004/v1/ffbd268fa3054c3b8b08b6412e54c36c    |
+|          |                |   internalURL: http://10.0.8.20:8004/v1/ffbd268fa3054c3b8b08b6412e54c36c  |
+|          |                |   adminURL: http://10.0.8.20:8004/v1/ffbd268fa3054c3b8b08b6412e54c36c     |
+|          |                |                                                                           |
+| swift    | object-store   | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.14:80/swift/v1                                 |
+|          |                |   internalURL: http://10.0.8.14:80/swift/v1                               |
+|          |                |   adminURL: http://10.0.8.14:80/swift                                     |
+|          |                |                                                                           |
+| keystone | identity       | RegionOne                                                                 |
+|          |                |   publicURL: http://10.0.8.143:5000/v2.0                                  |
+|          |                |   internalURL: http://10.0.8.143:5000/v2.0                                |
+|          |                |   adminURL: http://10.0.8.143:35357/v2.0                                  |
+|          |                |                                                                           |
++----------+----------------+---------------------------------------------------------------------------+
