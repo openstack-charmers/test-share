@@ -1,0 +1,3 @@
+NAME   SIZE  ALLOC   FREE  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTROOT
+stack  41.2G  20.6G  20.7G         -    31%    49%  1.00x  ONLINE  -
+  dasda1  41.2G  20.6G  20.7G         -    31%    49%

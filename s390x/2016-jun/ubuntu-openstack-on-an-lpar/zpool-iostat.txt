@@ -1,0 +1,7 @@
+               capacity     operations    bandwidth
+pool        alloc   free   read  write   read  write
+----------  -----  -----  -----  -----  -----  -----
+stack       20.6G  20.7G     83    128  3.49M  4.47M
+  dasda1    20.6G  20.7G     83    128  3.49M  4.47M
+----------  -----  -----  -----  -----  -----  -----
+
