@@ -1,0 +1,108 @@
++----------------------------------+------------+--------------+
+| ID                               | Name       | Type         |
++----------------------------------+------------+--------------+
+| 003d22582b7c4388b7db5b2dcd190c51 | keystone   | identity     |
+| 1b4390ad05fd4b218b95b7633a1cb4a6 | s3         | s3           |
+| 5de6299fd94c413aaf7e0ba662ed8618 | ceilometer | metering     |
+| 670d4829ffce4d8798607000e2da7e41 | nova       | compute      |
+| 6a8d624b1d5b4520976e3f3d78494d03 | glance     | image        |
+| 6ddf3777376142dd841b9abb9486f27f | aodh       | alarming     |
+| 79d0deb5a5524732be2ccac128a24935 | swift      | object-store |
+| 96bd2b4cfb584114811430b1c4eaa5aa | neutron    | network      |
+| ae1c2d5837804128bfb93c2096cb1fbd | cinderv3   | volumev3     |
+| c711547037274e72a751d79a64d1adcd | cinderv2   | volumev2     |
+| f5720d92a8d742caae5861f78fce1079 | placement  | placement    |
++----------------------------------+------------+--------------+
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+| Field                | Value                                                                                                                                     |
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
+| aggregates           | []                                                                                                                                        |
+| cpu_info             | {"vendor": "IBM", "model": "POWER8", "arch": "ppc64le", "features": [], "topology": {"cores": 5, "cells": 4, "threads": 8, "sockets": 1}} |
+| current_workload     | 0                                                                                                                                         |
+| disk_available_least | 211                                                                                                                                       |
+| free_disk_gb         | 260                                                                                                                                       |
+| free_ram_mb          | 260915                                                                                                                                    |
+| host_ip              | 10.245.168.61                                                                                                                             |
+| host_time            | 20:00:58                                                                                                                                  |
+| hypervisor_hostname  | node-mawhile.maas                                                                                                                         |
+| hypervisor_type      | QEMU                                                                                                                                      |
+| hypervisor_version   | 2010000                                                                                                                                   |
+| id                   | 1                                                                                                                                         |
+| load_average         | 0.49, 0.40, 0.52                                                                                                                          |
+| local_gb             | 260                                                                                                                                       |
+| local_gb_used        | 0                                                                                                                                         |
+| memory_mb            | 261427                                                                                                                                    |
+| memory_mb_used       | 512                                                                                                                                       |
+| running_vms          | 0                                                                                                                                         |
+| service_host         | node-mawhile                                                                                                                              |
+| service_id           | 10                                                                                                                                        |
+| state                | up                                                                                                                                        |
+| status               | enabled                                                                                                                                   |
+| uptime               | 13 days,  3:09                                                                                                                            |
+| users                | 0                                                                                                                                         |
+| vcpus                | 160                                                                                                                                       |
+| vcpus_used           | 0                                                                                                                                         |
++----------------------+-------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------------------+----------------+--------+
+| ID                                   | Name           | Status |
++--------------------------------------+----------------+--------+
+| bd03ac97-3cb3-4794-ab6d-de5bf1492282 | cirros-ppc64el | active |
+| e645346a-cda9-4d19-820d-7708e513e0fc | xenial-ppc64el | active |
++--------------------------------------+----------------+--------+
++--------------------------------------+-----------------------+---------+----------------------------------+----------------+-----------+
+| ID                                   | Name                  | Status  | Networks                         | Image          | Flavor    |
++--------------------------------------+-----------------------+---------+----------------------------------+----------------+-----------+
+| e77a7ce2-6c32-4627-b8ea-0fb314ea2eac | xenial-ppc64el-195349 | ACTIVE  | private=172.16.0.7, 10.245.173.4 | xenial-ppc64el | m1.small  |
+| 7add6123-1710-4d6e-81f3-113806121ac3 | cirros-ppc64el-190238 | SHUTOFF | private=172.16.0.6               | cirros-ppc64el | m1.cirros |
++--------------------------------------+-----------------------+---------+----------------------------------+----------------+-----------+
++----+------------+------+------+-----------+-------+-----------+
+| ID | Name       |  RAM | Disk | Ephemeral | VCPUs | Is Public |
++----+------------+------+------+-----------+-------+-----------+
+| 1  | m1.tiny    |  512 |    1 |         0 |     1 | True      |
+| 2  | m1.small   |  768 |   10 |         0 |     1 | True      |
+| 3  | m1.medium  | 1024 |   12 |         0 |     2 | True      |
+| 4  | m1.large   | 1536 |   14 |         0 |     4 | True      |
+| 5  | m1.xlarge  | 2048 |   16 |         0 |     8 | True      |
+| 6  | m1.cirros  |   64 |    1 |         0 |     1 | True      |
+| 7  | m1.tempest |  256 |    5 |         0 |     1 | True      |
+| 8  | m2.tempest |  512 |    5 |         0 |     1 | True      |
++----+------------+------+------+-----------+-------+-----------+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | node-loudred                                             |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | node-loudred.maas                                        |
+| OS-EXT-SRV-ATTR:instance_name       | instance-00000027                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2017-09-26T19:55:32.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.0.7, 10.245.173.4                         |
+| config_drive                        |                                                          |
+| created                             | 2017-09-26T19:53:54Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | da359d372190c5591418f5f8a3167966a558c2a165ac549568c480c6 |
+| id                                  | e77a7ce2-6c32-4627-b8ea-0fb314ea2eac                     |
+| image                               | xenial-ppc64el (e645346a-cda9-4d19-820d-7708e513e0fc)    |
+| key_name                            | testkey                                                  |
+| name                                | xenial-ppc64el-195349                                    |
+| progress                            | 0                                                        |
+| project_id                          | 7bf37bf744a04534813894f4a3c6a825                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2017-09-26T19:55:32Z                                     |
+| user_id                             | a7ce5fe7deef455d943929ea593198ab                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
++----+---------------------+-----------------+---------------+-------+
+| ID | Hypervisor Hostname | Hypervisor Type | Host IP       | State |
++----+---------------------+-----------------+---------------+-------+
+|  1 | node-mawhile.maas   | QEMU            | 10.245.168.61 | up    |
+|  2 | node-loudred.maas   | QEMU            | 10.245.168.62 | up    |
++----+---------------------+-----------------+---------------+-------+
