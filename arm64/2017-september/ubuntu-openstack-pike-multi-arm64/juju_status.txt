@@ -1,0 +1,121 @@
+Model           Controller      Cloud/Region  Version  SLA
+auto-osci-lb02  auto-osci-lb02  ruxton-maas   2.2.2    unsupported
+
+App                    Version       Status  Scale  Charm                  Store       Rev  OS      Notes
+ceph-mon               12.2.0        active      3  ceph-mon               jujucharms   12  ubuntu  
+ceph-osd               12.2.0        active      3  ceph-osd               jujucharms  246  ubuntu  
+ceph-radosgw           12.2.0        active      1  ceph-radosgw           jujucharms  251  ubuntu  
+cinder                 11.0.0        active      1  cinder                 jujucharms  264  ubuntu  
+cinder-ceph            11.0.0        active      1  cinder-ceph            jujucharms  227  ubuntu  
+glance                 15.0.0        active      1  glance                 jujucharms  259  ubuntu  
+keystone               12.0.0        active      1  keystone               jujucharms  268  ubuntu  
+mysql                  5.6.34-26.19  active      1  percona-cluster        jujucharms  254  ubuntu  
+neutron-api            11.0.0        active      1  neutron-api            jujucharms  252  ubuntu  
+neutron-gateway        11.0.0        active      1  neutron-gateway        jujucharms  238  ubuntu  
+neutron-openvswitch    11.0.0        active      3  neutron-openvswitch    jujucharms  244  ubuntu  
+nova-cloud-controller  16.0.0        active      1  nova-cloud-controller  jujucharms  300  ubuntu  
+nova-compute           16.0.0        active      3  nova-compute           jujucharms  273  ubuntu  
+ntp                    4.2.8p4+dfsg  active      4  ntp                    jujucharms   18  ubuntu  
+openstack-dashboard    12.0.0        active      1  openstack-dashboard    jujucharms  250  ubuntu  
+rabbitmq-server        3.5.7         active      1  rabbitmq-server        jujucharms   65  ubuntu  
+
+Unit                      Workload  Agent      Machine  Public address  Ports              Message
+ceph-mon/0                active    idle       1/lxd/0  10.245.168.57                      Unit is ready and clustered
+ceph-mon/1*               active    idle       2/lxd/0  10.245.168.51                      Unit is ready and clustered
+ceph-mon/2                active    idle       3/lxd/0  10.245.168.54                      Unit is ready and clustered
+ceph-osd/0                active    idle       1        10.245.168.35                      Unit is ready (1 OSD)
+ceph-osd/1*               active    idle       2        10.245.168.42                      Unit is ready (1 OSD)
+ceph-osd/2                active    idle       3        10.245.168.43                      Unit is ready (1 OSD)
+ceph-radosgw/0*           active    idle       0/lxd/0  10.245.168.32   80/tcp             Unit is ready
+cinder/0*                 active    idle       1/lxd/1  10.245.168.58   8776/tcp           Unit is ready
+  cinder-ceph/0*          active    idle                10.245.168.58                      Unit is ready
+glance/0*                 active    idle       2/lxd/1  10.245.168.52   9292/tcp           Unit is ready
+keystone/0*               active    idle       3/lxd/1  10.245.168.55   5000/tcp           Unit is ready
+mysql/0*                  active    idle       0/lxd/1  10.245.168.33   3306/tcp           Unit is ready
+neutron-api/0*            active    executing  1/lxd/2  10.245.168.59   9696/tcp           (update-status) Unit is ready
+neutron-gateway/0*        active    idle       0        10.245.168.47                      Unit is ready
+  ntp/1                   active    idle                10.245.168.47   123/udp            Unit is ready
+nova-cloud-controller/0*  active    idle       2/lxd/2  10.245.168.53   8774/tcp,8778/tcp  Unit is ready
+nova-compute/0            active    idle       1        10.245.168.35                      Unit is ready
+  neutron-openvswitch/2   active    idle                10.245.168.35                      Unit is ready
+  ntp/3                   active    idle                10.245.168.35   123/udp            Unit is ready
+nova-compute/1*           active    idle       2        10.245.168.42                      Unit is ready
+  neutron-openvswitch/0*  active    idle                10.245.168.42                      Unit is ready
+  ntp/0*                  active    idle                10.245.168.42   123/udp            Unit is ready
+nova-compute/2            active    idle       3        10.245.168.43                      Unit is ready
+  neutron-openvswitch/1   active    idle                10.245.168.43                      Unit is ready
+  ntp/2                   active    idle                10.245.168.43   123/udp            Unit is ready
+openstack-dashboard/0*    active    idle       3/lxd/2  10.245.168.56   80/tcp,443/tcp     Unit is ready
+rabbitmq-server/0*        active    executing  0/lxd/2  10.245.168.34   5672/tcp           (update-status) Unit is ready
+
+Machine  State    DNS            Inst id              Series  AZ       Message
+0        started  10.245.168.47  p7mgw4               xenial  default  Deployed
+0/lxd/0  started  10.245.168.32  juju-8f5978-0-lxd-0  xenial           Container started
+0/lxd/1  started  10.245.168.33  juju-8f5978-0-lxd-1  xenial           Container started
+0/lxd/2  started  10.245.168.34  juju-8f5978-0-lxd-2  xenial           Container started
+1        started  10.245.168.35  deqpb3               xenial  default  Deployed
+1/lxd/0  started  10.245.168.57  juju-8f5978-1-lxd-0  xenial           Container started
+1/lxd/1  started  10.245.168.58  juju-8f5978-1-lxd-1  xenial           Container started
+1/lxd/2  started  10.245.168.59  juju-8f5978-1-lxd-2  xenial           Container started
+2        started  10.245.168.42  qmwcqs               xenial  default  Deployed
+2/lxd/0  started  10.245.168.51  juju-8f5978-2-lxd-0  xenial           Container started
+2/lxd/1  started  10.245.168.52  juju-8f5978-2-lxd-1  xenial           Container started
+2/lxd/2  started  10.245.168.53  juju-8f5978-2-lxd-2  xenial           Container started
+3        started  10.245.168.43  mmda3r               xenial  default  Deployed
+3/lxd/0  started  10.245.168.54  juju-8f5978-3-lxd-0  xenial           Container started
+3/lxd/1  started  10.245.168.55  juju-8f5978-3-lxd-1  xenial           Container started
+3/lxd/2  started  10.245.168.56  juju-8f5978-3-lxd-2  xenial           Container started
+
+Relation                 Provides               Consumes               Type
+mon                      ceph-mon               ceph-mon               peer
+mon                      ceph-mon               ceph-osd               regular
+mon                      ceph-mon               ceph-radosgw           regular
+ceph                     ceph-mon               cinder-ceph            regular
+ceph                     ceph-mon               glance                 regular
+ceph                     ceph-mon               nova-compute           regular
+cluster                  ceph-radosgw           ceph-radosgw           peer
+identity-service         ceph-radosgw           keystone               regular
+cluster                  cinder                 cinder                 peer
+storage-backend          cinder                 cinder-ceph            subordinate
+image-service            cinder                 glance                 regular
+identity-service         cinder                 keystone               regular
+shared-db                cinder                 mysql                  regular
+cinder-volume-service    cinder                 nova-cloud-controller  regular
+amqp                     cinder                 rabbitmq-server        regular
+ceph-access              cinder-ceph            nova-compute           regular
+cluster                  glance                 glance                 peer
+identity-service         glance                 keystone               regular
+shared-db                glance                 mysql                  regular
+image-service            glance                 nova-cloud-controller  regular
+image-service            glance                 nova-compute           regular
+amqp                     glance                 rabbitmq-server        regular
+cluster                  keystone               keystone               peer
+shared-db                keystone               mysql                  regular
+identity-service         keystone               neutron-api            regular
+identity-service         keystone               nova-cloud-controller  regular
+identity-service         keystone               openstack-dashboard    regular
+cluster                  mysql                  mysql                  peer
+shared-db                mysql                  neutron-api            regular
+shared-db                mysql                  nova-cloud-controller  regular
+cluster                  neutron-api            neutron-api            peer
+neutron-plugin-api       neutron-api            neutron-gateway        regular
+neutron-plugin-api       neutron-api            neutron-openvswitch    regular
+neutron-api              neutron-api            nova-cloud-controller  regular
+amqp                     neutron-api            rabbitmq-server        regular
+cluster                  neutron-gateway        neutron-gateway        peer
+quantum-network-service  neutron-gateway        nova-cloud-controller  regular
+juju-info                neutron-gateway        ntp                    subordinate
+amqp                     neutron-gateway        rabbitmq-server        regular
+neutron-plugin           neutron-openvswitch    nova-compute           regular
+amqp                     neutron-openvswitch    rabbitmq-server        regular
+cluster                  nova-cloud-controller  nova-cloud-controller  peer
+cloud-compute            nova-cloud-controller  nova-compute           regular
+amqp                     nova-cloud-controller  rabbitmq-server        regular
+neutron-plugin           nova-compute           neutron-openvswitch    subordinate
+compute-peer             nova-compute           nova-compute           peer
+juju-info                nova-compute           ntp                    subordinate
+amqp                     nova-compute           rabbitmq-server        regular
+ntp-peers                ntp                    ntp                    peer
+cluster                  openstack-dashboard    openstack-dashboard    peer
+cluster                  rabbitmq-server        rabbitmq-server        peer
+
