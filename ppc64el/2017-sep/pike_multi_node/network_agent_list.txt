@@ -1,0 +1,12 @@
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type           | Host         | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
+| 04f4dbba-b2f1-4a78-9841-7b7a97b82fd3 | L3 agent             | node-gengar  | nova              | :-)   | UP    | neutron-l3-agent          |
+| 21677bf6-5c2d-431a-9fe3-07055a46c8ad | Metering agent       | node-gengar  | None              | :-)   | UP    | neutron-metering-agent    |
+| 33cf5ca1-9763-470b-9531-4c2cefc20209 | Open vSwitch agent   | node-mawhile | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 341f917f-c8e4-4adb-a538-cb608685f4cb | Loadbalancerv2 agent | node-gengar  | None              | :-)   | UP    | neutron-lbaasv2-agent     |
+| 77c17103-0ddd-44b4-bece-666847916990 | Open vSwitch agent   | node-gengar  | None              | :-)   | UP    | neutron-openvswitch-agent |
+| dc631731-a70b-4f70-acce-0445b1a7429e | Open vSwitch agent   | node-loudred | None              | :-)   | UP    | neutron-openvswitch-agent |
+| e2865a0f-fc64-457b-be47-aa146930bba5 | Metadata agent       | node-gengar  | None              | :-)   | UP    | neutron-metadata-agent    |
+| ee632db0-0ac3-4bcb-8f69-6ce215e40af4 | DHCP agent           | node-gengar  | nova              | :-)   | UP    | neutron-dhcp-agent        |
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
