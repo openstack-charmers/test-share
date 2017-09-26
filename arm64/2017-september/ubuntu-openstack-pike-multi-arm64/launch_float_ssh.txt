@@ -1,0 +1,177 @@
+
+(openstack-client) jenkins@juju-0d10ff-osci-5:~/temp/openstack-charm-testing⟫ tools/instance_launch.sh 1 xenial-uefi
++ instance_qty=1
++ image_name=xenial-uefi
++ '[' -z 1 ']'
++ '[' -z xenial-uefi ']'
++ openstack keypair show testkey
++-------------+-------------------------------------------------+
+| Field       | Value                                           |
++-------------+-------------------------------------------------+
+| created_at  | 2017-09-26T13:45:21.000000                      |
+| deleted     | False                                           |
+| deleted_at  | None                                            |
+| fingerprint | 2f:97:53:92:ed:34:65:a0:c8:c8:4a:18:1e:91:4e:1a |
+| id          | 1                                               |
+| name        | testkey                                         |
+| updated_at  | None                                            |
+| user_id     | 86b863b376ef4fff8e2f8375dd867c12                |
++-------------+-------------------------------------------------+
+++ openstack network list
+++ awk '/private/ {print $2}'
++ net_id=64d73241-f158-49d1-9600-383f527cc341
++ [[ xenial-uefi == *cirros* ]]
++ flavor=m1.medium
+++ date +%H%M%S
++ server_name=xenial-uefi-142153
++ openstack server create --wait --image xenial-uefi --flavor m1.medium --key-name testkey --nic net-id=64d73241-f158-49d1-9600-383f527cc341 --min 1 --max 1 xenial-uefi-142153
+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | node-couder                                              |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | node-couder.maas                                         |
+| OS-EXT-SRV-ATTR:instance_name       | instance-00000002                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2017-09-26T14:22:43.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.0.12                                      |
+| adminPass                           | sFUK3kavUgWB                                             |
+| config_drive                        |                                                          |
+| created                             | 2017-09-26T14:22:03Z                                     |
+| flavor                              | m1.medium (3)                                            |
+| hostId                              | 8cbc6d20de96187af5d076afd736e41c6ac24e6067db896c9534cf6e |
+| id                                  | 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc                     |
+| image                               | xenial-uefi (93c5fbfd-35a9-4479-b6e7-e298d70599e6)       |
+| key_name                            | testkey                                                  |
+| name                                | xenial-uefi-142153                                       |
+| progress                            | 0                                                        |
+| project_id                          | 48a07f7da4a543fcb42fe5151e6ddc62                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2017-09-26T14:22:43Z                                     |
+| user_id                             | 86b863b376ef4fff8e2f8375dd867c12                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
+(openstack-client) jenkins@juju-0d10ff-osci-5:~/temp/openstack-charm-testing⟫
+(openstack-client) jenkins@juju-0d10ff-osci-5:~/temp/openstack-charm-testing⟫ tools/float_all.sh
++ echo ' + Floating all instances.'
+ + Floating all instances.
+++ openstack floating ip list
+++ wc -l
+++ awk '/None/ { print $4 }'
++ fip_count=0
+++ openstack server list
+++ grep ACTIVE
+++ grep -v '\,'
+++ awk '{ print $2 }'
++ instances=6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc
+++ echo 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc
+++ wc -w
++ inst_count=1
++ [[ -z 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc ]]
++ ((  0 >= 1 ))
++ fip_diff=1
++ echo ' + Creating 1 more floating IPs.'
+ + Creating 1 more floating IPs.
+++ seq 1 1
++ for m in '$(seq 1 $fip_diff)'
++ openstack floating ip create ext_net
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| created_at          | 2017-09-26T14:26:05Z                 |
+| description         |                                      |
+| fixed_ip_address    | None                                 |
+| floating_ip_address | 10.245.172.9                         |
+| floating_network_id | 050e1154-d310-495f-9dc6-b5bdcd655885 |
+| id                  | 2b7173bf-2a92-4b63-b2fd-446b1221b782 |
+| name                | 10.245.172.9                         |
+| port_id             | None                                 |
+| project_id          | 48a07f7da4a543fcb42fe5151e6ddc62     |
+| revision_number     | 0                                    |
+| router_id           | None                                 |
+| status              | DOWN                                 |
+| updated_at          | 2017-09-26T14:26:05Z                 |
++---------------------+--------------------------------------+
++ for instance in '$instances'
+++ get_ip_f
+++ openstack floating ip list
+++ awk '/None/ { print $4 }'
+++ head -n 1
++ ip_f=10.245.172.9
++ echo ' + Associating floating IP 10.245.172.9 to instance 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc.'
+ + Associating floating IP 10.245.172.9 to instance 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc.
++ openstack server add floating ip 6b98bb6a-d0d6-4f2b-940e-07cc3bb5f0dc 10.245.172.9
+ssh ubuntu@10.245.172.9(openstack-client) jenkins@juju-0d10ff-osci-5:~/temp/openstack-charm-testing⟫ ssh ubuntu@10.245.172.9
+The authenticity of host '10.245.172.9 (10.245.172.9)' can't be established.
+ECDSA key fingerprint is SHA256:kA98aYLWxkGyXK4Y7X1xK2Y2/zsjI8O2ME0SHr2xyXM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.245.172.9' (ECDSA) to the list of known hosts.
+Permission denied (publickey).
+(openstack-client) 255 jenkins@juju-0d10ff-osci-5:~/temp/openstack-charm-testing⟫ ssh -i ~/testkey.pem ubuntu@10.245.172.9
+Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-93-generic aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+**************************************************************************
+# A new feature in cloud-init identified possible datasources for        #
+# this system as:                                                        #
+#   ['Ec2', 'None']                                                      #
+# However, the datasource used was: OpenStack                            #
+#                                                                        #
+# In the future, cloud-init will only attempt to use datasources that    #
+# are identified or specifically configured.                             #
+# For more information see                                               #
+#   https://bugs.launchpad.net/bugs/1669675                              #
+#                                                                        #
+# If you are seeing this message, please file a bug against              #
+# cloud-init at                                                          #
+#    https://bugs.launchpad.net/cloud-init/+filebug?field.tags=dsid      #
+# Make sure to include the cloud provider your instance is               #
+# running on.                                                            #
+#                                                                        #
+# After you have filed a bug, you can disable this warning by launching  #
+# your instance with the cloud-config below, or putting that content     #
+# into /etc/cloud/cloud.cfg.d/99-warnings.cfg                            #
+#                                                                        #
+# #cloud-config                                                          #
+# warnings:                                                              #
+#   dsid_missing_source: off                                             #
+**************************************************************************
+
+Disable the warnings above by:
+  touch /home/ubuntu/.cloud-warnings.skip
+or
+  touch /var/lib/cloud/instance/warnings/.skip
+ubuntu@xenial-uefi-142153:~$
+ubuntu@xenial-uefi-142153:~$ uname -a
+Linux xenial-uefi-142153 4.4.0-93-generic #116-Ubuntu SMP Fri Aug 11 16:31:47 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+

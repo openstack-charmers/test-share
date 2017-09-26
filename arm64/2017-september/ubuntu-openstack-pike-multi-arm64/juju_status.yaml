@@ -1,0 +1,1235 @@
+model:
+  name: auto-osci-lb02
+  controller: auto-osci-lb02
+  cloud: ruxton-maas
+  version: 2.2.2
+  model-status:
+    current: available
+    since: 26 Sep 2017 12:26:18Z
+  sla: unsupported
+machines:
+  "0":
+    juju-status:
+      current: started
+      since: 26 Sep 2017 12:38:22Z
+      version: 2.2.2
+    dns-name: 10.245.168.47
+    ip-addresses:
+    - 10.245.168.47
+    instance-id: p7mgw4
+    machine-status:
+      current: running
+      message: Deployed
+      since: 26 Sep 2017 12:37:39Z
+    series: xenial
+    network-interfaces:
+      br-enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.47
+        mac-address: 1c:1b:0d:0d:52:86
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.47
+        mac-address: 1c:1b:0d:0d:52:86
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.0.47.1
+        mac-address: 6e:66:ab:64:05:d9
+        is-up: true
+    containers:
+      0/lxd/0:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:47:37Z
+          version: 2.2.2
+        dns-name: 10.245.168.32
+        ip-addresses:
+        - 10.245.168.32
+        instance-id: juju-8f5978-0-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:46:42Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.32
+            mac-address: 00:16:3e:cf:1a:5c
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      0/lxd/1:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:47:53Z
+          version: 2.2.2
+        dns-name: 10.245.168.33
+        ip-addresses:
+        - 10.245.168.33
+        instance-id: juju-8f5978-0-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:46:56Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.33
+            mac-address: 00:16:3e:44:bf:c3
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      0/lxd/2:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:48:06Z
+          version: 2.2.2
+        dns-name: 10.245.168.34
+        ip-addresses:
+        - 10.245.168.34
+        instance-id: juju-8f5978-0-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:47:11Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.34
+            mac-address: 00:16:3e:68:7f:39
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+    constraints: arch=arm64 tags=uosci
+    hardware: arch=arm64 cores=48 mem=64390M tags=uosci,metal,gigabyte availability-zone=default
+  "1":
+    juju-status:
+      current: started
+      since: 26 Sep 2017 12:38:37Z
+      version: 2.2.2
+    dns-name: 10.245.168.35
+    ip-addresses:
+    - 10.245.168.35
+    instance-id: deqpb3
+    machine-status:
+      current: running
+      message: Deployed
+      since: 26 Sep 2017 12:37:57Z
+    series: xenial
+    network-interfaces:
+      br-enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.35
+        mac-address: 1c:1b:0d:68:7e:77
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.35
+        mac-address: 1c:1b:0d:68:7e:77
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.0.42.1
+        mac-address: be:97:f0:37:34:69
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:87:66:1d
+        is-up: true
+    containers:
+      1/lxd/0:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:57:53Z
+          version: 2.2.2
+        dns-name: 10.245.168.57
+        ip-addresses:
+        - 10.245.168.57
+        instance-id: juju-8f5978-1-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:56:58Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.57
+            mac-address: 00:16:3e:e7:86:a6
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      1/lxd/1:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:58:06Z
+          version: 2.2.2
+        dns-name: 10.245.168.58
+        ip-addresses:
+        - 10.245.168.58
+        instance-id: juju-8f5978-1-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:57:11Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.58
+            mac-address: 00:16:3e:9f:a8:e7
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      1/lxd/2:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:58:20Z
+          version: 2.2.2
+        dns-name: 10.245.168.59
+        ip-addresses:
+        - 10.245.168.59
+        instance-id: juju-8f5978-1-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:57:25Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.59
+            mac-address: 00:16:3e:b9:f3:4e
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+    constraints: arch=arm64 tags=uosci
+    hardware: arch=arm64 cores=48 mem=64390M tags=uosci,metal,gigabyte availability-zone=default
+  "2":
+    juju-status:
+      current: started
+      since: 26 Sep 2017 12:38:22Z
+      version: 2.2.2
+    dns-name: 10.245.168.42
+    ip-addresses:
+    - 10.245.168.42
+    instance-id: qmwcqs
+    machine-status:
+      current: running
+      message: Deployed
+      since: 26 Sep 2017 12:37:39Z
+    series: xenial
+    network-interfaces:
+      br-enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.42
+        mac-address: 1c:1b:0d:68:7e:3b
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.42
+        mac-address: 1c:1b:0d:68:7e:3b
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.0.242.1
+        mac-address: fa:b8:51:cf:cd:d1
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:ed:19:3c
+        is-up: true
+    containers:
+      2/lxd/0:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:52:23Z
+          version: 2.2.2
+        dns-name: 10.245.168.51
+        ip-addresses:
+        - 10.245.168.51
+        instance-id: juju-8f5978-2-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:51:29Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.51
+            mac-address: 00:16:3e:c2:c8:32
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      2/lxd/1:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:52:38Z
+          version: 2.2.2
+        dns-name: 10.245.168.52
+        ip-addresses:
+        - 10.245.168.52
+        instance-id: juju-8f5978-2-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:51:43Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.52
+            mac-address: 00:16:3e:30:47:8f
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      2/lxd/2:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:52:50Z
+          version: 2.2.2
+        dns-name: 10.245.168.53
+        ip-addresses:
+        - 10.245.168.53
+        instance-id: juju-8f5978-2-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:51:56Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.53
+            mac-address: 00:16:3e:4c:63:3c
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+    constraints: arch=arm64 tags=uosci
+    hardware: arch=arm64 cores=48 mem=64390M tags=uosci,metal,gigabyte availability-zone=default
+  "3":
+    juju-status:
+      current: started
+      since: 26 Sep 2017 12:38:38Z
+      version: 2.2.2
+    dns-name: 10.245.168.43
+    ip-addresses:
+    - 10.245.168.43
+    instance-id: mmda3r
+    machine-status:
+      current: running
+      message: Deployed
+      since: 26 Sep 2017 12:37:57Z
+    series: xenial
+    network-interfaces:
+      br-enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.43
+        mac-address: 1c:1b:0d:60:ee:76
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      enP2p1s0f1:
+        ip-addresses:
+        - 10.245.168.43
+        mac-address: 1c:1b:0d:60:ee:76
+        gateway: 10.245.168.1
+        dns-nameservers:
+        - 10.245.168.6
+        space: internal
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.0.64.1
+        mac-address: 6a:0d:7d:f3:43:d9
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:e1:78:aa
+        is-up: true
+    containers:
+      3/lxd/0:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:55:07Z
+          version: 2.2.2
+        dns-name: 10.245.168.54
+        ip-addresses:
+        - 10.245.168.54
+        instance-id: juju-8f5978-3-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:54:12Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.54
+            mac-address: 00:16:3e:ca:cd:20
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      3/lxd/1:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:55:22Z
+          version: 2.2.2
+        dns-name: 10.245.168.55
+        ip-addresses:
+        - 10.245.168.55
+        instance-id: juju-8f5978-3-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:54:26Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.55
+            mac-address: 00:16:3e:3e:73:9f
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+      3/lxd/2:
+        juju-status:
+          current: started
+          since: 26 Sep 2017 12:55:35Z
+          version: 2.2.2
+        dns-name: 10.245.168.56
+        ip-addresses:
+        - 10.245.168.56
+        instance-id: juju-8f5978-3-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 26 Sep 2017 12:54:41Z
+        series: xenial
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.56
+            mac-address: 00:16:3e:a4:d6:b9
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: internal
+            is-up: true
+        constraints: arch=arm64 tags=uosci
+    constraints: arch=arm64 tags=uosci
+    hardware: arch=arm64 cores=48 mem=64390M tags=uosci,metal,gigabyte availability-zone=default
+applications:
+  ceph-mon:
+    charm: cs:ceph-mon-12
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-mon
+    charm-rev: 12
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready and clustered
+      since: 26 Sep 2017 14:18:52Z
+    relations:
+      client:
+      - cinder-ceph
+      - glance
+      - nova-compute
+      mon:
+      - ceph-mon
+      osd:
+      - ceph-osd
+      radosgw:
+      - ceph-radosgw
+    units:
+      ceph-mon/0:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 26 Sep 2017 14:18:52Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:52Z
+          version: 2.2.2
+        machine: 1/lxd/0
+        public-address: 10.245.168.57
+      ceph-mon/1:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 26 Sep 2017 14:15:47Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:15:47Z
+          version: 2.2.2
+        leader: true
+        machine: 2/lxd/0
+        public-address: 10.245.168.51
+      ceph-mon/2:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 26 Sep 2017 14:16:22Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:22Z
+          version: 2.2.2
+        machine: 3/lxd/0
+        public-address: 10.245.168.54
+    version: 12.2.0
+  ceph-osd:
+    charm: cs:ceph-osd-246
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-osd
+    charm-rev: 246
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready (1 OSD)
+      since: 26 Sep 2017 14:18:39Z
+    relations:
+      mon:
+      - ceph-mon
+    units:
+      ceph-osd/0:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 26 Sep 2017 14:18:39Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:39Z
+          version: 2.2.2
+        machine: "1"
+        public-address: 10.245.168.35
+      ceph-osd/1:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 26 Sep 2017 14:15:21Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:15:21Z
+          version: 2.2.2
+        leader: true
+        machine: "2"
+        public-address: 10.245.168.42
+      ceph-osd/2:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 26 Sep 2017 14:16:34Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:34Z
+          version: 2.2.2
+        machine: "3"
+        public-address: 10.245.168.43
+    version: 12.2.0
+  ceph-radosgw:
+    charm: cs:ceph-radosgw-251
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-radosgw
+    charm-rev: 251
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:19:12Z
+    relations:
+      cluster:
+      - ceph-radosgw
+      identity-service:
+      - keystone
+      mon:
+      - ceph-mon
+    units:
+      ceph-radosgw/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:19:12Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:19:16Z
+          version: 2.2.2
+        leader: true
+        machine: 0/lxd/0
+        open-ports:
+        - 80/tcp
+        public-address: 10.245.168.32
+    version: 12.2.0
+  cinder:
+    charm: cs:cinder-264
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: cinder
+    charm-rev: 264
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:14:11Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - nova-cloud-controller
+      cluster:
+      - cinder
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      shared-db:
+      - mysql
+      storage-backend:
+      - cinder-ceph
+    units:
+      cinder/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:14:11Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:14:15Z
+          version: 2.2.2
+        leader: true
+        machine: 1/lxd/1
+        open-ports:
+        - 8776/tcp
+        public-address: 10.245.168.58
+        subordinates:
+          cinder-ceph/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:16:16Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:16:20Z
+              version: 2.2.2
+            leader: true
+            upgrading-from: cs:cinder-ceph-227
+            public-address: 10.245.168.58
+    version: 11.0.0
+  cinder-ceph:
+    charm: cs:cinder-ceph-227
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: cinder-ceph
+    charm-rev: 227
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:16:16Z
+    relations:
+      ceph:
+      - ceph-mon
+      ceph-access:
+      - nova-compute
+      storage-backend:
+      - cinder
+    subordinate-to:
+    - cinder
+    version: 11.0.0
+  glance:
+    charm: cs:glance-259
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: glance
+    charm-rev: 259
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:17:07Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph-mon
+      cluster:
+      - glance
+      identity-service:
+      - keystone
+      image-service:
+      - cinder
+      - nova-cloud-controller
+      - nova-compute
+      shared-db:
+      - mysql
+    units:
+      glance/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:17:07Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:17:10Z
+          version: 2.2.2
+        leader: true
+        machine: 2/lxd/1
+        open-ports:
+        - 9292/tcp
+        public-address: 10.245.168.52
+    version: 15.0.0
+  keystone:
+    charm: cs:keystone-268
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: keystone
+    charm-rev: 268
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:18:20Z
+    relations:
+      cluster:
+      - keystone
+      identity-service:
+      - ceph-radosgw
+      - cinder
+      - glance
+      - neutron-api
+      - nova-cloud-controller
+      - openstack-dashboard
+      shared-db:
+      - mysql
+    units:
+      keystone/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:18:20Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:24Z
+          version: 2.2.2
+        leader: true
+        machine: 3/lxd/1
+        open-ports:
+        - 5000/tcp
+        public-address: 10.245.168.55
+    version: 12.0.0
+  mysql:
+    charm: cs:percona-cluster-254
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: percona-cluster
+    charm-rev: 254
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:18:43Z
+    relations:
+      cluster:
+      - mysql
+      shared-db:
+      - cinder
+      - glance
+      - keystone
+      - neutron-api
+      - nova-cloud-controller
+    units:
+      mysql/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:18:43Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:47Z
+          version: 2.2.2
+        leader: true
+        machine: 0/lxd/1
+        open-ports:
+        - 3306/tcp
+        public-address: 10.245.168.33
+    version: 5.6.34-26.19
+  neutron-api:
+    charm: cs:neutron-api-252
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-api
+    charm-rev: 252
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:14:24Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-api
+      identity-service:
+      - keystone
+      neutron-api:
+      - nova-cloud-controller
+      neutron-plugin-api:
+      - neutron-gateway
+      - neutron-openvswitch
+      shared-db:
+      - mysql
+    units:
+      neutron-api/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:14:24Z
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 26 Sep 2017 14:19:12Z
+          version: 2.2.2
+        leader: true
+        machine: 1/lxd/2
+        open-ports:
+        - 9696/tcp
+        public-address: 10.245.168.59
+    version: 11.0.0
+  neutron-gateway:
+    charm: cs:neutron-gateway-238
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-gateway
+    charm-rev: 238
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:18:55Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-gateway
+      juju-info:
+      - ntp
+      neutron-plugin-api:
+      - neutron-api
+      quantum-network-service:
+      - nova-cloud-controller
+    units:
+      neutron-gateway/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:18:55Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:59Z
+          version: 2.2.2
+        leader: true
+        machine: "0"
+        public-address: 10.245.168.47
+        subordinates:
+          ntp/1:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:14:51Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:14:51Z
+              version: 2.2.2
+            upgrading-from: cs:ntp-18
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.47
+    version: 11.0.0
+  neutron-openvswitch:
+    charm: cs:neutron-openvswitch-244
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-openvswitch
+    charm-rev: 244
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:17:56Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      neutron-plugin:
+      - nova-compute
+      neutron-plugin-api:
+      - neutron-api
+    subordinate-to:
+    - nova-compute
+    version: 11.0.0
+  nova-cloud-controller:
+    charm: cs:nova-cloud-controller-300
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: nova-cloud-controller
+    charm-rev: 300
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:16:02Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - cinder
+      cloud-compute:
+      - nova-compute
+      cluster:
+      - nova-cloud-controller
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      neutron-api:
+      - neutron-api
+      quantum-network-service:
+      - neutron-gateway
+      shared-db:
+      - mysql
+    units:
+      nova-cloud-controller/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:16:02Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:06Z
+          version: 2.2.2
+        leader: true
+        machine: 2/lxd/2
+        open-ports:
+        - 8774/tcp
+        - 8778/tcp
+        public-address: 10.245.168.53
+    version: 16.0.0
+  nova-compute:
+    charm: cs:nova-compute-273
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: nova-compute
+    charm-rev: 273
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:18:28Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph-mon
+      ceph-access:
+      - cinder-ceph
+      cloud-compute:
+      - nova-cloud-controller
+      compute-peer:
+      - nova-compute
+      image-service:
+      - glance
+      juju-info:
+      - ntp
+      neutron-plugin:
+      - neutron-openvswitch
+    units:
+      nova-compute/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:18:28Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:18:32Z
+          version: 2.2.2
+        machine: "1"
+        public-address: 10.245.168.35
+        subordinates:
+          neutron-openvswitch/2:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:17:53Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:17:56Z
+              version: 2.2.2
+            upgrading-from: cs:neutron-openvswitch-244
+            public-address: 10.245.168.35
+          ntp/3:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:18:52Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:18:52Z
+              version: 2.2.2
+            upgrading-from: cs:ntp-18
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.35
+      nova-compute/1:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:16:53Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:57Z
+          version: 2.2.2
+        leader: true
+        machine: "2"
+        public-address: 10.245.168.42
+        subordinates:
+          neutron-openvswitch/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:17:56Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:18:00Z
+              version: 2.2.2
+            leader: true
+            upgrading-from: cs:neutron-openvswitch-244
+            public-address: 10.245.168.42
+          ntp/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:19:23Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:19:23Z
+              version: 2.2.2
+            leader: true
+            upgrading-from: cs:ntp-18
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.42
+      nova-compute/2:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:16:08Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:12Z
+          version: 2.2.2
+        machine: "3"
+        public-address: 10.245.168.43
+        subordinates:
+          neutron-openvswitch/1:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:16:24Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:16:27Z
+              version: 2.2.2
+            upgrading-from: cs:neutron-openvswitch-244
+            public-address: 10.245.168.43
+          ntp/2:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 26 Sep 2017 14:17:40Z
+            juju-status:
+              current: idle
+              since: 26 Sep 2017 14:17:40Z
+              version: 2.2.2
+            upgrading-from: cs:ntp-18
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.43
+    version: 16.0.0
+  ntp:
+    charm: cs:ntp-18
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ntp
+    charm-rev: 18
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:19:23Z
+    relations:
+      juju-info:
+      - neutron-gateway
+      - nova-compute
+      ntp-peers:
+      - ntp
+    subordinate-to:
+    - neutron-gateway
+    - nova-compute
+    version: 4.2.8p4+dfsg
+  openstack-dashboard:
+    charm: cs:openstack-dashboard-250
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: openstack-dashboard
+    charm-rev: 250
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:16:11Z
+    relations:
+      cluster:
+      - openstack-dashboard
+      identity-service:
+      - keystone
+    units:
+      openstack-dashboard/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:16:11Z
+        juju-status:
+          current: idle
+          since: 26 Sep 2017 14:16:15Z
+          version: 2.2.2
+        leader: true
+        machine: 3/lxd/2
+        open-ports:
+        - 80/tcp
+        - 443/tcp
+        public-address: 10.245.168.56
+    version: 12.0.0
+  rabbitmq-server:
+    charm: cs:rabbitmq-server-65
+    series: xenial
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: rabbitmq-server
+    charm-rev: 65
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 26 Sep 2017 14:15:37Z
+    relations:
+      amqp:
+      - cinder
+      - glance
+      - neutron-api
+      - neutron-gateway
+      - neutron-openvswitch
+      - nova-cloud-controller
+      - nova-compute
+      cluster:
+      - rabbitmq-server
+    units:
+      rabbitmq-server/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 26 Sep 2017 14:15:37Z
+        juju-status:
+          current: executing
+          message: running update-status hook
+          since: 26 Sep 2017 14:18:37Z
+          version: 2.2.2
+        leader: true
+        machine: 0/lxd/2
+        open-ports:
+        - 5672/tcp
+        public-address: 10.245.168.34
+    version: 3.5.7
