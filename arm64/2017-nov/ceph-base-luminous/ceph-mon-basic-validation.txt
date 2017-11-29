@@ -1,0 +1,41 @@
+- MachineId: "0"
+  Stdout: |
+    Linux node-loewy 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 0/lxd/0
+  Stdout: |
+    Linux juju-f14812-0-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: "1"
+  Stdout: |
+    Linux node-moingo 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 1/lxd/0
+  Stdout: |
+    Linux juju-f14812-1-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: "2"
+  Stdout: |
+    Linux node-egede 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 2/lxd/0
+  Stdout: |
+    Linux juju-f14812-2-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+
+- Stdout: "  cluster:\n    id:     70701498-d540-11e7-a66c-00163e822f85\n    health:
+    HEALTH_OK\n \n  services:\n    mon: 3 daemons, quorum juju-f14812-2-lxd-0,juju-f14812-1-lxd-0,juju-f14812-0-lxd-0\n
+    \   mgr: juju-f14812-2-lxd-0(active), standbys: juju-f14812-1-lxd-0, juju-f14812-0-lxd-0\n
+    \   osd: 3 osds: 3 up, 3 in\n \n  data:\n    pools:   0 pools, 0 pgs\n    objects:
+    0 objects, 0 bytes\n    usage:   1033 MB used, 2789 GB / 2790 GB avail\n    pgs:
+    \    \n \n"
+  UnitId: ceph-mon/0
+- Stdout: "  cluster:\n    id:     70701498-d540-11e7-a66c-00163e822f85\n    health:
+    HEALTH_OK\n \n  services:\n    mon: 3 daemons, quorum juju-f14812-2-lxd-0,juju-f14812-1-lxd-0,juju-f14812-0-lxd-0\n
+    \   mgr: juju-f14812-2-lxd-0(active), standbys: juju-f14812-1-lxd-0, juju-f14812-0-lxd-0\n
+    \   osd: 3 osds: 3 up, 3 in\n \n  data:\n    pools:   0 pools, 0 pgs\n    objects:
+    0 objects, 0 bytes\n    usage:   1033 MB used, 2789 GB / 2790 GB avail\n    pgs:
+    \    \n \n"
+  UnitId: ceph-mon/1
+- Stdout: "  cluster:\n    id:     70701498-d540-11e7-a66c-00163e822f85\n    health:
+    HEALTH_OK\n \n  services:\n    mon: 3 daemons, quorum juju-f14812-2-lxd-0,juju-f14812-1-lxd-0,juju-f14812-0-lxd-0\n
+    \   mgr: juju-f14812-2-lxd-0(active), standbys: juju-f14812-1-lxd-0, juju-f14812-0-lxd-0\n
+    \   osd: 3 osds: 3 up, 3 in\n \n  data:\n    pools:   0 pools, 0 pgs\n    objects:
+    0 objects, 0 bytes\n    usage:   1033 MB used, 2789 GB / 2790 GB avail\n    pgs:
+    \    \n \n"
+  UnitId: ceph-mon/2
+

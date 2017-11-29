@@ -1,0 +1,53 @@
+- MachineId: "0"
+  Stdout: |
+    Linux node-loewy 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 0/lxd/0
+  Stdout: |
+    Linux juju-ca9857-0-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: "1"
+  Stdout: |
+    Linux node-moingo 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 1/lxd/0
+  Stdout: |
+    Linux juju-ca9857-1-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: "2"
+  Stdout: |
+    Linux node-egede 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+- MachineId: 2/lxd/0
+  Stdout: |
+    Linux juju-ca9857-2-lxd-0 4.13.0-17-generic #20~16.04.1-Ubuntu SMP Mon Nov 6 14:18:42 UTC 2017 aarch64 aarch64 aarch64 GNU/Linux
+
+- Stdout: |2
+        cluster f59f379c-d537-11e7-bd52-00163e30d1e0
+         health HEALTH_OK
+         monmap e2: 3 mons at {juju-ca9857-0-lxd-0=10.245.168.46:6789/0,juju-ca9857-1-lxd-0=10.245.168.41:6789/0,juju-ca9857-2-lxd-0=10.245.168.49:6789/0}
+                election epoch 12, quorum 0,1,2 juju-ca9857-1-lxd-0,juju-ca9857-0-lxd-0,juju-ca9857-2-lxd-0
+         osdmap e13: 3 osds: 3 up, 3 in
+                flags sortbitwise,require_jewel_osds
+          pgmap v30: 64 pgs, 1 pools, 0 bytes data, 0 objects
+                812 MB used, 2789 GB / 2790 GB avail
+                      64 active+clean
+  UnitId: ceph-mon/0
+- Stdout: |2
+        cluster f59f379c-d537-11e7-bd52-00163e30d1e0
+         health HEALTH_OK
+         monmap e2: 3 mons at {juju-ca9857-0-lxd-0=10.245.168.46:6789/0,juju-ca9857-1-lxd-0=10.245.168.41:6789/0,juju-ca9857-2-lxd-0=10.245.168.49:6789/0}
+                election epoch 12, quorum 0,1,2 juju-ca9857-1-lxd-0,juju-ca9857-0-lxd-0,juju-ca9857-2-lxd-0
+         osdmap e13: 3 osds: 3 up, 3 in
+                flags sortbitwise,require_jewel_osds
+          pgmap v30: 64 pgs, 1 pools, 0 bytes data, 0 objects
+                812 MB used, 2789 GB / 2790 GB avail
+                      64 active+clean
+  UnitId: ceph-mon/1
+- Stdout: |2
+        cluster f59f379c-d537-11e7-bd52-00163e30d1e0
+         health HEALTH_OK
+         monmap e2: 3 mons at {juju-ca9857-0-lxd-0=10.245.168.46:6789/0,juju-ca9857-1-lxd-0=10.245.168.41:6789/0,juju-ca9857-2-lxd-0=10.245.168.49:6789/0}
+                election epoch 12, quorum 0,1,2 juju-ca9857-1-lxd-0,juju-ca9857-0-lxd-0,juju-ca9857-2-lxd-0
+         osdmap e13: 3 osds: 3 up, 3 in
+                flags sortbitwise,require_jewel_osds
+          pgmap v30: 64 pgs, 1 pools, 0 bytes data, 0 objects
+                812 MB used, 2789 GB / 2790 GB avail
+                      64 active+clean
+  UnitId: ceph-mon/2
+
