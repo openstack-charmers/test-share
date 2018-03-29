@@ -1,0 +1,50 @@
++--------------------------------------+---------------+--------+-------------------------------------+--------+----------+
+| ID                                   | Name          | Status | Networks                            | Image  | Flavor   |
++--------------------------------------+---------------+--------+-------------------------------------+--------+----------+
+| 45011491-6945-42b9-b79e-50848d4a7913 | xenial-s390x1 | ACTIVE | internal=192.168.20.3, 10.91.245.80 | xenial | m1.small |
++--------------------------------------+---------------+--------+-------------------------------------+--------+----------+
+ubuntu@s4lp5:~/openstack-charm-testing/tools$ ping 10.91.245.80
+PING 10.91.245.80 (10.91.245.80) 56(84) bytes of data.
+64 bytes from 10.91.245.80: icmp_seq=1 ttl=63 time=0.225 ms
+64 bytes from 10.91.245.80: icmp_seq=2 ttl=63 time=0.201 ms
+64 bytes from 10.91.245.80: icmp_seq=3 ttl=63 time=0.190 ms
+64 bytes from 10.91.245.80: icmp_seq=4 ttl=63 time=0.191 ms
+^C
+--- 10.91.245.80 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3001ms
+rtt min/avg/max/mdev = 0.190/0.201/0.225/0.022 ms
+ubuntu@s4lp5:~/openstack-charm-testing/tools$ ssh ubuntu@10.91.245.80
+The authenticity of host '10.91.245.80 (10.91.245.80)' can't be established.
+ECDSA key fingerprint is SHA256:o5lCU3MopKH4Trh/QDjo4swvQ0WytpDs7Sk92dhElUI.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.91.245.80' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-116-generic s390x)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@xenial-s390x1:~$ uname -a
+Linux xenial-s390x1 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:21:31 UTC 2018 s390x s390x s390x GNU/Linux
+ubuntu@xenial-s390x1:~$ exit
+logout
+Connection to 10.91.245.80 closed.
+

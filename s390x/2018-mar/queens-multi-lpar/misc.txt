@@ -1,0 +1,64 @@
++ echo ' + Floating all instances.'
+ + Floating all instances.
+++ openstack floating ip list
+++ wc -l
+++ awk '/None/ { print $4 }'
++ fip_count=2
+++ openstack server list
+++ grep -v '\,'
+++ grep ACTIVE
+++ awk '{ print $2 }'
++ instances='caef8581-f02d-4f8e-8113-509d19d78de2
+fa5551b5-2913-4ccd-9e2f-2ea3750aab0a'
+++ echo caef8581-f02d-4f8e-8113-509d19d78de2 fa5551b5-2913-4ccd-9e2f-2ea3750aab0a
+++ wc -w
++ inst_count=2
++ [[ -z caef8581-f02d-4f8e-8113-509d19d78de2
+fa5551b5-2913-4ccd-9e2f-2ea3750aab0a ]]
++ ((  2 >= 2 ))
++ echo ' . Already enough floating IPs.'
+ . Already enough floating IPs.
++ for instance in '$instances'
+++ get_ip_f
+++ openstack floating ip list
+++ awk '/None/ { print $4 }'
+++ head -n 1
++ ip_f=10.13.3.131
++ echo ' + Associating floating IP 10.13.3.131 to instance caef8581-f02d-4f8e-8113-509d19d78de2.'
+ + Associating floating IP 10.13.3.131 to instance caef8581-f02d-4f8e-8113-509d19d78de2.
+++ openstack server list
+++ grep caef8581-f02d-4f8e-8113-509d19d78de2
+++ awk -Fprivate= '{ print $2 }'
+++ awk '{ print $1 }'
++ tenant_ip=172.16.0.6
+++ openstack port list -c ID -c fixed_ips
+++ grep 172.16.0.6
+++ awk '{ print $2 }'
++ tenant_ip_portid=4ae8ecee-ccb3-4f8b-b625-9098a566fe9b
++ openstack floating ip set --port 4ae8ecee-ccb3-4f8b-b625-9098a566fe9b 10.13.3.131
++ for instance in '$instances'
+++ get_ip_f
+++ openstack floating ip list
+++ awk '/None/ { print $4 }'
+++ head -n 1
++ ip_f=10.13.3.129
++ echo ' + Associating floating IP 10.13.3.129 to instance fa5551b5-2913-4ccd-9e2f-2ea3750aab0a.'
+ + Associating floating IP 10.13.3.129 to instance fa5551b5-2913-4ccd-9e2f-2ea3750aab0a.
+++ openstack server list
+++ awk -Fprivate= '{ print $2 }'
+++ grep fa5551b5-2913-4ccd-9e2f-2ea3750aab0a
+++ awk '{ print $1 }'
++ tenant_ip=172.16.0.5
+++ openstack port list -c ID -c fixed_ips
+++ grep 172.16.0.5
+++ awk '{ print $2 }'
++ tenant_ip_portid=74b3cd22-2dee-4aaf-8fe3-d5704f9c7589
++ openstack floating ip set --port 74b3cd22-2dee-4aaf-8fe3-d5704f9c7589 10.13.3.129
+ubuntu@s4lp8:~/sfeole/zopenstack-sfeole/tools/2-configure/tools> openstack server list
++--------------------------------------+---------------------+--------+---------------------------------+--------------+----------+
+| ID                                   | Name                | Status | Networks                        | Image        | Flavor   |
++--------------------------------------+---------------------+--------+---------------------------------+--------------+----------+
+| caef8581-f02d-4f8e-8113-509d19d78de2 | xenial-s390x-162922 | ACTIVE | private=172.16.0.6, 10.13.3.131 | xenial-s390x | m1.small |
+| fa5551b5-2913-4ccd-9e2f-2ea3750aab0a | xenial-s390x-162649 | ACTIVE | private=172.16.0.5, 10.13.3.129 | xenial-s390x | m1.small |
++--------------------------------------+---------------------+--------+---------------------------------+--------------+----------+
+
