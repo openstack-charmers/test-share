@@ -1,0 +1,88 @@
++------------+----------------+---------------------------------------------------------------------------+
+| Name       | Type           | Endpoints                                                                 |
++------------+----------------+---------------------------------------------------------------------------+
+| ceilometer | metering       | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.176:8777                                        |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.176:8777                                     |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.176:8777                                       |
+|            |                |                                                                           |
+| keystone   | identity       | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.181:5000/v3                                    |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.181:5000/v3                                  |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.181:35357/v3                                    |
+|            |                |                                                                           |
+| neutron    | network        | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.103:9696                                     |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.103:9696                                       |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.103:9696                                        |
+|            |                |                                                                           |
+| cinderv3   | volumev3       | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.78:8776/v3/cec80d80c72142058dfa0f7785427b1c     |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.78:8776/v3/cec80d80c72142058dfa0f7785427b1c    |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.78:8776/v3/cec80d80c72142058dfa0f7785427b1c  |
+|            |                |                                                                           |
+| glance     | image          | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.207:9292                                     |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.207:9292                                        |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.207:9292                                       |
+|            |                |                                                                           |
+| gnocchi    | metric         | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.60:8041                                        |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.60:8041                                         |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.60:8041                                      |
+|            |                |                                                                           |
+| placement  | placement      | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.113:8778                                       |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.113:8778                                        |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.113:8778                                     |
+|            |                |                                                                           |
+| cinderv2   | volumev2       | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.78:8776/v2/cec80d80c72142058dfa0f7785427b1c  |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.78:8776/v2/cec80d80c72142058dfa0f7785427b1c     |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.78:8776/v2/cec80d80c72142058dfa0f7785427b1c    |
+|            |                |                                                                           |
+| designate  | dns            | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.49:9001                                         |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.49:9001                                      |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.49:9001                                        |
+|            |                |                                                                           |
+| heat       | orchestration  | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.253:8004/v1/cec80d80c72142058dfa0f7785427b1c |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.253:8004/v1/cec80d80c72142058dfa0f7785427b1c   |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.253:8004/v1/cec80d80c72142058dfa0f7785427b1c    |
+|            |                |                                                                           |
+| heat-cfn   | cloudformation | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.253:8000/v1                                  |
+|            |                | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.253:8000/v1                                    |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.253:8000/v1                                     |
+|            |                |                                                                           |
+| nova       | compute        | RegionOne                                                                 |
+|            |                |   public: http://10.91.245.113:8774/v2/cec80d80c72142058dfa0f7785427b1c   |
+|            |                | RegionOne                                                                 |
+|            |                |   internal: http://10.91.245.113:8774/v2/cec80d80c72142058dfa0f7785427b1c |
+|            |                | RegionOne                                                                 |
+|            |                |   admin: http://10.91.245.113:8774/v2/cec80d80c72142058dfa0f7785427b1c    |
+|            |                |                                                                           |
++------------+----------------+----------------------------------------

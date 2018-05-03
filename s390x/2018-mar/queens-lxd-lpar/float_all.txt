@@ -1,0 +1,57 @@
++ echo ' + Floating all instances.'
+ + Floating all instances.
+++ openstack floating ip list
+++ grep 'None '
+++ awk '{ print $4 }'
++ fips=
+++ echo
+++ wc -w
++ fip_count=0
+++ openstack server list
+++ grep ACTIVE
+++ awk '{ print $2 }'
+++ grep -v '\,'
++ instances=45011491-6945-42b9-b79e-50848d4a7913
+++ echo 45011491-6945-42b9-b79e-50848d4a7913
+++ wc -w
++ inst_count=1
++ [[ -z 45011491-6945-42b9-b79e-50848d4a7913 ]]
++ ((  0 >= 1 ))
++ fip_diff=1
++ echo ' + Creating 1 more floating IPs.'
+ + Creating 1 more floating IPs.
+++ seq 1 1
++ for m in '$(seq 1 $fip_diff)'
++ openstack floating ip create ext_net
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| created_at          | 2018-03-29T20:39:20Z                 |
+| description         |                                      |
+| fixed_ip_address    | None                                 |
+| floating_ip_address | 10.91.245.80                         |
+| floating_network_id | 02366c69-e026-49a0-8802-3db4cb19e3a0 |
+| id                  | 7ae86d92-8314-4d02-a60a-0299ed5d4040 |
+| name                | 10.91.245.80                         |
+| port_id             | None                                 |
+| project_id          | 2821d3e4cd664710bb521bf8d39e875f     |
+| qos_policy_id       | None                                 |
+| revision_number     | 0                                    |
+| router_id           | None                                 |
+| status              | DOWN                                 |
+| subnet_id           | None                                 |
+| updated_at          | 2018-03-29T20:39:20Z                 |
++---------------------+--------------------------------------+
++ for instance in '$instances'
+++ get_ip_f
++++ openstack floating ip list
++++ grep None
++++ awk '{ print $4 }'
++++ head -n 1
+++ local var=10.91.245.80
+++ echo 10.91.245.80
++ ip_f=10.91.245.80
++ echo ' + Associating floating IP 10.91.245.80 to instance 45011491-6945-42b9-b79e-50848d4a7913.'
+ + Associating floating IP 10.91.245.80 to instance 45011491-6945-42b9-b79e-50848d4a7913.
++ openstack server add floating ip 45011491-6945-42b9-b79e-50848d4a7913 10.91.245.80
+

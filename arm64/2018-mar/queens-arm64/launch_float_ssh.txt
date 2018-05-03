@@ -1,0 +1,42 @@
+
+
+
+D                                   | Name                 | Status | Networks                          | Image       | Flavor   |
++--------------------------------------+----------------------+--------+-----------------------------------+-------------+----------+
+| 3afe89d8-71e9-4512-a415-36ad25410109 | xenial-uefi-174439-2 | ACTIVE | private=172.16.0.8, 10.245.172.3  | xenial-uefi | m1.small |
+| 73cfa393-0e59-47b8-b229-bcc2190036dd | xenial-uefi-174439-1 | ACTIVE | private=172.16.0.13, 10.245.172.8 | xenial-uefi | m1.small |
++--------------------------------------+----------------------+--------+-----------------------------------+-------------+----------+
+
+
+
+jenkins@juju-0d10ff-osci-3:~/temp/sfeole-tempest$ ssh ubuntu@10.245.172.3 -i ~/testkey.pem
+Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-116-generic aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@xenial-uefi-174439-2:~$ uname -a
+Linux xenial-uefi-174439-2 4.4.0-116-generic #140-Ubuntu SMP Mon Feb 12 21:23:47 UTC 2018 aarch64 aarch64 aarch64 GNU/Linux
+ubuntu@xenial-uefi-174439-2:~$ exit
+logout
+Connection to 10.245.172.3 closed.
+

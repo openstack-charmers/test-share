@@ -1,0 +1,124 @@
+Model    Controller           Cloud/Region         Version  SLA
+default  localhost-localhost  localhost/localhost  2.3.5    unsupported
+
+App                    Version         Status   Scale  Charm                  Store       Rev  OS      Notes
+ceilometer             6.1.5           waiting      1  ceilometer             jujucharms  252  ubuntu  
+ceilometer-agent       10.0.0          active       1  ceilometer-agent       jujucharms  243  ubuntu  
+cinder                 12.0.0          active       1  cinder                 jujucharms  268  ubuntu  
+designate              2.1.0           active       1  designate              jujucharms   18  ubuntu  
+designate-bind         9.10.3.dfsg.P4  active       1  designate-bind         jujucharms   12  ubuntu  
+glance                 16.0.0          active       1  glance                 jujucharms  264  ubuntu  
+gnocchi                4.2.0           blocked      1  gnocchi                jujucharms    7  ubuntu  
+heat                   10.0.0          active       1  heat                   jujucharms  248  ubuntu  
+keystone               13.0.0          active       1  keystone               jujucharms  276  ubuntu  
+memcached                              unknown      1  memcached              jujucharms   21  ubuntu  
+mysql                  5.6.37-26.21    active       1  percona-cluster        jujucharms  260  ubuntu  
+neutron-api            12.0.0          active       1  neutron-api            jujucharms  258  ubuntu  
+neutron-gateway        12.0.0          active       1  neutron-gateway        jujucharms  248  ubuntu  
+neutron-openvswitch    12.0.0          active       1  neutron-openvswitch    jujucharms  249  ubuntu  
+nova-cloud-controller  17.0.1          active       1  nova-cloud-controller  jujucharms  307  ubuntu  
+nova-compute           17.0.1          active       1  nova-compute           jujucharms  282  ubuntu  
+openstack-dashboard    13.0.0          active       1  openstack-dashboard    jujucharms  258  ubuntu  
+rabbitmq-server        3.5.7           active       1  rabbitmq-server        jujucharms   72  ubuntu  
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+ceilometer/0*             waiting   idle   0        10.91.245.176   8777/tcp           Incomplete relations: database
+cinder/0*                 active    idle   1        10.91.245.78    8776/tcp           Unit is ready
+designate-bind/0*         active    idle   3        10.91.245.126                      Unit is ready
+designate/0*              active    idle   2        10.91.245.49    9001/tcp           Unit is ready
+glance/0*                 active    idle   4        10.91.245.207   9292/tcp           Unit is ready
+gnocchi/0*                blocked   idle   5        10.91.245.60    8041/tcp           'storage-ceph' missing
+heat/0*                   active    idle   6        10.91.245.253   8000/tcp,8004/tcp  Unit is ready
+keystone/0*               active    idle   7        10.91.245.181   5000/tcp           Unit is ready
+memcached/0*              unknown   idle   8        10.91.245.213   11211/tcp          
+mysql/0*                  active    idle   9        10.91.245.51    3306/tcp           Unit is ready
+neutron-api/0*            active    idle   10       10.91.245.103   9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   11       10.91.245.75                       Unit is ready
+nova-cloud-controller/0*  active    idle   12       10.91.245.113   8774/tcp,8778/tcp  Unit is ready
+nova-compute/0*           active    idle   13       10.91.245.254                      Unit is ready
+  ceilometer-agent/0*     active    idle            10.91.245.254                      Unit is ready
+  neutron-openvswitch/0*  active    idle            10.91.245.254                      Unit is ready
+openstack-dashboard/0*    active    idle   14       10.91.245.116   80/tcp,443/tcp     Unit is ready
+rabbitmq-server/0*        active    idle   15       10.91.245.243   5672/tcp           Unit is ready
+
+Machine  State    DNS            Inst id         Series  AZ  Message
+0        started  10.91.245.176  juju-f42a15-0   xenial      Running
+1        started  10.91.245.78   juju-f42a15-1   xenial      Running
+2        started  10.91.245.49   juju-f42a15-2   xenial      Running
+3        started  10.91.245.126  juju-f42a15-3   xenial      Running
+4        started  10.91.245.207  juju-f42a15-4   xenial      Running
+5        started  10.91.245.60   juju-f42a15-5   xenial      Running
+6        started  10.91.245.253  juju-f42a15-6   xenial      Running
+7        started  10.91.245.181  juju-f42a15-7   xenial      Running
+8        started  10.91.245.213  juju-f42a15-8   xenial      Running
+9        started  10.91.245.51   juju-f42a15-9   xenial      Running
+10       started  10.91.245.103  juju-f42a15-10  xenial      Running
+11       started  10.91.245.75   juju-f42a15-11  xenial      Running
+12       started  10.91.245.113  juju-f42a15-12  xenial      Running
+13       started  10.91.245.254  juju-f42a15-13  xenial      Running
+14       started  10.91.245.116  juju-f42a15-14  xenial      Running
+15       started  10.91.245.243  juju-f42a15-15  xenial      Running
+
+Relation provider                        Requirer                                       Interface               Type         Message
+ceilometer-agent:nova-ceilometer         nova-compute:nova-ceilometer                   nova-ceilometer         subordinate  
+ceilometer:ceilometer-service            ceilometer-agent:ceilometer-service            ceilometer              regular      
+ceilometer:cluster                       ceilometer:cluster                             ceilometer-ha           peer         
+cinder:cinder-volume-service             nova-cloud-controller:cinder-volume-service    cinder                  regular      
+cinder:cluster                           cinder:cluster                                 cinder-ha               peer         
+designate-bind:cluster                   designate-bind:cluster                         openstack-ha            peer         
+designate-bind:dns-backend               designate:dns-backend                          bind-rndc               regular      
+designate:cluster                        designate:cluster                              openstack-ha            peer         
+glance:cluster                           glance:cluster                                 glance-ha               peer         
+glance:image-service                     cinder:image-service                           glance                  regular      
+glance:image-service                     nova-cloud-controller:image-service            glance                  regular      
+glance:image-service                     nova-compute:image-service                     glance                  regular      
+gnocchi:cluster                          gnocchi:cluster                                openstack-ha            peer         
+gnocchi:metric-service                   ceilometer:metric-service                      gnocchi                 regular      
+heat:cluster                             heat:cluster                                   heat-ha                 peer         
+keystone:cluster                         keystone:cluster                               keystone-ha             peer         
+keystone:identity-credentials            ceilometer:identity-credentials                keystone-credentials    regular      
+keystone:identity-notifications          ceilometer:identity-notifications              keystone-notifications  regular      
+keystone:identity-service                ceilometer:identity-service                    keystone                regular      
+keystone:identity-service                cinder:identity-service                        keystone                regular      
+keystone:identity-service                designate:identity-service                     keystone                regular      
+keystone:identity-service                glance:identity-service                        keystone                regular      
+keystone:identity-service                gnocchi:identity-service                       keystone                regular      
+keystone:identity-service                heat:identity-service                          keystone                regular      
+keystone:identity-service                neutron-api:identity-service                   keystone                regular      
+keystone:identity-service                nova-cloud-controller:identity-service         keystone                regular      
+keystone:identity-service                openstack-dashboard:identity-service           keystone                regular      
+memcached:cache                          designate:coordinator-memcached                memcache                regular      
+memcached:cache                          gnocchi:coordinator-memcached                  memcache                regular      
+memcached:cluster                        memcached:cluster                              memcached-replication   peer         
+mysql:cluster                            mysql:cluster                                  percona-cluster         peer         
+mysql:shared-db                          cinder:shared-db                               mysql-shared            regular      
+mysql:shared-db                          designate:shared-db                            mysql-shared            regular      
+mysql:shared-db                          glance:shared-db                               mysql-shared            regular      
+mysql:shared-db                          gnocchi:shared-db                              mysql-shared            regular      
+mysql:shared-db                          heat:shared-db                                 mysql-shared            regular      
+mysql:shared-db                          keystone:shared-db                             mysql-shared            regular      
+mysql:shared-db                          neutron-api:shared-db                          mysql-shared            regular      
+mysql:shared-db                          nova-cloud-controller:shared-db                mysql-shared            regular      
+neutron-api:cluster                      neutron-api:cluster                            neutron-api-ha          peer         
+neutron-api:neutron-api                  nova-cloud-controller:neutron-api              neutron-api             regular      
+neutron-api:neutron-plugin-api           neutron-gateway:neutron-plugin-api             neutron-plugin-api      regular      
+neutron-api:neutron-plugin-api           neutron-openvswitch:neutron-plugin-api         neutron-plugin-api      regular      
+neutron-gateway:cluster                  neutron-gateway:cluster                        quantum-gateway-ha      peer         
+neutron-gateway:quantum-network-service  nova-cloud-controller:quantum-network-service  quantum                 regular      
+neutron-openvswitch:neutron-plugin       nova-compute:neutron-plugin                    neutron-plugin          subordinate  
+nova-cloud-controller:cluster            nova-cloud-controller:cluster                  nova-ha                 peer         
+nova-compute:cloud-compute               nova-cloud-controller:cloud-compute            nova-compute            regular      
+nova-compute:compute-peer                nova-compute:compute-peer                      nova                    peer         
+openstack-dashboard:cluster              openstack-dashboard:cluster                    openstack-dashboard-ha  peer         
+rabbitmq-server:amqp                     ceilometer:amqp                                rabbitmq                regular      
+rabbitmq-server:amqp                     cinder:amqp                                    rabbitmq                regular      
+rabbitmq-server:amqp                     designate:amqp                                 rabbitmq                regular      
+rabbitmq-server:amqp                     glance:amqp                                    rabbitmq                regular      
+rabbitmq-server:amqp                     gnocchi:amqp                                   rabbitmq                regular      
+rabbitmq-server:amqp                     heat:amqp                                      rabbitmq                regular      
+rabbitmq-server:amqp                     neutron-api:amqp                               rabbitmq                regular      
+rabbitmq-server:amqp                     neutron-gateway:amqp                           rabbitmq                regular      
+rabbitmq-server:amqp                     neutron-openvswitch:amqp                       rabbitmq                regular      
+rabbitmq-server:amqp                     nova-cloud-controller:amqp                     rabbitmq                regular      
+rabbitmq-server:amqp                     nova-compute:amqp                              rabbitmq                regular      
+rabbitmq-server:cluster                  rabbitmq-server:cluster                        rabbitmq-ha             peer

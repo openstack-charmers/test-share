@@ -1,0 +1,14 @@
++--------------------------------------+----------------------+-------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type           | Host        | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+----------------------+-------------+-------------------+-------+-------+---------------------------+
+| 04d1ccdd-2099-4d29-a5c8-06c9ea24327b | Loadbalancerv2 agent | node-loewy  | None              | :-)   | UP    | neutron-lbaasv2-agent     |
+| 241d58dd-e7a3-495b-8d5d-f601052cada6 | DHCP agent           | node-loewy  | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| 45c9d413-9743-4f51-b6f3-67fc5e7b243a | L3 agent             | node-loewy  | nova              | :-)   | UP    | neutron-l3-agent          |
+| 66e99387-d67f-4bd7-8c9e-6378dc44a5cd | Open vSwitch agent   | node-egede  | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 6a86d2bb-1d03-48ae-9aaf-57f13d71ac13 | Open vSwitch agent   | node-couder | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 880ea686-a569-4e3a-b778-76c6c3475034 | Open vSwitch agent   | node-loewy  | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 92c3cbdf-7ee8-4505-a819-a93f1cab1ef1 | Metadata agent       | node-loewy  | None              | :-)   | UP    | neutron-metadata-agent    |
+| a969812b-c901-4685-b1d4-7effa9288b90 | Open vSwitch agent   | node-moingo | None              | :-)   | UP    | neutron-openvswitch-agent |
+| b6a19d83-c14e-4f7f-93fa-8ae357c3db2f | Metering agent       | node-loewy  | None              | :-)   | UP    | neutron-metering-agent    |
++--------------------------------------+----------------------+-------------+-------------------+-------+-------+---------------------------+
+

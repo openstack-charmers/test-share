@@ -1,0 +1,12 @@
++--------------------------------------+----------------------+----------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type           | Host           | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+----------------------+----------------+-------------------+-------+-------+---------------------------+
+| 05334034-3b05-4839-a6f3-e0f4ec050ad0 | Open vSwitch agent   | juju-f42a15-11 | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 59694083-cf14-4f36-b5c0-112f2c00296d | Open vSwitch agent   | juju-f42a15-13 | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 7a9bcf9b-b9be-4be3-af57-09daf7693369 | Metadata agent       | juju-f42a15-11 | None              | :-)   | UP    | neutron-metadata-agent    |
+| a130d64a-6400-4c22-87a0-905b08034613 | Loadbalancerv2 agent | juju-f42a15-11 | None              | :-)   | UP    | neutron-lbaasv2-agent     |
+| b7d54f9b-5702-4bca-84fe-f7568f73f8d2 | DHCP agent           | juju-f42a15-11 | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| ecddd5a8-78d9-4108-ae6f-ae0e5ae72afe | L3 agent             | juju-f42a15-11 | nova              | :-)   | UP    | neutron-l3-agent          |
+| f9614053-f932-45af-83a4-a25b90ff7bab | Metering agent       | juju-f42a15-11 | None              | :-)   | UP    | neutron-metering-agent    |
++--------------------------------------+----------------------+----------------+-------------------+-------+-------+---------------------------+
+

@@ -1,0 +1,60 @@
+| Name      | Type         | Endpoints                                                                 |
++-----------+--------------+---------------------------------------------------------------------------+
+| placement | placement    | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.28:8778                                       |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.28:8778                                        |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.28:8778                                     |
+|           |              |                                                                           |
+| nova      | compute      | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.28:8774/v2/27301d8699cb4c93816f13ffb2f5f18f |
+|           |              | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.28:8774/v2/27301d8699cb4c93816f13ffb2f5f18f   |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.28:8774/v2/27301d8699cb4c93816f13ffb2f5f18f    |
+|           |              |                                                                           |
+| glance    | image        | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.30:9292                                       |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.30:9292                                     |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.30:9292                                        |
+|           |              |                                                                           |
+| cinderv3  | volumev3     | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.23:8776/v3/27301d8699cb4c93816f13ffb2f5f18f   |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.23:8776/v3/27301d8699cb4c93816f13ffb2f5f18f |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.23:8776/v3/27301d8699cb4c93816f13ffb2f5f18f    |
+|           |              |                                                                           |
+| swift     | object-store | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.49:80/swift                                    |
+|           |              | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.49:80/swift/v1                                |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.49:80/swift/v1                              |
+|           |              |                                                                           |
+| keystone  | identity     | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.46:5000/v3                                    |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.46:35357/v3                                    |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.46:5000/v3                                  |
+|           |              |                                                                           |
+| neutron   | network      | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.25:9696                                       |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.25:9696                                        |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.25:9696                                     |
+|           |              |                                                                           |
+| cinderv2  | volumev2     | RegionOne                                                                 |
+|           |              |   public: http://10.245.168.23:8776/v2/27301d8699cb4c93816f13ffb2f5f18f   |
+|           |              | RegionOne                                                                 |
+|           |              |   admin: http://10.245.168.23:8776/v2/27301d8699cb4c93816f13ffb2f5f18f    |
+|           |              | RegionOne                                                                 |
+|           |              |   internal: http://10.245.168.23:8776/v2/27301d8699cb4c93816f13ffb2f5f18f |
+|           |              |                                                                           |
++-----------+--------------+---------------------------------------------------------------------------+
+

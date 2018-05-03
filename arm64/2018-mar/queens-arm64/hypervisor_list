@@ -1,0 +1,10 @@
+jenkins@juju-0d10ff-osci-3:~/temp/openstack-bundles/stable/openstack-base⟫ openstack hypervisor list
+WARNING: Failed to import plugin orchestration.
++----+---------------------+-----------------+---------------+-------+
+| ID | Hypervisor Hostname | Hypervisor Type | Host IP       | State |
++----+---------------------+-----------------+---------------+-------+
+|  1 | node-moingo.maas    | QEMU            | 10.245.168.43 | up    |
+|  2 | node-couder.maas    | QEMU            | 10.245.168.45 | up    |
+|  3 | node-egede.maas     | QEMU            | 10.245.168.44 | up    |
++----+---------------------+-----------------+---------------+-------+
+
