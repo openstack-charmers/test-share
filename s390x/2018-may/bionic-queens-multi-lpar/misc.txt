@@ -1,0 +1,46 @@
++--------------------------------------+-----------------------+--------+----------------------------------+--------------+----------+
+| ID                                   | Name                  | Status | Networks                         | Image        | Flavor   |
++--------------------------------------+-----------------------+--------+----------------------------------+--------------+----------+
+| da562862-c66e-403f-9d91-9ec0d069abe1 | bionic-s390x-125957-1 | ACTIVE | private=172.16.0.11, 10.13.3.133 | bionic-s390x | m1.small |
+| ed3cb02e-c5c6-439b-997f-5e4f0091411c | bionic-s390x-125957-2 | ACTIVE | private=172.16.0.10, 10.13.3.136 | bionic-s390x | m1.small |
++--------------------------------------+-----------------------+--------+----------------------------------+--------------+----------+
+
+
+ubuntu@s4lpf:~> ssh -i ~/testkey.pem ubuntu@10.13.3.133
+Welcome to Ubuntu 18.04 LTS (GNU/Linux 4.15.0-22-generic s390x)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed May 23 12:15:43 UTC 2018
+
+  System load:  0.0              Processes:           74
+  Usage of /:   9.1% of 9.63GB   Users logged in:     0
+  Memory usage: 5%               IP address for enc1: 172.16.0.11
+  Swap usage:   0%
+
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Wed May 23 12:05:37 2018 from 10.13.3.2
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@bionic-s390x-125957-1:~$ uname -a
+Linux bionic-s390x-125957-1 4.15.0-22-generic #24-Ubuntu SMP Wed May 16 12:13:36 UTC 2018 s390x s390x s390x GNU/Linux
+ubuntu@bionic-s390x-125957-1:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04 LTS
+Release:        18.04
+Codename:       bionic
+ubuntu@bionic-s390x-125957-1:~$ 
+
+
+
