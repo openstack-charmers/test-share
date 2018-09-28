@@ -1,0 +1,16 @@
++--------------------------------------+---------------------+--------+----------------------------------+--------------+----------+
+| ID                                   | Name                | Status | Networks                         | Image        | Flavor   |
++--------------------------------------+---------------------+--------+----------------------------------+--------------+----------+
+| 26cc2fe6-40eb-4e5d-b11e-2ae381bbe634 | bionic-s390x-131034 | ACTIVE | private=172.16.0.10, 10.13.3.136 | bionic-s390x | m1.small |
+| bc8c3b61-4bed-4f9e-9932-1c83d5957bfa | xenial-s390x-131002 | ACTIVE | private=172.16.0.11, 10.13.3.140 | xenial-s390x | m1.small |
++--------------------------------------+---------------------+--------+----------------------------------+--------------+----------+
+Linux bionic-s390x-131034 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:18:36 UTC 2018 s390x s390x s390x GNU/Linux
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.1 LTS
+Release:	18.04
+Codename:	bionic
+Linux xenial-s390x-131002 4.4.0-135-generic #161-Ubuntu SMP Mon Aug 27 10:43:37 UTC 2018 s390x s390x s390x GNU/Linux
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.5 LTS
+Release:	16.04
+Codename:	xenial
