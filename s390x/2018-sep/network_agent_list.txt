@@ -1,0 +1,13 @@
++--------------------------------------+----------------------+-------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type           | Host  | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+----------------------+-------+-------------------+-------+-------+---------------------------+
+| 00dc9d54-4498-4712-8133-050b0c24bca9 | Open vSwitch agent   | s4lpd | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 139ad331-1e1e-4f26-a9e2-b435dc23ce86 | DHCP agent           | s4lpa | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| 2628b881-e7cc-4b71-a2a6-2296ad8082b9 | L3 agent             | s4lpa | nova              | :-)   | UP    | neutron-l3-agent          |
+| 30e934c0-f174-4eff-9d84-40ffb75a6a8d | Metering agent       | s4lpa | None              | :-)   | UP    | neutron-metering-agent    |
+| 3a32115f-70d6-497b-a357-36de71ea21f3 | Loadbalancerv2 agent | s4lpa | None              | :-)   | UP    | neutron-lbaasv2-agent     |
+| 61b92c6e-1839-44fd-b734-a60e3819f291 | Metadata agent       | s4lpa | None              | :-)   | UP    | neutron-metadata-agent    |
+| 6328560d-cdd5-431e-84f4-19f3698446ff | Open vSwitch agent   | s4lpc | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 90eabbe8-430f-4051-8787-b8cd51060870 | Open vSwitch agent   | s4lpa | None              | :-)   | UP    | neutron-openvswitch-agent |
+| a3a77d11-46ac-41f4-ab8d-02d2bb7916ea | Open vSwitch agent   | s4lpb | None              | :-)   | UP    | neutron-openvswitch-agent |
++--------------------------------------+----------------------+-------+-------------------+-------+-------+---------------------------+

@@ -1,0 +1,67 @@
++-----------+--------------+------------------------------------------------------------------------------+
+| Name      | Type         | Endpoints                                                                    |
++-----------+--------------+------------------------------------------------------------------------------+
+| keystone  | identity     | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.199:35357/v3                                         |
+|           |              | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.199:5000/v3                                       |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.199:5000/v3                                         |
+|           |              |                                                                              |
+| nova      | compute      | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.202:8774/v2/0d312009ad204bb98c0658062baca777      |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.202:8774/v2/0d312009ad204bb98c0658062baca777         |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.202:8774/v2/0d312009ad204bb98c0658062baca777        |
+|           |              |                                                                              |
+| neutron   | network      | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.207:9696                                          |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.207:9696                                             |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.207:9696                                            |
+|           |              |                                                                              |
+| glance    | image        | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.243:9292                                            |
+|           |              | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.243:9292                                          |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.243:9292                                             |
+|           |              |                                                                              |
+| swift     | object-store | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.254:8080/v1/AUTH_0d312009ad204bb98c0658062baca777   |
+|           |              | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.254:8080/v1/AUTH_0d312009ad204bb98c0658062baca777 |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.254:8080                                             |
+|           |              |                                                                              |
+| cinderv2  | volumev2     | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.244:8776/v2/0d312009ad204bb98c0658062baca777      |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.244:8776/v2/0d312009ad204bb98c0658062baca777        |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.244:8776/v2/0d312009ad204bb98c0658062baca777         |
+|           |              |                                                                              |
+| cinderv3  | volumev3     | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.244:8776/v3/0d312009ad204bb98c0658062baca777      |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.244:8776/v3/0d312009ad204bb98c0658062baca777         |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.244:8776/v3/0d312009ad204bb98c0658062baca777        |
+|           |              |                                                                              |
+| s3        | s3           | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.254:8080                                          |
+|           |              | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.254:8080                                            |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.254:8080                                             |
+|           |              |                                                                              |
+| placement | placement    | RegionOne                                                                    |
+|           |              |   public: http://10.13.3.202:8778                                            |
+|           |              | RegionOne                                                                    |
+|           |              |   admin: http://10.13.3.202:8778                                             |
+|           |              | RegionOne                                                                    |
+|           |              |   internal: http://10.13.3.202:8778                                          |
+|           |              |                                                                              |
++-----------+--------------+------------------------------------------------------------------------------+
