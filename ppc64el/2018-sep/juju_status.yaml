@@ -1,0 +1,1420 @@
+model:
+  name: ppc64el-mosci-ruxton-maas
+  type: iaas
+  controller: ppc64el-mosci-ruxton-maas
+  cloud: ruxton-maas
+  version: 2.4.3
+  model-status:
+    current: available
+    since: 01 Oct 2018 15:00:42Z
+  sla: unsupported
+machines:
+  "0":
+    juju-status:
+      current: started
+      since: 01 Oct 2018 15:17:08Z
+      version: 2.4.3
+    dns-name: 10.245.168.23
+    ip-addresses:
+    - 10.245.168.23
+    instance-id: gxy47x
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Oct 2018 15:16:37Z
+    series: bionic
+    network-interfaces:
+      br-enP5p5s0f0:
+        ip-addresses:
+        - 10.245.168.23
+        mac-address: c2:42:cb:83:d6:3f
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      enP5p5s0f0:
+        ip-addresses:
+        - 10.245.168.23
+        mac-address: 6c:ae:8b:6a:93:c0
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.61.1.1
+        mac-address: 3a:22:2d:cd:73:0d
+        is-up: true
+    containers:
+      0/lxd/0:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:23:28Z
+          version: 2.4.3
+        dns-name: 10.245.168.34
+        ip-addresses:
+        - 10.245.168.34
+        instance-id: juju-f60ee8-0-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:22:14Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.34
+            mac-address: 00:16:3e:fa:2e:71
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      0/lxd/1:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:23:15Z
+          version: 2.4.3
+        dns-name: 10.245.168.33
+        ip-addresses:
+        - 10.245.168.33
+        instance-id: juju-f60ee8-0-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:21:48Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.33
+            mac-address: 00:16:3e:c3:29:b1
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      0/lxd/2:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:25:04Z
+          version: 2.4.3
+        dns-name: 10.245.168.61
+        ip-addresses:
+        - 10.245.168.61
+        instance-id: juju-f60ee8-0-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:24:09Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.61
+            mac-address: 00:16:3e:d3:59:72
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+    constraints: arch=ppc64el tags=uosci
+    hardware: arch=ppc64el cores=160 mem=130613M tags=ibm,power8,uosci,metal availability-zone=default
+  "1":
+    juju-status:
+      current: started
+      since: 01 Oct 2018 15:17:59Z
+      version: 2.4.3
+    dns-name: 10.245.168.24
+    ip-addresses:
+    - 10.245.168.24
+    instance-id: fb8bkb
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Oct 2018 15:17:45Z
+    series: bionic
+    network-interfaces:
+      br-enP5p5s0f0:
+        ip-addresses:
+        - 10.245.168.24
+        mac-address: 62:bb:bb:5a:fe:84
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      enP5p5s0f0:
+        ip-addresses:
+        - 10.245.168.24
+        mac-address: 6c:ae:8b:6a:a0:88
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.1.254.1
+        mac-address: 7e:dc:2b:0c:fc:d5
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:9a:4e:bb
+        space: undefined
+        is-up: true
+    containers:
+      1/lxd/0:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:24:47Z
+          version: 2.4.3
+        dns-name: 10.245.168.42
+        ip-addresses:
+        - 10.245.168.42
+        instance-id: juju-f60ee8-1-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:23:52Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.42
+            mac-address: 00:16:3e:c7:b5:1b
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      1/lxd/1:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:26:56Z
+          version: 2.4.3
+        dns-name: 10.245.168.41
+        ip-addresses:
+        - 10.245.168.41
+        instance-id: juju-f60ee8-1-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:26:19Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.41
+            mac-address: 00:16:3e:11:24:fe
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      1/lxd/2:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:25:54Z
+          version: 2.4.3
+        dns-name: 10.245.168.43
+        ip-addresses:
+        - 10.245.168.43
+        instance-id: juju-f60ee8-1-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:24:33Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.43
+            mac-address: 00:16:3e:e5:20:5c
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+    constraints: arch=ppc64el tags=uosci
+    hardware: arch=ppc64el cores=160 mem=130613M tags=ibm,power8,gregory,uosci,metal
+      availability-zone=default
+  "2":
+    juju-status:
+      current: started
+      since: 01 Oct 2018 15:17:51Z
+      version: 2.4.3
+    dns-name: 10.245.168.25
+    ip-addresses:
+    - 10.245.168.25
+    instance-id: 877gbf
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Oct 2018 15:17:27Z
+    series: bionic
+    network-interfaces:
+      br-enP5p9s0f0:
+        ip-addresses:
+        - 10.245.168.25
+        mac-address: b2:5f:c0:76:9c:14
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      enP5p9s0f0:
+        ip-addresses:
+        - 10.245.168.25
+        mac-address: 98:be:94:01:d6:14
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.77.135.1
+        mac-address: a6:89:de:2f:8b:75
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:ac:25:a3
+        space: undefined
+        is-up: true
+    containers:
+      2/lxd/0:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:24:28Z
+          version: 2.4.3
+        dns-name: 10.245.168.40
+        ip-addresses:
+        - 10.245.168.40
+        instance-id: juju-f60ee8-2-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:22:56Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.40
+            mac-address: 00:16:3e:02:34:ce
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      2/lxd/1:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:26:14Z
+          version: 2.4.3
+        dns-name: 10.245.168.60
+        ip-addresses:
+        - 10.245.168.60
+        instance-id: juju-f60ee8-2-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:24:46Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.60
+            mac-address: 00:16:3e:6e:fc:70
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      2/lxd/2:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:23:53Z
+          version: 2.4.3
+        dns-name: 10.245.168.35
+        ip-addresses:
+        - 10.245.168.35
+        instance-id: juju-f60ee8-2-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:22:26Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.35
+            mac-address: 00:16:3e:1a:fb:b9
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+    constraints: arch=ppc64el tags=uosci
+    hardware: arch=ppc64el cores=160 mem=261413M tags=ibm,power8,uosci,metal availability-zone=default
+  "3":
+    juju-status:
+      current: started
+      since: 01 Oct 2018 15:19:56Z
+      version: 2.4.3
+    dns-name: 10.245.168.32
+    ip-addresses:
+    - 10.245.168.32
+    instance-id: xpwspa
+    machine-status:
+      current: running
+      message: Deployed
+      since: 01 Oct 2018 15:19:08Z
+    series: bionic
+    network-interfaces:
+      br-enP3p9s0f0:
+        ip-addresses:
+        - 10.245.168.32
+        mac-address: da:c5:0c:50:83:58
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      enP3p9s0f0:
+        ip-addresses:
+        - 10.245.168.32
+        mac-address: 98:be:94:01:a2:ac
+        gateway: 10.245.168.1
+        space: undefined
+        is-up: true
+      lxdbr0:
+        ip-addresses:
+        - 10.130.167.1
+        mac-address: 96:5f:c3:24:91:27
+        is-up: true
+      virbr0:
+        ip-addresses:
+        - 192.168.122.1
+        mac-address: 52:54:00:ed:16:f4
+        space: undefined
+        is-up: true
+    containers:
+      3/lxd/0:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:26:42Z
+          version: 2.4.3
+        dns-name: 10.245.168.45
+        ip-addresses:
+        - 10.245.168.45
+        instance-id: juju-f60ee8-3-lxd-0
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:25:37Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.45
+            mac-address: 00:16:3e:9e:bb:2d
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      3/lxd/1:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:26:48Z
+          version: 2.4.3
+        dns-name: 10.245.168.46
+        ip-addresses:
+        - 10.245.168.46
+        instance-id: juju-f60ee8-3-lxd-1
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:26:04Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.46
+            mac-address: 00:16:3e:cd:91:0d
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+      3/lxd/2:
+        juju-status:
+          current: started
+          since: 01 Oct 2018 15:27:41Z
+          version: 2.4.3
+        dns-name: 10.245.168.44
+        ip-addresses:
+        - 10.245.168.44
+        instance-id: juju-f60ee8-3-lxd-2
+        machine-status:
+          current: running
+          message: Container started
+          since: 01 Oct 2018 15:27:10Z
+        series: bionic
+        network-interfaces:
+          eth0:
+            ip-addresses:
+            - 10.245.168.44
+            mac-address: 00:16:3e:c1:57:28
+            gateway: 10.245.168.1
+            dns-nameservers:
+            - 10.245.168.6
+            space: undefined
+            is-up: true
+        constraints: arch=ppc64el tags=uosci
+        hardware: availability-zone=default
+    constraints: arch=ppc64el tags=uosci
+    hardware: arch=ppc64el cores=160 mem=261428M tags=ibm,power8,uosci,metal availability-zone=default
+applications:
+  ceph-mon:
+    charm: cs:~openstack-charmers-next/ceph-mon-342
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-mon
+    charm-rev: 342
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready and clustered
+      since: 01 Oct 2018 15:32:29Z
+    relations:
+      client:
+      - cinder-ceph
+      - glance
+      - nova-compute
+      mon:
+      - ceph-mon
+      osd:
+      - ceph-osd
+      radosgw:
+      - ceph-radosgw
+    units:
+      ceph-mon/0:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Oct 2018 15:32:29Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:34:30Z
+          version: 2.4.3
+        machine: 1/lxd/0
+        public-address: 10.245.168.42
+      ceph-mon/1:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Oct 2018 15:34:29Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:36:03Z
+          version: 2.4.3
+        leader: true
+        machine: 2/lxd/0
+        public-address: 10.245.168.40
+      ceph-mon/2:
+        workload-status:
+          current: active
+          message: Unit is ready and clustered
+          since: 01 Oct 2018 15:32:58Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:34:30Z
+          version: 2.4.3
+        machine: 3/lxd/0
+        public-address: 10.245.168.45
+    version: 13.2.1+dfsg1
+    endpoint-bindings:
+      admin: ""
+      bootstrap-source: ""
+      client: ""
+      cluster: ""
+      mds: ""
+      mon: ""
+      nrpe-external-master: ""
+      osd: ""
+      public: ""
+      radosgw: ""
+  ceph-osd:
+    charm: cs:~openstack-charmers-next/ceph-osd-366
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-osd
+    charm-rev: 366
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready (1 OSD)
+      since: 01 Oct 2018 15:33:03Z
+    relations:
+      mon:
+      - ceph-mon
+    units:
+      ceph-osd/0:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Oct 2018 15:33:03Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:35:08Z
+          version: 2.4.3
+        machine: "1"
+        public-address: 10.245.168.24
+      ceph-osd/1:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Oct 2018 15:33:04Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:35:09Z
+          version: 2.4.3
+        leader: true
+        machine: "2"
+        public-address: 10.245.168.25
+      ceph-osd/2:
+        workload-status:
+          current: active
+          message: Unit is ready (1 OSD)
+          since: 01 Oct 2018 15:33:06Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:35:02Z
+          version: 2.4.3
+        machine: "3"
+        public-address: 10.245.168.32
+    version: 13.2.1+dfsg1
+    endpoint-bindings:
+      cluster: ""
+      mon: ""
+      nrpe-external-master: ""
+      public: ""
+      secrets-storage: ""
+  ceph-radosgw:
+    charm: cs:~openstack-charmers-next/ceph-radosgw-296
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ceph-radosgw
+    charm-rev: 296
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:34:46Z
+    relations:
+      cluster:
+      - ceph-radosgw
+      identity-service:
+      - keystone
+      mon:
+      - ceph-mon
+    units:
+      ceph-radosgw/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:34:46Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:34:47Z
+          version: 2.4.3
+        leader: true
+        machine: 0/lxd/0
+        open-ports:
+        - 80/tcp
+        public-address: 10.245.168.34
+    version: 13.2.1+dfsg1
+    endpoint-bindings:
+      admin: ""
+      cluster: ""
+      gateway: ""
+      ha: ""
+      identity-service: ""
+      internal: ""
+      mon: ""
+      nrpe-external-master: ""
+      public: ""
+  cinder:
+    charm: cs:~openstack-charmers-next/cinder-340
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: cinder
+    charm-rev: 340
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:34:38Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - nova-cloud-controller
+      cluster:
+      - cinder
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      shared-db:
+      - mysql
+      storage-backend:
+      - cinder-ceph
+    units:
+      cinder/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:34:38Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:35:43Z
+          version: 2.4.3
+        leader: true
+        machine: 1/lxd/1
+        open-ports:
+        - 8776/tcp
+        public-address: 10.245.168.41
+        subordinates:
+          cinder-ceph/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 01 Oct 2018 15:33:24Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:35:34Z
+              version: 2.4.3
+            leader: true
+            upgrading-from: cs:~openstack-charmers-next/cinder-ceph-272
+            public-address: 10.245.168.41
+    version: 13.0.0
+    endpoint-bindings:
+      admin: ""
+      amqp: ""
+      backup-backend: ""
+      ceph: ""
+      certificates: ""
+      cinder-volume-service: ""
+      cluster: ""
+      ha: ""
+      identity-service: ""
+      image-service: ""
+      internal: ""
+      nrpe-external-master: ""
+      public: ""
+      shared-db: ""
+      storage-backend: ""
+  cinder-ceph:
+    charm: cs:~openstack-charmers-next/cinder-ceph-272
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: cinder-ceph
+    charm-rev: 272
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:33:24Z
+    relations:
+      ceph:
+      - ceph-mon
+      ceph-access:
+      - nova-compute
+      storage-backend:
+      - cinder
+    subordinate-to:
+    - cinder
+    version: 13.0.0
+    endpoint-bindings:
+      ceph: ""
+      ceph-access: ""
+      juju-info: ""
+      storage-backend: ""
+  glance:
+    charm: cs:~openstack-charmers-next/glance-330
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: glance
+    charm-rev: 330
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:34:37Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph-mon
+      cluster:
+      - glance
+      identity-service:
+      - keystone
+      image-service:
+      - cinder
+      - nova-cloud-controller
+      - nova-compute
+      shared-db:
+      - mysql
+    units:
+      glance/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:34:37Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:35:55Z
+          version: 2.4.3
+        leader: true
+        machine: 2/lxd/1
+        open-ports:
+        - 9292/tcp
+        public-address: 10.245.168.60
+    version: 17.0.0
+    endpoint-bindings:
+      admin: ""
+      amqp: ""
+      ceph: ""
+      certificates: ""
+      cinder-volume-service: ""
+      cluster: ""
+      ha: ""
+      identity-service: ""
+      image-service: ""
+      internal: ""
+      nrpe-external-master: ""
+      object-store: ""
+      public: ""
+      shared-db: ""
+      storage-backend: ""
+  keystone:
+    charm: cs:~openstack-charmers-next/keystone-379
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: keystone
+    charm-rev: 379
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:34:15Z
+    relations:
+      cluster:
+      - keystone
+      identity-service:
+      - ceph-radosgw
+      - cinder
+      - glance
+      - neutron-api
+      - nova-cloud-controller
+      - openstack-dashboard
+      shared-db:
+      - mysql
+    units:
+      keystone/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:34:15Z
+        juju-status:
+          current: idle
+          since: 04 Oct 2018 11:00:05Z
+          version: 2.4.3
+        leader: true
+        machine: 3/lxd/1
+        open-ports:
+        - 5000/tcp
+        public-address: 10.245.168.46
+    version: 14.0.0
+    endpoint-bindings:
+      admin: ""
+      certificates: ""
+      cluster: ""
+      domain-backend: ""
+      ha: ""
+      identity-admin: ""
+      identity-credentials: ""
+      identity-notifications: ""
+      identity-service: ""
+      internal: ""
+      keystone-fid-service-provider: ""
+      nrpe-external-master: ""
+      public: ""
+      shared-db: ""
+      websso-trusted-dashboard: ""
+  mysql:
+    charm: cs:~openstack-charmers-next/percona-cluster-310
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: percona-cluster
+    charm-rev: 310
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:26:05Z
+    relations:
+      cluster:
+      - mysql
+      shared-db:
+      - cinder
+      - glance
+      - keystone
+      - neutron-api
+      - nova-cloud-controller
+      - openstack-dashboard
+    units:
+      mysql/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:26:05Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:39:02Z
+          version: 2.4.3
+        leader: true
+        machine: 0/lxd/1
+        open-ports:
+        - 3306/tcp
+        public-address: 10.245.168.33
+    version: 5.7.20-29.24
+    endpoint-bindings:
+      access: ""
+      cluster: ""
+      db: ""
+      db-admin: ""
+      ha: ""
+      nrpe-external-master: ""
+      shared-db: ""
+  neutron-api:
+    charm: cs:~openstack-charmers-next/neutron-api-359
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-api
+    charm-rev: 359
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:47:35Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-api
+      identity-service:
+      - keystone
+      neutron-api:
+      - nova-cloud-controller
+      neutron-plugin-api:
+      - neutron-gateway
+      - neutron-openvswitch
+      shared-db:
+      - mysql
+    units:
+      neutron-api/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:47:35Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:47:37Z
+          version: 2.4.3
+        leader: true
+        machine: 1/lxd/2
+        open-ports:
+        - 9696/tcp
+        public-address: 10.245.168.43
+    version: 13.0.0
+    endpoint-bindings:
+      admin: ""
+      amqp: ""
+      certificates: ""
+      cluster: ""
+      etcd-proxy: ""
+      external-dns: ""
+      ha: ""
+      identity-service: ""
+      internal: ""
+      midonet: ""
+      neutron-api: ""
+      neutron-plugin-api: ""
+      neutron-plugin-api-subordinate: ""
+      nrpe-external-master: ""
+      public: ""
+      shared-db: ""
+      vsd-rest-api: ""
+  neutron-gateway:
+    charm: cs:~openstack-charmers-next/neutron-gateway-335
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-gateway
+    charm-rev: 335
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:36:13Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cluster:
+      - neutron-gateway
+      juju-info:
+      - ntp
+      neutron-plugin-api:
+      - neutron-api
+      quantum-network-service:
+      - nova-cloud-controller
+    units:
+      neutron-gateway/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:36:13Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:47:51Z
+          version: 2.4.3
+        leader: true
+        machine: "0"
+        public-address: 10.245.168.23
+        subordinates:
+          ntp/2:
+            workload-status:
+              current: active
+              message: Ready
+              since: 01 Oct 2018 15:27:37Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:30:42Z
+              version: 2.4.3
+            upgrading-from: cs:ntp-27
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.23
+    version: 13.0.0
+    endpoint-bindings:
+      amqp: ""
+      amqp-nova: ""
+      cluster: ""
+      data: ""
+      ha: ""
+      neutron-plugin-api: ""
+      nrpe-external-master: ""
+      quantum-network-service: ""
+  neutron-openvswitch:
+    charm: cs:~openstack-charmers-next/neutron-openvswitch-319
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: neutron-openvswitch
+    charm-rev: 319
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:47:46Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      neutron-plugin:
+      - nova-compute
+      neutron-plugin-api:
+      - neutron-api
+    subordinate-to:
+    - nova-compute
+    version: 13.0.0
+    endpoint-bindings:
+      amqp: ""
+      data: ""
+      juju-info: ""
+      neutron-control: ""
+      neutron-plugin: ""
+      neutron-plugin-api: ""
+  nova-cloud-controller:
+    charm: cs:~openstack-charmers-next/nova-cloud-controller-367
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: nova-cloud-controller
+    charm-rev: 367
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:39:28Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      cinder-volume-service:
+      - cinder
+      cloud-compute:
+      - nova-compute
+      cluster:
+      - nova-cloud-controller
+      identity-service:
+      - keystone
+      image-service:
+      - glance
+      neutron-api:
+      - neutron-api
+      quantum-network-service:
+      - neutron-gateway
+      shared-db:
+      - mysql
+    units:
+      nova-cloud-controller/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:39:28Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:47:02Z
+          version: 2.4.3
+        leader: true
+        machine: 2/lxd/2
+        open-ports:
+        - 8774/tcp
+        - 8778/tcp
+        public-address: 10.245.168.35
+    version: 18.0.0
+    endpoint-bindings:
+      admin: ""
+      amqp: ""
+      certificates: ""
+      cinder-volume-service: ""
+      cloud-compute: ""
+      cloud-controller: ""
+      cluster: ""
+      ha: ""
+      identity-service: ""
+      image-service: ""
+      internal: ""
+      memcache: ""
+      neutron-api: ""
+      nova-vmware: ""
+      nrpe-external-master: ""
+      public: ""
+      quantum-network-service: ""
+      shared-db: ""
+  nova-compute:
+    charm: cs:~openstack-charmers-next/nova-compute-389
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: nova-compute
+    charm-rev: 389
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:33:51Z
+    relations:
+      amqp:
+      - rabbitmq-server
+      ceph:
+      - ceph-mon
+      ceph-access:
+      - cinder-ceph
+      cloud-compute:
+      - nova-cloud-controller
+      compute-peer:
+      - nova-compute
+      image-service:
+      - glance
+      juju-info:
+      - ntp
+      neutron-plugin:
+      - neutron-openvswitch
+    units:
+      nova-compute/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:33:16Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:39:42Z
+          version: 2.4.3
+        machine: "1"
+        public-address: 10.245.168.24
+        subordinates:
+          neutron-openvswitch/0:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 01 Oct 2018 15:47:46Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:47:47Z
+              version: 2.4.3
+            leader: true
+            upgrading-from: cs:~openstack-charmers-next/neutron-openvswitch-319
+            public-address: 10.245.168.24
+          ntp/0:
+            workload-status:
+              current: active
+              message: Ready
+              since: 01 Oct 2018 15:26:31Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:30:42Z
+              version: 2.4.3
+            leader: true
+            upgrading-from: cs:ntp-27
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.24
+      nova-compute/1:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:33:51Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:39:42Z
+          version: 2.4.3
+        leader: true
+        machine: "2"
+        public-address: 10.245.168.25
+        subordinates:
+          neutron-openvswitch/2:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 01 Oct 2018 15:47:46Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:47:47Z
+              version: 2.4.3
+            upgrading-from: cs:~openstack-charmers-next/neutron-openvswitch-319
+            public-address: 10.245.168.25
+          ntp/3:
+            workload-status:
+              current: active
+              message: Ready
+              since: 01 Oct 2018 15:30:26Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:32:15Z
+              version: 2.4.3
+            upgrading-from: cs:ntp-27
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.25
+      nova-compute/2:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:33:19Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:39:41Z
+          version: 2.4.3
+        machine: "3"
+        public-address: 10.245.168.32
+        subordinates:
+          neutron-openvswitch/1:
+            workload-status:
+              current: active
+              message: Unit is ready
+              since: 01 Oct 2018 15:47:46Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:47:47Z
+              version: 2.4.3
+            upgrading-from: cs:~openstack-charmers-next/neutron-openvswitch-319
+            public-address: 10.245.168.32
+          ntp/1:
+            workload-status:
+              current: active
+              message: Ready
+              since: 01 Oct 2018 15:28:48Z
+            juju-status:
+              current: idle
+              since: 01 Oct 2018 15:30:55Z
+              version: 2.4.3
+            upgrading-from: cs:ntp-27
+            open-ports:
+            - 123/udp
+            public-address: 10.245.168.32
+    version: 18.0.0
+    endpoint-bindings:
+      amqp: ""
+      ceph: ""
+      ceph-access: ""
+      cloud-compute: ""
+      cloud-credentials: ""
+      compute-peer: ""
+      ephemeral-backend: ""
+      image-service: ""
+      internal: ""
+      lxd: ""
+      neutron-plugin: ""
+      nova-ceilometer: ""
+      nrpe-external-master: ""
+      secrets-storage: ""
+  ntp:
+    charm: cs:ntp-27
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: ntp
+    charm-rev: 27
+    exposed: false
+    application-status:
+      current: active
+      message: Ready
+      since: 01 Oct 2018 15:26:31Z
+    relations:
+      juju-info:
+      - neutron-gateway
+      - nova-compute
+      ntp-peers:
+      - ntp
+    subordinate-to:
+    - neutron-gateway
+    - nova-compute
+    version: 4.2.8p10+dfsg
+    endpoint-bindings:
+      juju-info: ""
+      master: ""
+      nrpe-external-master: ""
+      ntp-peers: ""
+      ntpmaster: ""
+  openstack-dashboard:
+    charm: cs:~openstack-charmers-next/openstack-dashboard-342
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: openstack-dashboard
+    charm-rev: 342
+    can-upgrade-to: cs:~openstack-charmers-next/openstack-dashboard-343
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:38:51Z
+    relations:
+      cluster:
+      - openstack-dashboard
+      identity-service:
+      - keystone
+      shared-db:
+      - mysql
+    units:
+      openstack-dashboard/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:38:51Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:46:45Z
+          version: 2.4.3
+        leader: true
+        machine: 3/lxd/2
+        open-ports:
+        - 80/tcp
+        - 443/tcp
+        public-address: 10.245.168.44
+    version: 14.0.0
+    endpoint-bindings:
+      certificates: ""
+      cluster: ""
+      dashboard-plugin: ""
+      ha: ""
+      identity-service: ""
+      nrpe-external-master: ""
+      public: ""
+      shared-db: ""
+      website: ""
+      websso-fid-service-provider: ""
+      websso-trusted-dashboard: ""
+  rabbitmq-server:
+    charm: cs:~openstack-charmers-next/rabbitmq-server-308
+    series: bionic
+    os: ubuntu
+    charm-origin: jujucharms
+    charm-name: rabbitmq-server
+    charm-rev: 308
+    exposed: false
+    application-status:
+      current: active
+      message: Unit is ready
+      since: 01 Oct 2018 15:27:49Z
+    relations:
+      amqp:
+      - cinder
+      - glance
+      - neutron-api
+      - neutron-gateway
+      - neutron-openvswitch
+      - nova-cloud-controller
+      - nova-compute
+      cluster:
+      - rabbitmq-server
+    units:
+      rabbitmq-server/0:
+        workload-status:
+          current: active
+          message: Unit is ready
+          since: 01 Oct 2018 15:27:49Z
+        juju-status:
+          current: idle
+          since: 01 Oct 2018 15:34:25Z
+          version: 2.4.3
+        leader: true
+        machine: 0/lxd/2
+        open-ports:
+        - 5672/tcp
+        public-address: 10.245.168.61
+    version: 3.6.10
+    endpoint-bindings:
+      amqp: ""
+      ceph: ""
+      cluster: ""
+      ha: ""
+      nrpe-external-master: ""
+controller:
+  timestamp: 11:00:45Z

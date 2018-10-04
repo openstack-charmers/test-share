@@ -1,0 +1,83 @@
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | node-mawhile                                             |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | node-mawhile.maas                                        |
+| OS-EXT-SRV-ATTR:instance_name       | instance-0000008c                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2018-10-04T11:01:47.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.0.10                                      |
+| adminPass                           | rESmF6XgbfLv                                             |
+| config_drive                        | True                                                     |
+| created                             | 2018-10-04T11:01:39Z                                     |
+| flavor                              | m1.large (4)                                             |
+| hostId                              | d8facc0c5e1d46e201b83e83db423a1a99dc24ab069be8773c37091f |
+| id                                  | 3e235553-3cab-44c6-8fdb-e9b281dc2590                     |
+| image                               | bionic-ppc64el (4d5f625a-e732-4edf-a7f9-72bc139ad94e)    |
+| key_name                            | testkey                                                  |
+| name                                | bionic-ppc64el-manual                                    |
+| progress                            | 0                                                        |
+| project_id                          | 865846ff5a27432bb05817dd40da9c24                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2018-10-04T11:01:47Z                                     |
+| user_id                             | 35341f682ff047f0ae889d9429ef2d8e                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
+
+...
++--------------------------------------+-----------------------+--------+------------------------------------+----------------+----------+
+| ID                                   | Name                  | Status | Networks                           | Image          | Flavor   |
++--------------------------------------+-----------------------+--------+------------------------------------+----------------+----------+
+| 3e235553-3cab-44c6-8fdb-e9b281dc2590 | bionic-ppc64el-manual | ACTIVE | private=172.16.0.10, 10.245.173.15 | bionic-ppc64el | m1.large |
++--------------------------------------+-----------------------+--------+------------------------------------+----------------+----------+
+...
+~/tests$ ssh ubuntu@10.245.173.15 -i ~/testkey.pem 
+Welcome to Ubuntu 18.04.1 LTS (GNU/Linux 4.15.0-34-generic ppc64le)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Oct  4 11:04:10 UTC 2018
+
+  System load:  0.14              Processes:             117
+  Usage of /:   5.6% of 19.32GB   Users logged in:       0
+  Memory usage: 4%                IP address for enp0s1: 172.16.0.10
+  Swap usage:   0%
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+ubuntu@bionic-ppc64el-manual:~$ uname -a
+Linux bionic-ppc64el-manual 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:18:58 UTC 2018 ppc64le ppc64le ppc64le GNU/Linux
+ubuntu@bionic-ppc64el-manual:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04.1 LTS
+Release:	18.04
+Codename:	bionic
+

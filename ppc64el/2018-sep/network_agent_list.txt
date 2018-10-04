@@ -1,0 +1,13 @@
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type           | Host         | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
+| 41ca73e6-0f94-460e-9097-5a5404fa3058 | Open vSwitch agent   | node-gregory | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 76670339-3388-47bc-863e-922fc1c4325f | Metadata agent       | node-huffman | None              | :-)   | UP    | neutron-metadata-agent    |
+| 7ea70205-00fb-46fc-8d30-0744c15ed41d | Open vSwitch agent   | node-huffman | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 99ea4bb5-398f-47f1-8e8b-44a020670a4b | Metering agent       | node-huffman | None              | :-)   | UP    | neutron-metering-agent    |
+| c2b8e2b7-0c1f-40bc-800d-2f02dc8dac26 | Loadbalancerv2 agent | node-huffman | None              | :-)   | UP    | neutron-lbaasv2-agent     |
+| c2ed74e5-a6a9-40b4-b868-a2c301020a04 | Open vSwitch agent   | node-mawhile | None              | :-)   | UP    | neutron-openvswitch-agent |
+| c35ec4e2-8d37-4181-92e2-7a347ee4823b | DHCP agent           | node-huffman | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| d31a0158-70f9-4950-90f1-5991ab3427ab | Open vSwitch agent   | node-gengar  | None              | :-)   | UP    | neutron-openvswitch-agent |
+| e9c8a5f6-4714-4b2e-b261-b6311d2a4aa5 | L3 agent             | node-huffman | nova              | :-)   | UP    | neutron-l3-agent          |
++--------------------------------------+----------------------+--------------+-------------------+-------+-------+---------------------------+
