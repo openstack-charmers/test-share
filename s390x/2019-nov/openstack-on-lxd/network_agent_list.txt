@@ -1,0 +1,12 @@
+ubuntu@s4lp5:~/openstack-on-lxd$ openstack network agent list
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host               | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+
+| 07a213fe-318a-4a87-af63-142272192eac | Metadata agent     | juju-75104d-8      | None              | :-)   | UP    | neutron-metadata-agent    |
+| 1d6e084a-9fec-437b-aa9a-adf1d2175ca0 | Open vSwitch agent | juju-75104d-8      | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 4b2c9aef-3d1f-42d3-8994-68bd6080fd81 | DHCP agent         | juju-75104d-8      | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| a84a3d8d-8a7f-44b1-849f-698b52273959 | Metering agent     | juju-75104d-8      | None              | :-)   | UP    | neutron-metering-agent    |
+| d4603b8b-7373-45c6-a13f-82b14f3a3cbe | L3 agent           | juju-75104d-8      | nova              | :-)   | UP    | neutron-l3-agent          |
+| f9f78a20-883d-45aa-9e55-b17eee1e3dac | Open vSwitch agent | juju-75104d-10.lxd | None              | :-)   | UP    | neutron-openvswitch-agent |
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+
+

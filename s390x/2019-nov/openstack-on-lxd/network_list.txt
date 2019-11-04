@@ -1,0 +1,37 @@
+ubuntu@s4lp5:~/openstack-on-lxd$ ./neutron-ext-net-ksv3 --network-type flat \
+>     -g 10.0.8.1 -c 10.0.8.0/24 \
+>     -f 10.0.8.201:10.0.8.254 ext_net
+/usr/lib/python2.7/dist-packages/keystoneauth1/adapter.py:224: UserWarning: Using keystoneclient sessions has been deprecated. Please update your software to use keystoneauth1.
+  warnings.warn('Using keystoneclient sessions has been deprecated. '
+INFO:root:Configuring external network 'ext_net'
+INFO:root:Creating new external network definition: ext_net
+INFO:root:New external network created: 0959c9ae-472b-475a-9ea1-24a7eb2b32ed
+INFO:root:Creating new subnet for ext_net
+INFO:root:New subnet created: 024d7bf8-26f4-4bb4-88d6-a4115b615a07
+INFO:root:Creating provider router for external network access
+INFO:root:New router created: 93dcbc1f-d94a-41b0-981e-f7bbfe1c6b83
+INFO:root:Plugging router into ext_net
+INFO:root:Router connected to ext_net
+ubuntu@s4lp5:~/openstack-on-lxd$ ./neutron-tenant-net-ksv3 -p admin -r provider-router \
+>     -N 10.0.8.1 internal 192.168.20.0/24
+/usr/lib/python2.7/dist-packages/keystoneauth1/adapter.py:224: UserWarning: Using keystoneclient sessions has been deprecated. Please update your software to use keystoneauth1.
+  warnings.warn('Using keystoneclient sessions has been deprecated. '
+INFO:root:Creating tenant network: internal
+INFO:root:Creating subnet for internal
+INFO:root:Updating dns_nameservers (10.0.8.1) for subnet internal_subnet
+INFO:root:Adding interface from provider-router to internal_subnet
+ubuntu@s4lp5:~/openstack-on-lxd$ openstack network list
++--------------------------------------+----------+--------------------------------------+
+| ID                                   | Name     | Subnets                              |
++--------------------------------------+----------+--------------------------------------+
+| 0959c9ae-472b-475a-9ea1-24a7eb2b32ed | ext_net  | 024d7bf8-26f4-4bb4-88d6-a4115b615a07 |
+| da728d07-a888-4c94-8e15-eeac9a9cac25 | internal | 24ce59ee-9b3c-4876-b644-5c898963e738 |
++--------------------------------------+----------+--------------------------------------+
+
++--------------------------------------+----------+--------------------------------------+
+| ID                                   | Name     | Subnets                              |
++--------------------------------------+----------+--------------------------------------+
+| 0959c9ae-472b-475a-9ea1-24a7eb2b32ed | ext_net  | 024d7bf8-26f4-4bb4-88d6-a4115b615a07 |
+| da728d07-a888-4c94-8e15-eeac9a9cac25 | internal | 24ce59ee-9b3c-4876-b644-5c898963e738 |
++--------------------------------------+----------+--------------------------------------+
+
