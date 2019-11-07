@@ -1,0 +1,54 @@
+ubuntu@s4lp5:~/openstack-on-lxd$ juju status
+Model    Controller  Cloud/Region         Version  SLA          Timestamp
+default  lxd         localhost/localhost  2.6.10   unsupported  11:31:29-05:00
+
+App                    Version         Status  Scale  Charm                  Store       Rev  OS      Notes
+designate              9.0.0           active      1  designate              jujucharms  137  ubuntu  
+designate-bind         9.11.5.P4+dfsg  active      1  designate-bind         jujucharms   76  ubuntu  
+glance                 19.0.0          active      1  glance                 jujucharms  388  ubuntu  
+heat                   13.0.0          active      1  heat                   jujucharms  334  ubuntu  
+keystone               16.0.0          active      1  keystone               jujucharms  466  ubuntu  
+memcached                              active      1  memcached              jujucharms   26  ubuntu  
+mysql                  5.7.20          active      1  percona-cluster        jujucharms  355  ubuntu  
+neutron-api            15.0.0          active      1  neutron-api            jujucharms  423  ubuntu  
+neutron-gateway        15.0.0          active      1  neutron-gateway        jujucharms  390  ubuntu  
+neutron-openvswitch    15.0.0          active      1  neutron-openvswitch    jujucharms  385  ubuntu  
+nova-cloud-controller  20.0.0          active      1  nova-cloud-controller  jujucharms  455  ubuntu  
+nova-compute           20.0.0          active      1  nova-compute           jujucharms  470  ubuntu  
+openstack-dashboard    16.0.0          active      1  openstack-dashboard    jujucharms  447  ubuntu  
+placement              2.0.0           active      1  placement              jujucharms    1  ubuntu  
+rabbitmq-server        3.7.8           active      1  rabbitmq-server        jujucharms  353  ubuntu  
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+designate-bind/0*         active    idle   1        10.0.8.43                          Unit is ready
+designate/0*              active    idle   0        10.0.8.137      9001/tcp           Unit is ready
+glance/0*                 active    idle   2        10.0.8.36       9292/tcp           Unit is ready
+heat/0*                   active    idle   3        10.0.8.95       8000/tcp,8004/tcp  Unit is ready
+keystone/0*               active    idle   4        10.0.8.24       5000/tcp           Unit is ready
+memcached/0*              active    idle   5        10.0.8.40       11211/tcp          Unit is ready
+mysql/0*                  active    idle   6        10.0.8.231      3306/tcp           Unit is ready
+neutron-api/0*            active    idle   7        10.0.8.47       9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   8        10.0.8.17                          Unit is ready
+nova-cloud-controller/0*  active    idle   9        10.0.8.147      8774/tcp,8775/tcp  Unit is ready
+nova-compute/0*           active    idle   10       10.0.8.180                         Unit is ready
+  neutron-openvswitch/0*  active    idle            10.0.8.180                         Unit is ready
+openstack-dashboard/0*    active    idle   11       10.0.8.173      80/tcp,443/tcp     Unit is ready
+placement/0*              active    idle   12       10.0.8.135      8778/tcp           Unit is ready
+rabbitmq-server/0*        active    idle   13       10.0.8.181      5672/tcp           Unit is ready
+
+Machine  State    DNS         Inst id         Series  AZ  Message
+0        started  10.0.8.137  juju-75104d-0   eoan        Running
+1        started  10.0.8.43   juju-75104d-1   eoan        Running
+2        started  10.0.8.36   juju-75104d-2   eoan        Running
+3        started  10.0.8.95   juju-75104d-3   eoan        Running
+4        started  10.0.8.24   juju-75104d-4   eoan        Running
+5        started  10.0.8.40   juju-75104d-5   bionic      Running
+6        started  10.0.8.231  juju-75104d-6   eoan        Running
+7        started  10.0.8.47   juju-75104d-7   eoan        Running
+8        started  10.0.8.17   juju-75104d-8   eoan        Running
+9        started  10.0.8.147  juju-75104d-9   eoan        Running
+10       started  10.0.8.180  juju-75104d-10  eoan        Running
+11       started  10.0.8.173  juju-75104d-11  eoan        Running
+12       started  10.0.8.135  juju-75104d-12  eoan        Running
+13       started  10.0.8.181  juju-75104d-13  eoan        Running
+
