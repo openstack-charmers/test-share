@@ -1,0 +1,69 @@
+Model              Controller         Cloud/Region  Version  SLA          Timestamp
+s390x-mosci-s390x  s390x-mosci-s390x  manual        2.6.10   unsupported  14:36:55Z
+
+App                    Version  Status  Scale  Charm                  Store       Rev  OS      Notes
+cinder                 15.0.0   active      1  cinder                 jujucharms  393  ubuntu  
+glance                 19.0.0   active      1  glance                 jujucharms  388  ubuntu  
+keystone               16.0.0   active      1  keystone               jujucharms  466  ubuntu  
+mysql                  5.7.20   active      1  percona-cluster        jujucharms  355  ubuntu  
+neutron-api            15.0.0   active      1  neutron-api            jujucharms  423  ubuntu  
+neutron-gateway        15.0.0   active      1  neutron-gateway        jujucharms  390  ubuntu  
+neutron-openvswitch    15.0.0   active      3  neutron-openvswitch    jujucharms  386  ubuntu  
+nova-cloud-controller  20.0.0   active      1  nova-cloud-controller  jujucharms  456  ubuntu  
+nova-compute           20.0.0   active      3  nova-compute           jujucharms  470  ubuntu  
+ntp                    3.5      active      4  ntp                    jujucharms   36  ubuntu  
+openstack-dashboard    16.0.0   active      1  openstack-dashboard    jujucharms  447  ubuntu  
+placement              2.0.0    active      1  placement              jujucharms    1  ubuntu  
+rabbitmq-server        3.7.8    active      1  rabbitmq-server        jujucharms  353  ubuntu  
+swift-proxy            2.23.0   active      1  swift-proxy            jujucharms  176  ubuntu  
+swift-storage-z1       2.23.0   active      1  swift-storage          jujucharms  343  ubuntu  
+swift-storage-z2       2.23.0   active      1  swift-storage          jujucharms  343  ubuntu  
+swift-storage-z3       2.23.0   active      1  swift-storage          jujucharms  343  ubuntu  
+swift-storage-z4       2.23.0   active      1  swift-storage          jujucharms  343  ubuntu  
+swift-storage-z5       2.23.0   active      1  swift-storage          jujucharms  343  ubuntu  
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+cinder/0*                 active    idle   1/lxd/0  10.13.3.250     8776/tcp           Unit is ready
+glance/0*                 active    idle   2/lxd/0  10.13.3.204     9292/tcp           Unit is ready
+keystone/0*               active    idle   3/lxd/0  10.13.3.235     5000/tcp           Unit is ready
+mysql/0*                  active    idle   0/lxd/0  10.13.3.207     3306/tcp           Unit is ready
+neutron-api/0*            active    idle   1/lxd/1  10.13.3.244     9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   0        10.13.3.10                         Unit is ready
+  ntp/3                   active    idle            10.13.3.10      123/udp            chrony: Ready
+nova-cloud-controller/0*  active    idle   2/lxd/1  10.13.3.233     8774/tcp,8775/tcp  Unit is ready
+nova-compute/0            active    idle   1        10.13.3.11                         Unit is ready
+  neutron-openvswitch/1   active    idle            10.13.3.11                         Unit is ready
+  ntp/1                   active    idle            10.13.3.11      123/udp            chrony: Ready
+nova-compute/1            active    idle   2        10.13.3.12                         Unit is ready
+  neutron-openvswitch/2   active    idle            10.13.3.12                         Unit is ready
+  ntp/2                   active    idle            10.13.3.12      123/udp            chrony: Ready
+nova-compute/2*           active    idle   3        10.13.3.13                         Unit is ready
+  neutron-openvswitch/0*  active    idle            10.13.3.13                         Unit is ready
+  ntp/0*                  active    idle            10.13.3.13      123/udp            chrony: Ready
+openstack-dashboard/0*    active    idle   3/lxd/1  10.13.3.248     80/tcp,443/tcp     Unit is ready
+placement/0*              active    idle   2/lxd/2  10.13.3.210     8778/tcp           Unit is ready
+rabbitmq-server/0*        active    idle   0/lxd/1  10.13.3.196     5672/tcp           Unit is ready
+swift-proxy/0*            active    idle   0/lxd/2  10.13.3.194     8080/tcp           Unit is ready
+swift-storage-z1/0*       active    idle   0        10.13.3.10                         Unit is ready
+swift-storage-z2/0*       active    idle   1        10.13.3.11                         Unit is ready
+swift-storage-z3/0*       active    idle   2        10.13.3.12                         Unit is ready
+swift-storage-z4/0*       active    idle   3        10.13.3.13                         Unit is ready
+swift-storage-z5/0*       active    idle   4        10.13.3.14                         Unit is ready
+
+Machine  State    DNS          Inst id              Series  AZ  Message
+0        started  10.13.3.10   manual:10.13.3.10    eoan        Manually provisioned machine
+0/lxd/0  started  10.13.3.207  juju-640ee7-0-lxd-0  eoan        Container started
+0/lxd/1  started  10.13.3.196  juju-640ee7-0-lxd-1  eoan        Container started
+0/lxd/2  started  10.13.3.194  juju-640ee7-0-lxd-2  eoan        Container started
+1        started  10.13.3.11   manual:10.13.3.11    eoan        Manually provisioned machine
+1/lxd/0  started  10.13.3.250  juju-640ee7-1-lxd-0  eoan        Container started
+1/lxd/1  started  10.13.3.244  juju-640ee7-1-lxd-1  eoan        Container started
+2        started  10.13.3.12   manual:10.13.3.12    eoan        Manually provisioned machine
+2/lxd/0  started  10.13.3.204  juju-640ee7-2-lxd-0  eoan        Container started
+2/lxd/1  started  10.13.3.233  juju-640ee7-2-lxd-1  eoan        Container started
+2/lxd/2  started  10.13.3.210  juju-640ee7-2-lxd-2  eoan        Container started
+3        started  10.13.3.13   manual:10.13.3.13    eoan        Manually provisioned machine
+3/lxd/0  started  10.13.3.235  juju-640ee7-3-lxd-0  eoan        Container started
+3/lxd/1  started  10.13.3.248  juju-640ee7-3-lxd-1  eoan        Container started
+4        started  10.13.3.14   manual:10.13.3.14    eoan        Manually provisioned machine
+

@@ -1,0 +1,8 @@
+jenkins@mosci-s390x-jslave-persist-718:~/tools/zopenstack/tools/2-configure$ openstack image list
++--------------------------------------+--------------+--------+
+| ID                                   | Name         | Status |
++--------------------------------------+--------------+--------+
+| 7b7c27d9-4754-491c-9aaa-3324efa6704b | bionic-s390x | active |
+| ae55ddbf-b517-442d-9ede-430cecc9d979 | xenial-s390x | active |
++--------------------------------------+--------------+--------+
+
