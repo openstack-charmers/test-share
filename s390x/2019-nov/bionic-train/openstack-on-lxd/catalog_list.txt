@@ -1,0 +1,60 @@
++-----------+----------------+------------------------------------------------------------------------+
+| Name      | Type           | Endpoints                                                              |
++-----------+----------------+------------------------------------------------------------------------+
+| keystone  | identity       | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.103:5000/v3                                  |
+|           |                | RegionOne                                                              |
+|           |                |   public: http://10.0.8.103:5000/v3                                    |
+|           |                | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.103:35357/v3                                    |
+|           |                |                                                                        |
+| designate | dns            | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.164:9001                                        |
+|           |                | RegionOne                                                              |
+|           |                |   public: http://10.0.8.164:9001                                       |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.164:9001                                     |
+|           |                |                                                                        |
+| glance    | image          | RegionOne                                                              |
+|           |                |   public: http://10.0.8.200:9292                                       |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.200:9292                                     |
+|           |                | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.200:9292                                        |
+|           |                |                                                                        |
+| nova      | compute        | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.208:8774/v2.1                                   |
+|           |                | RegionOne                                                              |
+|           |                |   public: http://10.0.8.208:8774/v2.1                                  |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.208:8774/v2.1                                |
+|           |                |                                                                        |
+| heat-cfn  | cloudformation | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.192:8000/v1                                  |
+|           |                | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.192:8000/v1                                     |
+|           |                | RegionOne                                                              |
+|           |                |   public: http://10.0.8.192:8000/v1                                    |
+|           |                |                                                                        |
+| placement | placement      | RegionOne                                                              |
+|           |                |   public: http://10.0.8.186:8778                                       |
+|           |                | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.186:8778                                        |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.186:8778                                     |
+|           |                |                                                                        |
+| neutron   | network        | RegionOne                                                              |
+|           |                |   public: http://10.0.8.43:9696                                        |
+|           |                | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.43:9696                                         |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.43:9696                                      |
+|           |                |                                                                        |
+| heat      | orchestration  | RegionOne                                                              |
+|           |                |   admin: http://10.0.8.192:8004/v1/019c133f6e914e7cabe3f798522a91a9    |
+|           |                | RegionOne                                                              |
+|           |                |   internal: http://10.0.8.192:8004/v1/019c133f6e914e7cabe3f798522a91a9 |
+|           |                | RegionOne                                                              |
+|           |                |   public: http://10.0.8.192:8004/v1/019c133f6e914e7cabe3f798522a91a9   |
+|           |                |                                                                        |
++-----------+----------------+------------------------------------------------------------------------+
