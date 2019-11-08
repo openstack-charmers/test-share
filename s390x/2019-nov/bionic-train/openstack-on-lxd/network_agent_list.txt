@@ -1,0 +1,10 @@
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host               | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+
+| 05ad1427-bdec-4a14-9aa6-459787a047a2 | Open vSwitch agent | juju-2ff07d-10.lxd | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 228435c4-1717-4d06-857a-50b039085661 | Open vSwitch agent | juju-2ff07d-8      | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 230e763f-ba05-429b-ba0c-321ae2a3fae4 | Metering agent     | juju-2ff07d-8      | None              | :-)   | UP    | neutron-metering-agent    |
+| 68e87d19-b720-45d7-8da1-bd49427a4fb1 | DHCP agent         | juju-2ff07d-8      | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| 8bb22539-88d2-4203-9549-3ca98221e520 | Metadata agent     | juju-2ff07d-8      | None              | :-)   | UP    | neutron-metadata-agent    |
+| da921451-6fd9-4cda-8536-4c0f4b64d140 | L3 agent           | juju-2ff07d-8      | nova              | :-)   | UP    | neutron-l3-agent          |
++--------------------------------------+--------------------+--------------------+-------------------+-------+-------+---------------------------+

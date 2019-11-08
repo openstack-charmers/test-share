@@ -1,0 +1,53 @@
+Model    Controller  Cloud/Region         Version  SLA          Timestamp
+default  lxd         localhost/localhost  2.6.10   unsupported  08:31:02-05:00
+
+App                    Version      Status  Scale  Charm                  Store       Rev  OS      Notes
+designate              9.0.0        active      1  designate              jujucharms   36  ubuntu  
+designate-bind         9.11.3+dfsg  active      1  designate-bind         jujucharms   25  ubuntu  
+glance                 19.0.0       active      1  glance                 jujucharms  290  ubuntu  
+heat                   13.0.0       active      1  heat                   jujucharms  271  ubuntu  
+keystone               16.0.0       active      1  keystone               jujucharms  309  ubuntu  
+memcached                           active      1  memcached              jujucharms   26  ubuntu  
+mysql                  5.7.20       active      1  percona-cluster        jujucharms  281  ubuntu  
+neutron-api            15.0.0       active      1  neutron-api            jujucharms  281  ubuntu  
+neutron-gateway        15.0.0       active      1  neutron-gateway        jujucharms  275  ubuntu  
+neutron-openvswitch    15.0.0       active      1  neutron-openvswitch    jujucharms  269  ubuntu  
+nova-cloud-controller  20.0.0       active      1  nova-cloud-controller  jujucharms  339  ubuntu  
+nova-compute           20.0.0       active      1  nova-compute           jujucharms  309  ubuntu  
+openstack-dashboard    16.0.0       active      1  openstack-dashboard    jujucharms  295  ubuntu  
+placement              2.0.0        active      1  placement              jujucharms    0  ubuntu  
+rabbitmq-server        3.6.10       active      1  rabbitmq-server        jujucharms   97  ubuntu  
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+designate-bind/0*         active    idle   1        10.0.8.213                         Unit is ready
+designate/0*              active    idle   0        10.0.8.164      9001/tcp           Unit is ready
+glance/0*                 active    idle   2        10.0.8.200      9292/tcp           Unit is ready
+heat/0*                   active    idle   3        10.0.8.192      8000/tcp,8004/tcp  Unit is ready
+keystone/0*               active    idle   4        10.0.8.103      5000/tcp           Unit is ready
+memcached/0*              active    idle   5        10.0.8.219      11211/tcp          Unit is ready
+mysql/0*                  active    idle   6        10.0.8.245      3306/tcp           Unit is ready
+neutron-api/0*            active    idle   7        10.0.8.43       9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   8        10.0.8.116                         Unit is ready
+nova-cloud-controller/0*  active    idle   9        10.0.8.208      8774/tcp,8775/tcp  Unit is ready
+nova-compute/0*           active    idle   10       10.0.8.178                         Unit is ready
+  neutron-openvswitch/0*  active    idle            10.0.8.178                         Unit is ready
+openstack-dashboard/0*    active    idle   11       10.0.8.122      80/tcp,443/tcp     Unit is ready
+placement/0*              active    idle   12       10.0.8.186      8778/tcp           Unit is ready
+rabbitmq-server/0*        active    idle   13       10.0.8.253      5672/tcp           Unit is ready
+
+Machine  State    DNS         Inst id         Series  AZ  Message
+0        started  10.0.8.164  juju-2ff07d-0   bionic      Running
+1        started  10.0.8.213  juju-2ff07d-1   bionic      Running
+2        started  10.0.8.200  juju-2ff07d-2   bionic      Running
+3        started  10.0.8.192  juju-2ff07d-3   bionic      Running
+4        started  10.0.8.103  juju-2ff07d-4   bionic      Running
+5        started  10.0.8.219  juju-2ff07d-5   bionic      Running
+6        started  10.0.8.245  juju-2ff07d-6   bionic      Running
+7        started  10.0.8.43   juju-2ff07d-7   bionic      Running
+8        started  10.0.8.116  juju-2ff07d-8   bionic      Running
+9        started  10.0.8.208  juju-2ff07d-9   bionic      Running
+10       started  10.0.8.178  juju-2ff07d-10  bionic      Running
+11       started  10.0.8.122  juju-2ff07d-11  bionic      Running
+12       started  10.0.8.186  juju-2ff07d-12  bionic      Running
+13       started  10.0.8.253  juju-2ff07d-13  bionic      Running
+

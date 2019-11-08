@@ -1,0 +1,14 @@
+jenkins@mosci-s390x-jslave-persist-718:~/tools/zopenstack/tools/2-configure$ openstack network agent list
++--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host                | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+| 69ce5a36-a830-4f3a-9da5-b3c9cf697ddb | Open vSwitch agent | 10-13-3-11.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 6bc44ed3-08d7-406a-9633-7e7d5a4a4185 | L3 agent           | s4lpa               | nova              | :-)   | UP    | neutron-l3-agent          |
+| 7d2193f7-f720-4ead-a7f6-38f92c0eb17f | Open vSwitch agent | s4lpa               | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 983417ee-4559-4e47-b523-56e41d75ef3b | Open vSwitch agent | 10-13-3-12.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
+| a861edc1-2c4e-4aea-a575-932b1099becd | Metering agent     | s4lpa               | None              | :-)   | UP    | neutron-metering-agent    |
+| e95b31d6-37ad-43d7-9f31-93843ed1eb7e | Open vSwitch agent | 10-13-3-13.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
+| f6c3629a-9cbf-4b74-be95-ea801aa7779f | DHCP agent         | s4lpa               | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| f9fb0533-fe27-4f1a-b531-f616156acc3c | Metadata agent     | s4lpa               | None              | :-)   | UP    | neutron-metadata-agent    |
++--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+

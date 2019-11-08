@@ -1,0 +1,14 @@
+jenkins@mosci-s390x-jslave-persist-719:~/tools/zopenstack/tools/2-configure/tempest$ openstack network agent list
+opensa+--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host                | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+| 1cf8379b-66db-4200-8ada-23030b23126d | Metadata agent     | s4lpa               | None              | :-)   | UP    | neutron-metadata-agent    |
+| 48c3389c-ae44-4755-8173-002a7b08b355 | Metering agent     | s4lpa               | None              | :-)   | UP    | neutron-metering-agent    |
+| 4baf6701-9c39-4029-abac-79f21d692432 | Open vSwitch agent | s4lpa               | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 645570a5-cad6-484a-a79b-469380c7ce84 | Open vSwitch agent | 10-13-3-13.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
+| a5094459-c9c0-4055-9304-e76157e05f17 | Open vSwitch agent | 10-13-3-12.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
+| a682b45f-b2de-4329-86e0-4f8e31fd0206 | DHCP agent         | s4lpa               | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| f7ae00af-fc8e-4df1-bcae-e3885e49461d | L3 agent           | s4lpa               | nova              | :-)   | UP    | neutron-l3-agent          |
+| ff1b2ba7-11ae-42d4-b0a2-71eb217ba37d | Open vSwitch agent | 10-13-3-11.internal | None              | :-)   | UP    | neutron-openvswitch-agent |
++--------------------------------------+--------------------+---------------------+-------------------+-------+-------+---------------------------+
+
