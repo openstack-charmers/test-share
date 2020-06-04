@@ -1,0 +1,85 @@
+Model              Controller         Cloud/Region  Version  SLA          Timestamp
+s390x-mosci-s390x  s390x-mosci-s390x  manual        2.7.6    unsupported  14:44:19Z
+
+App                    Version  Status  Scale  Charm                  Store       Rev  OS      Notes
+ceph-mon               15.2.1   active      3  ceph-mon               jujucharms  426  ubuntu
+ceph-osd               15.2.1   active      3  ceph-osd               jujucharms  450  ubuntu
+ceph-radosgw           15.2.1   active      1  ceph-radosgw           jujucharms  363  ubuntu
+cinder                 16.0.0   active      1  cinder                 jujucharms  413  ubuntu
+cinder-ceph            16.0.0   active      1  cinder-ceph            jujucharms  320  ubuntu
+glance                 20.0.0   active      1  glance                 jujucharms  411  ubuntu
+keystone               17.0.0   active      1  keystone               jujucharms  498  ubuntu
+mysql                  5.7.20   active      1  percona-cluster        jujucharms  372  ubuntu
+neutron-api            16.0.0   active      1  neutron-api            jujucharms  446  ubuntu
+neutron-gateway        16.0.0   active      1  neutron-gateway        jujucharms  415  ubuntu
+neutron-openvswitch    16.0.0   active      3  neutron-openvswitch    jujucharms  404  ubuntu
+nova-cloud-controller  21.0.0   active      1  nova-cloud-controller  jujucharms  487  ubuntu
+nova-compute           21.0.0   active      3  nova-compute           jujucharms  498  ubuntu
+ntp                    3.2      active      4  ntp                    jujucharms   39  ubuntu
+openstack-dashboard    18.3.2   active      1  openstack-dashboard    jujucharms  476  ubuntu
+placement              3.0.0    active      1  placement              jujucharms   15  ubuntu
+rabbitmq-server        3.6.10   active      1  rabbitmq-server        jujucharms  368  ubuntu
+swift-proxy            2.25.0   active      1  swift-proxy            jujucharms  198  ubuntu
+swift-storage-z1       2.25.0   active      1  swift-storage          jujucharms  359  ubuntu
+swift-storage-z2       2.25.0   active      1  swift-storage          jujucharms  359  ubuntu
+swift-storage-z3       2.25.0   active      1  swift-storage          jujucharms  359  ubuntu
+swift-storage-z4       2.25.0   active      1  swift-storage          jujucharms  359  ubuntu
+swift-storage-z5       2.25.0   active      1  swift-storage          jujucharms  359  ubuntu
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+ceph-mon/0                active    idle   1/lxd/0  10.13.3.225                        Unit is ready and clustered
+ceph-mon/1*               active    idle   2/lxd/0  10.13.3.221                        Unit is ready and clustered
+ceph-mon/2                active    idle   3/lxd/0  10.13.3.197                        Unit is ready and clustered
+ceph-osd/0                active    idle   1        10.13.3.11                         Unit is ready (1 OSD)
+ceph-osd/1*               active    idle   2        10.13.3.12                         Unit is ready (1 OSD)
+ceph-osd/2                active    idle   3        10.13.3.13                         Unit is ready (1 OSD)
+ceph-radosgw/0*           active    idle   0/lxd/0  10.13.3.207     80/tcp             Unit is ready
+cinder/0*                 active    idle   1/lxd/1  10.13.3.192     8776/tcp           Unit is ready
+  cinder-ceph/0*          active    idle            10.13.3.192                        Unit is ready
+glance/0*                 active    idle   2/lxd/1  10.13.3.222     9292/tcp           Unit is ready
+keystone/0*               active    idle   3/lxd/1  10.13.3.212     5000/tcp           Unit is ready
+mysql/0*                  active    idle   0/lxd/1  10.13.3.248     3306/tcp           Unit is ready
+neutron-api/0*            active    idle   1/lxd/2  10.13.3.241     9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   0        10.13.3.10                         Unit is ready
+  ntp/3                   active    idle            10.13.3.10      123/udp            chrony: Ready
+nova-cloud-controller/0*  active    idle   2/lxd/2  10.13.3.195     8774/tcp,8775/tcp  Unit is ready
+nova-compute/0            active    idle   1        10.13.3.11                         Unit is ready
+  neutron-openvswitch/1   active    idle            10.13.3.11                         Unit is ready
+  ntp/1                   active    idle            10.13.3.11      123/udp            chrony: Ready
+nova-compute/1*           active    idle   2        10.13.3.12                         Unit is ready
+  neutron-openvswitch/2   active    idle            10.13.3.12                         Unit is ready
+  ntp/2                   active    idle            10.13.3.12      123/udp            chrony: Ready
+nova-compute/2            active    idle   3        10.13.3.13                         Unit is ready
+  neutron-openvswitch/0*  active    idle            10.13.3.13                         Unit is ready
+  ntp/0*                  active    idle            10.13.3.13      123/udp            chrony: Ready
+openstack-dashboard/0*    active    idle   3/lxd/2  10.13.3.232     80/tcp,443/tcp     Unit is ready
+placement/0*              active    idle   2/lxd/3  10.13.3.202     8778/tcp           Unit is ready
+rabbitmq-server/0*        active    idle   0/lxd/2  10.13.3.249     5672/tcp           Unit is ready
+swift-proxy/0*            active    idle   0/lxd/3  10.13.3.210     8080/tcp           Unit is ready
+swift-storage-z1/0*       active    idle   0        10.13.3.10                         Unit is ready
+swift-storage-z2/0*       active    idle   1        10.13.3.11                         Unit is ready
+swift-storage-z3/0*       active    idle   2        10.13.3.12                         Unit is ready
+swift-storage-z4/0*       active    idle   3        10.13.3.13                         Unit is ready
+swift-storage-z5/0*       active    idle   4        10.13.3.14                         Unit is ready
+
+Machine  State    DNS          Inst id              Series  AZ  Message
+0        started  10.13.3.10   manual:10.13.3.10    bionic      Manually provisioned machine
+0/lxd/0  started  10.13.3.207  juju-86308a-0-lxd-0  bionic      Container started
+0/lxd/1  started  10.13.3.248  juju-86308a-0-lxd-1  bionic      Container started
+0/lxd/2  started  10.13.3.249  juju-86308a-0-lxd-2  bionic      Container started
+0/lxd/3  started  10.13.3.210  juju-86308a-0-lxd-3  bionic      Container started
+1        started  10.13.3.11   manual:10.13.3.11    bionic      Manually provisioned machine
+1/lxd/0  started  10.13.3.225  juju-86308a-1-lxd-0  bionic      Container started
+1/lxd/1  started  10.13.3.192  juju-86308a-1-lxd-1  bionic      Container started
+1/lxd/2  started  10.13.3.241  juju-86308a-1-lxd-2  bionic      Container started
+2        started  10.13.3.12   manual:10.13.3.12    bionic      Manually provisioned machine
+2/lxd/0  started  10.13.3.221  juju-86308a-2-lxd-0  bionic      Container started
+2/lxd/1  started  10.13.3.222  juju-86308a-2-lxd-1  bionic      Container started
+2/lxd/2  started  10.13.3.195  juju-86308a-2-lxd-2  bionic      Container started
+2/lxd/3  started  10.13.3.202  juju-86308a-2-lxd-3  bionic      Container started
+3        started  10.13.3.13   manual:10.13.3.13    bionic      Manually provisioned machine
+3/lxd/0  started  10.13.3.197  juju-86308a-3-lxd-0  bionic      Container started
+3/lxd/1  started  10.13.3.212  juju-86308a-3-lxd-1  bionic      Container started
+3/lxd/2  started  10.13.3.232  juju-86308a-3-lxd-2  bionic      Container started
+4        started  10.13.3.14   manual:10.13.3.14    bionic      Manually provisioned machine
+
