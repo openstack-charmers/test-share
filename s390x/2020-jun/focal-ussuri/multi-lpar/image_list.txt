@@ -1,0 +1,7 @@
+jenkins@mosci-s390x-jslave-persist-721:~/tools/zopenstack/tools/2-configure/tempest$ openstack image list
++--------------------------------------+--------------+--------+
+| ID                                   | Name         | Status |
++--------------------------------------+--------------+--------+
+| 772b3720-c679-4956-b33e-f6cd9297cd79 | bionic-s390x | active |
+| ce14b8af-5ee8-4168-becd-7a5bb5a660b5 | xenial-s390x | active |
++--------------------------------------+--------------+--------+

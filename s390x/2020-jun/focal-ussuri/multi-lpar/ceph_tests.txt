@@ -1,0 +1,126 @@
+ubuntu@juju-dc7a05-1-lxd-1:~$ sudo ceph osd lspools
+sudo: setrlimit(RLIMIT_CORE): Operation not permitted
+1 device_health_metrics
+2 default.rgw.buckets.data
+3 default.rgw.control
+4 default.rgw.data.root
+5 default.rgw.gc
+6 default.rgw.log
+7 default.rgw.intent-log
+8 default.rgw.meta
+9 default.rgw.usage
+10 default.rgw.users.keys
+11 default.rgw.users.email
+12 default.rgw.users.swift
+13 default.rgw.users.uid
+14 default.rgw.buckets.extra
+15 default.rgw.buckets.index
+16 .rgw.root
+17 glance
+18 cinder-ceph
+ubuntu@juju-dc7a05-1-lxd-1:~$ sudo ceph osd df
+sudo: setrlimit(RLIMIT_CORE): Operation not permitted
+ID  CLASS  WEIGHT   REWEIGHT  SIZE    RAW USE  DATA     OMAP  META   AVAIL   %USE  VAR   PGS  STATUS
+ 1    ssd  0.02010   1.00000  21 GiB  1.6 GiB  566 MiB   0 B  1 GiB  19 GiB  7.52  1.00  111      up
+ 0    ssd  0.02010   1.00000  21 GiB  1.6 GiB  566 MiB   0 B  1 GiB  19 GiB  7.52  1.00  111      up
+ 2    ssd  0.02010   1.00000  21 GiB  1.6 GiB  566 MiB   0 B  1 GiB  19 GiB  7.52  1.00  111      up
+                       TOTAL  62 GiB  4.7 GiB  1.7 GiB   0 B  3 GiB  57 GiB  7.52
+MIN/MAX VAR: 1.00/1.00  STDDEV: 0
+ubuntu@juju-dc7a05-1-lxd-1:~$ sudo rados -p cinder-ceph ls
+sudo: setrlimit(RLIMIT_CORE): Operation not permitted
+rbd_directory
+rbd_info
+rbd_trash
+ubuntu@juju-dc7a05-1-lxd-1:~$ sudo rados -p cinder-ceph ls
+sudo: setrlimit(RLIMIT_CORE): Operation not permitted
+rbd_directory
+rbd_object_map.1d5d6952aed6
+rbd_info
+rbd_id.volume-84e89d1b-e707-4230-bf24-fc9109957ffc
+rbd_header.1d5d6952aed6
+rbd_trash
+ubuntu@juju-dc7a05-1-lxd-1:~$ # second output after creating a 10g volume
+ubuntu@juju-dc7a05-1-lxd-1:~$ sudo rados -p glance ls
+sudo: setrlimit(RLIMIT_CORE): Operation not permitted
+rbd_data.15768568ef42.0000000000000014
+rbd_data.15768568ef42.0000000000000001
+rbd_data.156d30f8ec07.0000000000000000
+rbd_id.ce14b8af-5ee8-4168-becd-7a5bb5a660b5
+rbd_data.15768568ef42.0000000000000021
+rbd_data.15768568ef42.000000000000001a
+rbd_data.156d30f8ec07.000000000000000e
+rbd_data.15768568ef42.0000000000000012
+rbd_data.15768568ef42.0000000000000015
+rbd_data.15768568ef42.0000000000000020
+rbd_data.15768568ef42.000000000000001b
+rbd_data.15768568ef42.0000000000000024
+rbd_directory
+rbd_data.15768568ef42.0000000000000010
+rbd_data.15768568ef42.0000000000000005
+rbd_data.156d30f8ec07.0000000000000011
+rbd_data.156d30f8ec07.000000000000000a
+rbd_data.156d30f8ec07.0000000000000018
+rbd_data.156d30f8ec07.0000000000000007
+rbd_data.156d30f8ec07.0000000000000012
+rbd_data.15768568ef42.0000000000000006
+rbd_data.156d30f8ec07.0000000000000005
+rbd_data.156d30f8ec07.000000000000001f
+rbd_info
+rbd_id.772b3720-c679-4956-b33e-f6cd9297cd79
+rbd_data.156d30f8ec07.000000000000001b
+rbd_data.156d30f8ec07.000000000000001c
+rbd_data.156d30f8ec07.000000000000000c
+rbd_data.15768568ef42.0000000000000008
+rbd_data.15768568ef42.0000000000000002
+rbd_data.156d30f8ec07.000000000000000b
+rbd_data.15768568ef42.000000000000001c
+rbd_data.15768568ef42.000000000000000a
+rbd_data.156d30f8ec07.0000000000000002
+rbd_data.156d30f8ec07.0000000000000015
+rbd_data.156d30f8ec07.0000000000000003
+rbd_data.156d30f8ec07.000000000000001a
+rbd_data.156d30f8ec07.0000000000000017
+rbd_data.15768568ef42.000000000000001e
+rbd_data.156d30f8ec07.0000000000000009
+rbd_data.15768568ef42.0000000000000018
+rbd_data.156d30f8ec07.0000000000000008
+rbd_data.15768568ef42.0000000000000007
+rbd_data.15768568ef42.0000000000000000
+rbd_data.15768568ef42.0000000000000011
+rbd_data.15768568ef42.000000000000001f
+rbd_data.156d30f8ec07.000000000000001e
+rbd_data.15768568ef42.0000000000000004
+rbd_header.15768568ef42
+rbd_data.156d30f8ec07.0000000000000004
+rbd_data.15768568ef42.0000000000000022
+rbd_data.15768568ef42.000000000000000b
+rbd_data.156d30f8ec07.0000000000000010
+rbd_data.156d30f8ec07.0000000000000013
+rbd_data.15768568ef42.000000000000000e
+rbd_object_map.15768568ef42
+rbd_data.156d30f8ec07.0000000000000001
+rbd_data.15768568ef42.0000000000000017
+rbd_data.15768568ef42.0000000000000013
+rbd_data.156d30f8ec07.0000000000000006
+rbd_trash
+rbd_data.15768568ef42.000000000000000c
+rbd_data.156d30f8ec07.000000000000000f
+rbd_object_map.156d30f8ec07
+rbd_data.15768568ef42.0000000000000009
+rbd_data.156d30f8ec07.000000000000000d
+rbd_data.15768568ef42.0000000000000016
+rbd_data.15768568ef42.000000000000001d
+rbd_data.15768568ef42.0000000000000023
+rbd_data.15768568ef42.000000000000000d
+rbd_data.156d30f8ec07.0000000000000016
+rbd_object_map.156d30f8ec07.0000000000000004
+rbd_data.15768568ef42.0000000000000019
+rbd_data.156d30f8ec07.000000000000001d
+rbd_data.156d30f8ec07.0000000000000019
+rbd_data.15768568ef42.0000000000000003
+rbd_header.156d30f8ec07
+rbd_data.156d30f8ec07.0000000000000020
+rbd_object_map.15768568ef42.0000000000000005
+rbd_data.156d30f8ec07.0000000000000014
+rbd_data.15768568ef42.000000000000000f
+
