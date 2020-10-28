@@ -1,0 +1,25 @@
+ubuntu@juju-d4f73f-1-lxd-1:~$ sudo ceph osd lspools ; sudo ceph osd df ; sudo rados -p cinder-ceph ls
+1 device_health_metrics
+2 default.rgw.buckets.data
+3 default.rgw.control
+4 default.rgw.data.root
+5 default.rgw.gc
+6 default.rgw.log
+7 default.rgw.intent-log
+8 default.rgw.meta
+9 default.rgw.usage
+10 default.rgw.users.keys
+11 default.rgw.users.email
+12 default.rgw.users.swift
+13 default.rgw.users.uid
+14 default.rgw.buckets.extra
+15 default.rgw.buckets.index
+16 .rgw.root
+17 glance
+18 cinder-ceph
+ID  CLASS  WEIGHT   REWEIGHT  SIZE    RAW USE  DATA     OMAP  META   AVAIL   %USE  VAR   PGS  STATUS
+ 0    ssd  0.02010   1.00000  21 GiB  1.6 GiB  590 MiB   0 B  1 GiB  19 GiB  7.64  1.00   99      up
+ 1    ssd  0.02010   1.00000  21 GiB  1.6 GiB  590 MiB   0 B  1 GiB  19 GiB  7.64  1.00   99      up
+ 2    ssd  0.02010   1.00000  21 GiB  1.6 GiB  590 MiB   0 B  1 GiB  19 GiB  7.64  1.00   99      up
+                       TOTAL  62 GiB  4.7 GiB  1.7 GiB   0 B  3 GiB  57 GiB  7.64                   
+MIN/MAX VAR: 1.00/1.00  STDDEV: 0
