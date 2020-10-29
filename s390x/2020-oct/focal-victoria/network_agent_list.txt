@@ -1,0 +1,13 @@
+jenkins@mosci-s390x-jslave-persist-19:~/tools/openstack-charm-testing/tools$ openstack network agent list
++--------------------------------------+--------------------+-------+-------------------+-------+-------+---------------------------+
+| ID                                   | Agent Type         | Host  | Availability Zone | Alive | State | Binary                    |
++--------------------------------------+--------------------+-------+-------------------+-------+-------+---------------------------+
+| 1795854b-341a-4128-8566-88ec816620f9 | Open vSwitch agent | s4lpa | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 27952227-e256-49c9-ad0d-477747fa9c4a | Metering agent     | s4lpa | None              | :-)   | UP    | neutron-metering-agent    |
+| 63a32f86-c096-47db-8f00-31064a320c94 | Open vSwitch agent | s4lpd | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 7e937fea-6c01-487f-b0d6-5f6b5e239097 | Open vSwitch agent | s4lpb | None              | :-)   | UP    | neutron-openvswitch-agent |
+| 8f03d9c4-158c-4ffd-833c-dfdfe5ed203a | DHCP agent         | s4lpa | nova              | :-)   | UP    | neutron-dhcp-agent        |
+| c35fa45e-e756-405d-9b0b-48617c098765 | L3 agent           | s4lpa | nova              | :-)   | UP    | neutron-l3-agent          |
+| c9bd73f8-baac-443c-a768-eb5f7bd20d48 | Open vSwitch agent | s4lpc | None              | :-)   | UP    | neutron-openvswitch-agent |
+| e3840b98-0fde-400d-8351-b85e8fbf95df | Metadata agent     | s4lpa | None              | :-)   | UP    | neutron-metadata-agent    |
++--------------------------------------+--------------------+-------+-------------------+-------+-------+---------------------------+

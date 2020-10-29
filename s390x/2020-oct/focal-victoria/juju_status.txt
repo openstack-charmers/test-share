@@ -1,0 +1,102 @@
+jenkins@mosci-s390x-jslave-persist-19:~/tools/openstack-charm-testing/tools$ juju status
+Model              Controller         Cloud/Region  Version  SLA          Timestamp
+s390x-mosci-s390x  s390x-mosci-s390x  manual        2.8.5    unsupported  11:37:28Z
+
+App                     Version  Status   Scale  Charm                  Store       Rev  OS      Notes
+ceph-mon                15.2.3   active       3  ceph-mon               jujucharms  446  ubuntu  
+ceph-osd                15.2.3   active       3  ceph-osd               jujucharms  470  ubuntu  
+ceph-radosgw            15.2.3   active       1  ceph-radosgw           jujucharms  379  ubuntu  
+cinder                  17.0.0   active       1  cinder                 jujucharms  423  ubuntu  
+cinder-ceph             17.0.0   active       1  cinder-ceph            jujucharms  335  ubuntu  
+cinder-mysql-router     8.0.22   active       1  mysql-router           jujucharms   27  ubuntu  
+dashboard-mysql-router           unknown      0  mysql-router           jujucharms   27  ubuntu  
+glance                  21.0.0   active       1  glance                 jujucharms  435  ubuntu  
+glance-mysql-router     8.0.22   active       1  mysql-router           jujucharms   27  ubuntu  
+keystone                18.0.0   active       1  keystone               jujucharms  516  ubuntu  
+keystone-mysql-router   8.0.22   active       1  mysql-router           jujucharms   27  ubuntu  
+mysql                   8.0.22   active       3  mysql-innodb-cluster   jujucharms   51  ubuntu  
+neutron-api             17.0.0   active       1  neutron-api            jujucharms  457  ubuntu  
+neutron-gateway         17.0.0   active       1  neutron-gateway        jujucharms  432  ubuntu  
+neutron-mysql-router    8.0.22   active       1  mysql-router           jujucharms   27  ubuntu  
+neutron-openvswitch     17.0.0   active       3  neutron-openvswitch    jujucharms  415  ubuntu  
+nova-cloud-controller   22.0.0   active       1  nova-cloud-controller  jujucharms  503  ubuntu  
+nova-compute            22.0.0   active       3  nova-compute           jujucharms  514  ubuntu  
+nova-mysql-router       8.0.22   active       1  mysql-router           jujucharms   27  ubuntu  
+ntp                     3.5      active       4  ntp                    jujucharms   41  ubuntu  
+openstack-dashboard     18.6.1   active       1  openstack-dashboard    jujucharms  490  ubuntu  
+placement               4.0.0    active       1  placement              jujucharms   31  ubuntu  
+placement-mysql-router           unknown      0  mysql-router           jujucharms   27  ubuntu  
+rabbitmq-server         3.8.2    active       1  rabbitmq-server        jujucharms  384  ubuntu  
+swift-proxy             2.26.0   active       1  swift-proxy            jujucharms  211  ubuntu  
+swift-storage-z1        2.26.0   active       1  swift-storage          jujucharms  373  ubuntu  
+swift-storage-z2        2.26.0   active       1  swift-storage          jujucharms  373  ubuntu  
+swift-storage-z3        2.26.0   active       1  swift-storage          jujucharms  373  ubuntu  
+swift-storage-z4        2.26.0   active       1  swift-storage          jujucharms  373  ubuntu  
+swift-storage-z5        2.26.0   active       1  swift-storage          jujucharms  373  ubuntu  
+
+Unit                        Workload  Agent  Machine  Public address  Ports              Message
+ceph-mon/0                  active    idle   1/lxd/1  10.13.3.228                        Unit is ready and clustered
+ceph-mon/1*                 active    idle   2/lxd/1  10.13.3.222                        Unit is ready and clustered
+ceph-mon/2                  active    idle   3/lxd/1  10.13.3.197                        Unit is ready and clustered
+ceph-osd/0                  active    idle   1        10.13.3.11                         Unit is ready (1 OSD)
+ceph-osd/1*                 active    idle   2        10.13.3.12                         Unit is ready (1 OSD)
+ceph-osd/2                  active    idle   3        10.13.3.13                         Unit is ready (1 OSD)
+ceph-radosgw/0*             active    idle   0/lxd/1  10.13.3.251     80/tcp             Unit is ready
+cinder/0*                   active    idle   1/lxd/2  10.13.3.215     8776/tcp           Unit is ready
+  cinder-ceph/0*            active    idle            10.13.3.215                        Unit is ready
+  cinder-mysql-router/0*    active    idle            10.13.3.215                        Unit is ready
+glance/0*                   active    idle   2/lxd/2  10.13.3.245     9292/tcp           Unit is ready
+  glance-mysql-router/0*    active    idle            10.13.3.245                        Unit is ready
+keystone/0*                 active    idle   3/lxd/2  10.13.3.250     5000/tcp           Unit is ready
+  keystone-mysql-router/0*  active    idle            10.13.3.250                        Unit is ready
+mysql/0*                    active    idle   0/lxd/2  10.13.3.207                        Unit is ready: Mode: R/W
+mysql/1                     active    idle   1/lxd/3  10.13.3.231                        Unit is ready: Mode: R/O
+mysql/2                     active    idle   2/lxd/3  10.13.3.241                        Unit is ready: Mode: R/O
+neutron-api/0*              active    idle   1/lxd/4  10.13.3.192     9696/tcp           Unit is ready
+  neutron-mysql-router/0*   active    idle            10.13.3.192                        Unit is ready
+neutron-gateway/0*          active    idle   0        10.13.3.10                         Unit is ready
+  ntp/0*                    active    idle            10.13.3.10      123/udp            chrony: Ready
+nova-cloud-controller/0*    active    idle   2/lxd/4  10.13.3.195     8774/tcp,8775/tcp  Unit is ready
+  nova-mysql-router/0*      active    idle            10.13.3.195                        Unit is ready
+nova-compute/0              active    idle   1        10.13.3.11                         Unit is ready
+  neutron-openvswitch/2     active    idle            10.13.3.11                         Unit is ready
+  ntp/3                     active    idle            10.13.3.11      123/udp            chrony: Ready
+nova-compute/1*             active    idle   2        10.13.3.12                         Unit is ready
+  neutron-openvswitch/0*    active    idle            10.13.3.12                         Unit is ready
+  ntp/1                     active    idle            10.13.3.12      123/udp            chrony: Ready
+nova-compute/2              active    idle   3        10.13.3.13                         Unit is ready
+  neutron-openvswitch/1     active    idle            10.13.3.13                         Unit is ready
+  ntp/2                     active    idle            10.13.3.13      123/udp            chrony: Ready
+openstack-dashboard/0*      active    idle   3/lxd/3  10.13.3.232     80/tcp,443/tcp     Unit is ready
+placement/0*                active    idle   2/lxd/5  10.13.3.248     8778/tcp           Unit is ready
+rabbitmq-server/0*          active    idle   0/lxd/3  10.13.3.225     5672/tcp           Unit is ready
+swift-proxy/0*              active    idle   0/lxd/4  10.13.3.210     8080/tcp           Unit is ready
+swift-storage-z1/0*         active    idle   0        10.13.3.10                         Unit is ready
+swift-storage-z2/0*         active    idle   1        10.13.3.11                         Unit is ready
+swift-storage-z3/0*         active    idle   2        10.13.3.12                         Unit is ready
+swift-storage-z4/0*         active    idle   3        10.13.3.13                         Unit is ready
+swift-storage-z5/0*         active    idle   4        10.13.3.14                         Unit is ready
+
+Machine  State    DNS          Inst id              Series  AZ  Message
+0        started  10.13.3.10   manual:10.13.3.10    focal       Manually provisioned machine
+0/lxd/1  started  10.13.3.251  juju-d4f73f-0-lxd-1  focal       Container started
+0/lxd/2  started  10.13.3.207  juju-d4f73f-0-lxd-2  focal       Container started
+0/lxd/3  started  10.13.3.225  juju-d4f73f-0-lxd-3  focal       Container started
+0/lxd/4  started  10.13.3.210  juju-d4f73f-0-lxd-4  focal       Container started
+1        started  10.13.3.11   manual:10.13.3.11    focal       Manually provisioned machine
+1/lxd/1  started  10.13.3.228  juju-d4f73f-1-lxd-1  focal       Container started
+1/lxd/2  started  10.13.3.215  juju-d4f73f-1-lxd-2  focal       Container started
+1/lxd/3  started  10.13.3.231  juju-d4f73f-1-lxd-3  focal       Container started
+1/lxd/4  started  10.13.3.192  juju-d4f73f-1-lxd-4  focal       Container started
+2        started  10.13.3.12   manual:10.13.3.12    focal       Manually provisioned machine
+2/lxd/1  started  10.13.3.222  juju-d4f73f-2-lxd-1  focal       Container started
+2/lxd/2  started  10.13.3.245  juju-d4f73f-2-lxd-2  focal       Container started
+2/lxd/3  started  10.13.3.241  juju-d4f73f-2-lxd-3  focal       Container started
+2/lxd/4  started  10.13.3.195  juju-d4f73f-2-lxd-4  focal       Container started
+2/lxd/5  started  10.13.3.248  juju-d4f73f-2-lxd-5  focal       Container started
+3        started  10.13.3.13   manual:10.13.3.13    focal       Manually provisioned machine
+3/lxd/1  started  10.13.3.197  juju-d4f73f-3-lxd-1  focal       Container started
+3/lxd/2  started  10.13.3.250  juju-d4f73f-3-lxd-2  focal       Container started
+3/lxd/3  started  10.13.3.232  juju-d4f73f-3-lxd-3  focal       Container started
+4        started  10.13.3.14   manual:10.13.3.14    focal       Manually provisioned machine
+
