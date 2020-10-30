@@ -1,0 +1,9 @@
+jenkins@mosci-s390x-jslave-persist-67:~/tools/openstack-charm-testing$ openstack hypervisor list
++----+---------------------+-----------------+------------+-------+
+| ID | Hypervisor Hostname | Hypervisor Type | Host IP    | State |
++----+---------------------+-----------------+------------+-------+
+|  1 | s4lpd               | QEMU            | 10.13.3.13 | up    |
+|  2 | s4lpc               | QEMU            | 10.13.3.12 | up    |
+|  3 | s4lpb               | QEMU            | 10.13.3.11 | up    |
++----+---------------------+-----------------+------------+-------+
+
