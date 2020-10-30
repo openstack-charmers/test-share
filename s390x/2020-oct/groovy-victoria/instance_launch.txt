@@ -1,0 +1,36 @@
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name testkey --nic net-id=7e1debc6-24c6-4d3e-97fe-3b9b19731225 --min 1 --max 1 bionic-s390x-150558
+	
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | s4lpb                                                    |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | s4lpb                                                    |
+| OS-EXT-SRV-ATTR:instance_name       | instance-00000001                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2020-10-30T15:07:11.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.1.178                                     |
+| adminPass                           | UFWcYYJNzxG2                                             |
+| config_drive                        |                                                          |
+| created                             | 2020-10-30T15:06:01Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | 27f0b408ded8d5e049e15a2740fc73ba62b88689bd455bf7f550f308 |
+| id                                  | 54cfbcbc-03cf-4aa1-a309-80f6de1705df                     |
+| image                               | bionic-s390x (7dde1be6-644e-4a73-87fb-b4be5e99aa81)      |
+| key_name                            | testkey                                                  |
+| name                                | bionic-s390x-150558                                      |
+| progress                            | 0                                                        |
+| project_id                          | ad749e9225a74e8b942598d9562c4966                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2020-10-30T15:07:12Z                                     |
+| user_id                             | 9e89bb4f9d224e808c26812f0b41974b                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+

@@ -1,0 +1,8 @@
+jenkins@mosci-s390x-jslave-persist-67:~/tools/openstack-charm-testing$ openstack image list
++--------------------------------------+--------------+--------+
+| ID                                   | Name         | Status |
++--------------------------------------+--------------+--------+
+| 7dde1be6-644e-4a73-87fb-b4be5e99aa81 | bionic-s390x | active |
+| 925db2a6-dbe0-4f2a-98a1-e6cab147d298 | xenial-s390x | active |
++--------------------------------------+--------------+--------+
+
