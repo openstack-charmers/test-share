@@ -1,0 +1,68 @@
+Model                      Controller                 Cloud/Region  Version  SLA          Timestamp
+ppc64el-mosci-ruxton-maas  ppc64el-mosci-ruxton-maas  ruxton-maas   2.4.3    unsupported  11:00:53Z
+
+App                    Version        Status  Scale  Charm                  Store       Rev  OS      Notes
+ceph-mon               13.2.1+dfsg1   active      3  ceph-mon               jujucharms  342  ubuntu  
+ceph-osd               13.2.1+dfsg1   active      3  ceph-osd               jujucharms  366  ubuntu  
+ceph-radosgw           13.2.1+dfsg1   active      1  ceph-radosgw           jujucharms  296  ubuntu  
+cinder                 13.0.0         active      1  cinder                 jujucharms  340  ubuntu  
+cinder-ceph            13.0.0         active      1  cinder-ceph            jujucharms  272  ubuntu  
+glance                 17.0.0         active      1  glance                 jujucharms  330  ubuntu  
+keystone               14.0.0         active      1  keystone               jujucharms  379  ubuntu  
+mysql                  5.7.20-29.24   active      1  percona-cluster        jujucharms  310  ubuntu  
+neutron-api            13.0.0         active      1  neutron-api            jujucharms  359  ubuntu  
+neutron-gateway        13.0.0         active      1  neutron-gateway        jujucharms  335  ubuntu  
+neutron-openvswitch    13.0.0         active      3  neutron-openvswitch    jujucharms  319  ubuntu  
+nova-cloud-controller  18.0.0         active      1  nova-cloud-controller  jujucharms  367  ubuntu  
+nova-compute           18.0.0         active      3  nova-compute           jujucharms  389  ubuntu  
+ntp                    4.2.8p10+dfsg  active      4  ntp                    jujucharms   27  ubuntu  
+openstack-dashboard    14.0.0         active      1  openstack-dashboard    jujucharms  342  ubuntu  
+rabbitmq-server        3.6.10         active      1  rabbitmq-server        jujucharms  308  ubuntu  
+
+Unit                      Workload  Agent  Machine  Public address  Ports              Message
+ceph-mon/0                active    idle   1/lxd/0  10.245.168.42                      Unit is ready and clustered
+ceph-mon/1*               active    idle   2/lxd/0  10.245.168.40                      Unit is ready and clustered
+ceph-mon/2                active    idle   3/lxd/0  10.245.168.45                      Unit is ready and clustered
+ceph-osd/0                active    idle   1        10.245.168.24                      Unit is ready (1 OSD)
+ceph-osd/1*               active    idle   2        10.245.168.25                      Unit is ready (1 OSD)
+ceph-osd/2                active    idle   3        10.245.168.32                      Unit is ready (1 OSD)
+ceph-radosgw/0*           active    idle   0/lxd/0  10.245.168.34   80/tcp             Unit is ready
+cinder/0*                 active    idle   1/lxd/1  10.245.168.41   8776/tcp           Unit is ready
+  cinder-ceph/0*          active    idle            10.245.168.41                      Unit is ready
+glance/0*                 active    idle   2/lxd/1  10.245.168.60   9292/tcp           Unit is ready
+keystone/0*               active    idle   3/lxd/1  10.245.168.46   5000/tcp           Unit is ready
+mysql/0*                  active    idle   0/lxd/1  10.245.168.33   3306/tcp           Unit is ready
+neutron-api/0*            active    idle   1/lxd/2  10.245.168.43   9696/tcp           Unit is ready
+neutron-gateway/0*        active    idle   0        10.245.168.23                      Unit is ready
+  ntp/2                   active    idle            10.245.168.23   123/udp            Ready
+nova-cloud-controller/0*  active    idle   2/lxd/2  10.245.168.35   8774/tcp,8778/tcp  Unit is ready
+nova-compute/0            active    idle   1        10.245.168.24                      Unit is ready
+  neutron-openvswitch/0*  active    idle            10.245.168.24                      Unit is ready
+  ntp/0*                  active    idle            10.245.168.24   123/udp            Ready
+nova-compute/1*           active    idle   2        10.245.168.25                      Unit is ready
+  neutron-openvswitch/2   active    idle            10.245.168.25                      Unit is ready
+  ntp/3                   active    idle            10.245.168.25   123/udp            Ready
+nova-compute/2            active    idle   3        10.245.168.32                      Unit is ready
+  neutron-openvswitch/1   active    idle            10.245.168.32                      Unit is ready
+  ntp/1                   active    idle            10.245.168.32   123/udp            Ready
+openstack-dashboard/0*    active    idle   3/lxd/2  10.245.168.44   80/tcp,443/tcp     Unit is ready
+rabbitmq-server/0*        active    idle   0/lxd/2  10.245.168.61   5672/tcp           Unit is ready
+
+Machine  State    DNS            Inst id              Series  AZ       Message
+0        started  10.245.168.23  gxy47x               bionic  default  Deployed
+0/lxd/0  started  10.245.168.34  juju-f60ee8-0-lxd-0  bionic  default  Container started
+0/lxd/1  started  10.245.168.33  juju-f60ee8-0-lxd-1  bionic  default  Container started
+0/lxd/2  started  10.245.168.61  juju-f60ee8-0-lxd-2  bionic  default  Container started
+1        started  10.245.168.24  fb8bkb               bionic  default  Deployed
+1/lxd/0  started  10.245.168.42  juju-f60ee8-1-lxd-0  bionic  default  Container started
+1/lxd/1  started  10.245.168.41  juju-f60ee8-1-lxd-1  bionic  default  Container started
+1/lxd/2  started  10.245.168.43  juju-f60ee8-1-lxd-2  bionic  default  Container started
+2        started  10.245.168.25  877gbf               bionic  default  Deployed
+2/lxd/0  started  10.245.168.40  juju-f60ee8-2-lxd-0  bionic  default  Container started
+2/lxd/1  started  10.245.168.60  juju-f60ee8-2-lxd-1  bionic  default  Container started
+2/lxd/2  started  10.245.168.35  juju-f60ee8-2-lxd-2  bionic  default  Container started
+3        started  10.245.168.32  xpwspa               bionic  default  Deployed
+3/lxd/0  started  10.245.168.45  juju-f60ee8-3-lxd-0  bionic  default  Container started
+3/lxd/1  started  10.245.168.46  juju-f60ee8-3-lxd-1  bionic  default  Container started
+3/lxd/2  started  10.245.168.44  juju-f60ee8-3-lxd-2  bionic  default  Container started
+
