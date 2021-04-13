@@ -1,0 +1,345 @@
++ output=
+++ awk '{print $1}'
+++ grep charmstore
+++ juju status
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config ceph-mon openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config ceph-mon source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config ceph-osd openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config ceph-osd source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config ceph-radosgw openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config ceph-radosgw source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config cinder openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config cinder-ceph openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config cinder-ceph source
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config cinder-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config cinder-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config dashboard-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config dashboard-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config glance openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config glance-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config glance-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config keystone openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config keystone-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config keystone-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config mysql openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config mysql source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config neutron-api openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config neutron-gateway openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config neutron-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config neutron-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config neutron-openvswitch openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config neutron-openvswitch source
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config nova-cloud-controller openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config nova-compute openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config nova-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config nova-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config ntp openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config ntp source
++ origin=
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source='
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config openstack-dashboard openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config placement openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config placement-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config placement-mysql-router source
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config rabbitmq-server openstack-origin
++ origin='{}'
++ exit_code=1
++ [[ 1 == \0 ]]
++ for config in openstack-origin source
+++ juju config rabbitmq-server source
++ origin=
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source='
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-proxy openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-storage-z1 openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby\nswift-storage-z1: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-storage-z2 openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby\nswift-storage-z1: openstack-origin=cloud:focal-wallaby\nswift-storage-z2: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-storage-z3 openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby\nswift-storage-z1: openstack-origin=cloud:focal-wallaby\nswift-storage-z2: openstack-origin=cloud:focal-wallaby\nswift-storage-z3: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-storage-z4 openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby\nswift-storage-z1: openstack-origin=cloud:focal-wallaby\nswift-storage-z2: openstack-origin=cloud:focal-wallaby\nswift-storage-z3: openstack-origin=cloud:focal-wallaby\nswift-storage-z4: openstack-origin=cloud:focal-wallaby'
++ break
++ for application in $(juju status | grep charmstore | awk '{print $1}')
++ for config in openstack-origin source
+++ juju config swift-storage-z5 openstack-origin
++ origin=cloud:focal-wallaby
++ exit_code=0
++ [[ 0 == \0 ]]
++ output='\nceph-mon: source=cloud:focal-wallaby\nceph-osd: source=cloud:focal-wallaby\nceph-radosgw: source=cloud:focal-wallaby\ncinder: openstack-origin=cloud:focal-wallaby\ncinder-mysql-router: source=cloud:focal-wallaby\ndashboard-mysql-router: source=cloud:focal-wallaby\nglance: openstack-origin=cloud:focal-wallaby\nglance-mysql-router: source=cloud:focal-wallaby\nkeystone: openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router: source=cloud:focal-wallaby\nmysql: source=cloud:focal-wallaby\nneutron-api: openstack-origin=cloud:focal-wallaby\nneutron-gateway: openstack-origin=cloud:focal-wallaby\nneutron-mysql-router: source=cloud:focal-wallaby\nnova-cloud-controller: openstack-origin=cloud:focal-wallaby\nnova-compute: openstack-origin=cloud:focal-wallaby\nnova-mysql-router: source=cloud:focal-wallaby\nntp: source=\nopenstack-dashboard: openstack-origin=cloud:focal-wallaby\nplacement: openstack-origin=cloud:focal-wallaby\nplacement-mysql-router: source=cloud:focal-wallaby\nrabbitmq-server: source=\nswift-proxy: openstack-origin=cloud:focal-wallaby\nswift-storage-z1: openstack-origin=cloud:focal-wallaby\nswift-storage-z2: openstack-origin=cloud:focal-wallaby\nswift-storage-z3: openstack-origin=cloud:focal-wallaby\nswift-storage-z4: openstack-origin=cloud:focal-wallaby\nswift-storage-z5: openstack-origin=cloud:focal-wallaby'
++ break
++ echo -e '\nceph-mon:' 'source=cloud:focal-wallaby\nceph-osd:' 'source=cloud:focal-wallaby\nceph-radosgw:' 'source=cloud:focal-wallaby\ncinder:' 'openstack-origin=cloud:focal-wallaby\ncinder-mysql-router:' 'source=cloud:focal-wallaby\ndashboard-mysql-router:' 'source=cloud:focal-wallaby\nglance:' 'openstack-origin=cloud:focal-wallaby\nglance-mysql-router:' 'source=cloud:focal-wallaby\nkeystone:' 'openstack-origin=cloud:focal-wallaby\nkeystone-mysql-router:' 'source=cloud:focal-wallaby\nmysql:' 'source=cloud:focal-wallaby\nneutron-api:' 'openstack-origin=cloud:focal-wallaby\nneutron-gateway:' 'openstack-origin=cloud:focal-wallaby\nneutron-mysql-router:' 'source=cloud:focal-wallaby\nnova-cloud-controller:' 'openstack-origin=cloud:focal-wallaby\nnova-compute:' 'openstack-origin=cloud:focal-wallaby\nnova-mysql-router:' 'source=cloud:focal-wallaby\nntp:' 'source=\nopenstack-dashboard:' 'openstack-origin=cloud:focal-wallaby\nplacement:' 'openstack-origin=cloud:focal-wallaby\nplacement-mysql-router:' 'source=cloud:focal-wallaby\nrabbitmq-server:' 'source=\nswift-proxy:' 'openstack-origin=cloud:focal-wallaby\nswift-storage-z1:' 'openstack-origin=cloud:focal-wallaby\nswift-storage-z2:' 'openstack-origin=cloud:focal-wallaby\nswift-storage-z3:' 'openstack-origin=cloud:focal-wallaby\nswift-storage-z4:' 'openstack-origin=cloud:focal-wallaby\nswift-storage-z5:' openstack-origin=cloud:focal-wallaby
+
+ceph-mon: source=cloud:focal-wallaby
+ceph-osd: source=cloud:focal-wallaby
+ceph-radosgw: source=cloud:focal-wallaby
+cinder: openstack-origin=cloud:focal-wallaby
+cinder-mysql-router: source=cloud:focal-wallaby
+dashboard-mysql-router: source=cloud:focal-wallaby
+glance: openstack-origin=cloud:focal-wallaby
+glance-mysql-router: source=cloud:focal-wallaby
+keystone: openstack-origin=cloud:focal-wallaby
+keystone-mysql-router: source=cloud:focal-wallaby
+mysql: source=cloud:focal-wallaby
+neutron-api: openstack-origin=cloud:focal-wallaby
+neutron-gateway: openstack-origin=cloud:focal-wallaby
+neutron-mysql-router: source=cloud:focal-wallaby
+nova-cloud-controller: openstack-origin=cloud:focal-wallaby
+nova-compute: openstack-origin=cloud:focal-wallaby
+nova-mysql-router: source=cloud:focal-wallaby
+ntp: source=
+openstack-dashboard: openstack-origin=cloud:focal-wallaby
+placement: openstack-origin=cloud:focal-wallaby
+placement-mysql-router: source=cloud:focal-wallaby
+rabbitmq-server: source=
+swift-proxy: openstack-origin=cloud:focal-wallaby
+swift-storage-z1: openstack-origin=cloud:focal-wallaby
+swift-storage-z2: openstack-origin=cloud:focal-wallaby
+swift-storage-z3: openstack-origin=cloud:focal-wallaby
+swift-storage-z4: openstack-origin=cloud:focal-wallaby
+swift-storage-z5: openstack-origin=cloud:focal-wallaby

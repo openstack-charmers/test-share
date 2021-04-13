@@ -1,0 +1,43 @@
++ openstack keypair create --public-key /home/ubuntu/.ssh/id_rsa.pub mykey
+Key pair 'mykey' already exists. (HTTP 409) (Request-ID: req-a4f26837-ceda-4109-bb38-91dc3808574c)
++ true
+++ awk '{print $2}'
+++ grep private
+++ openstack network list
++ private_network_id=3b4d5e8c-d1b2-4693-9bdc-42b73ca106ab
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=3b4d5e8c-d1b2-4693-9bdc-42b73ca106ab my-bionic-s390x
+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | s4lp6                                                    |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | s4lp6                                                    |
+| OS-EXT-SRV-ATTR:instance_name       | instance-0000000e                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2021-04-13T13:34:34.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.3.202                                     |
+| adminPass                           | 8mfo6dByPHCh                                             |
+| config_drive                        |                                                          |
+| created                             | 2021-04-13T13:33:57Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | 912c354c08e7f4e5b50bf3f558b04408c18ce1b7501cd5aa765f63a0 |
+| id                                  | 6526e24e-2003-4c28-b9cc-ed05bfb36b26                     |
+| image                               | bionic-s390x (20537d8f-6cb0-4778-876f-75f649a02d29)      |
+| key_name                            | mykey                                                    |
+| name                                | my-bionic-s390x                                          |
+| progress                            | 0                                                        |
+| project_id                          | 31f5393af78241ff9460c80acae5d75b                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2021-04-13T13:34:35Z                                     |
+| user_id                             | e0ae493cf11040908716714eccee9f83                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
