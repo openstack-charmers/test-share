@@ -1,4 +1,4 @@
-Tempest validation of OpenStack focal-wallaby (OVS) on s390x
+Tempest validation of OpenStack focal-ussuri (OVN) on s390x
 
 The single tempest smoke failure is caused by
 [a known issue](https://bugs.launchpad.net/charm-keystone/+bug/1830076) that we

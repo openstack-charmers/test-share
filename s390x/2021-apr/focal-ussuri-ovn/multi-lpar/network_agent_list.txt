@@ -1,0 +1,11 @@
++ openstack network agent list
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+-------------------------------+
+| ID                                   | Agent Type                   | Host  | Availability Zone | Alive | State | Binary                        |
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+-------------------------------+
+| s4lp7                                | OVN Controller agent         | s4lp7 |                   | :-)   | UP    | ovn-controller                |
+| a7c7b19f-ff1c-4bf1-914c-1b68d9ed040a | OVN Metadata agent           | s4lp7 |                   | :-)   | UP    | networking-ovn-metadata-agent |
+| s4lp6                                | OVN Controller agent         | s4lp6 |                   | :-)   | UP    | ovn-controller                |
+| 382c9326-e41b-4dd8-b000-bafda12b27aa | OVN Metadata agent           | s4lp6 |                   | :-)   | UP    | networking-ovn-metadata-agent |
+| s4lp5                                | OVN Controller Gateway agent | s4lp5 |                   | :-)   | UP    | ovn-controller                |
+| c4ff9cb4-d941-4eda-abe8-5ae57e7b6230 | OVN Metadata agent           | s4lp5 |                   | :-)   | UP    | networking-ovn-metadata-agent |
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+-------------------------------+
