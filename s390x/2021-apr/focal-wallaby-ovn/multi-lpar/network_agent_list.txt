@@ -1,0 +1,8 @@
++ openstack network agent list
++-------+----------------------+-------+-------------------+-------+-------+----------------+
+| ID    | Agent Type           | Host  | Availability Zone | Alive | State | Binary         |
++-------+----------------------+-------+-------------------+-------+-------+----------------+
+| s4lp7 | OVN Controller agent | s4lp7 |                   | :-)   | UP    | ovn-controller |
+| s4lp5 | OVN Controller agent | s4lp5 |                   | :-)   | UP    | ovn-controller |
+| s4lp6 | OVN Controller agent | s4lp6 |                   | :-)   | UP    | ovn-controller |
++-------+----------------------+-------+-------------------+-------+-------+----------------+
