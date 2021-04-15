@@ -1,0 +1,48 @@
++ openstack keypair create --public-key /home/ubuntu/.ssh/id_rsa.pub mykey
++-------------+-------------------------------------------------+
+| Field       | Value                                           |
++-------------+-------------------------------------------------+
+| fingerprint | 9f:b1:6b:c0:9d:e7:dd:61:60:92:17:27:5d:bf:87:5f |
+| name        | mykey                                           |
+| user_id     | 88aa37aa26da4ff2a8e613bdec35e999                |
++-------------+-------------------------------------------------+
+++ awk '{print $2}'
+++ grep private
+++ openstack network list
++ private_network_id=f852bb46-8a10-429b-b34a-975a44eed962
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=f852bb46-8a10-429b-b34a-975a44eed962 my-bionic-s390x
+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | s4lp5                                                    |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | s4lp5                                                    |
+| OS-EXT-SRV-ATTR:instance_name       | instance-0000000e                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2021-04-13T21:37:02.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.1.6                                       |
+| adminPass                           | ie7GcGMiV4fu                                             |
+| config_drive                        |                                                          |
+| created                             | 2021-04-13T21:35:35Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | 75bc46d6667921689aa95416ad1c87cc3d13ea7cd36604d0eecf8d40 |
+| id                                  | 9f9a3f08-a5f4-44b2-8e1a-569ff7c128ff                     |
+| image                               | bionic-s390x (b898dcb0-a467-41f0-815a-e52caed7728d)      |
+| key_name                            | mykey                                                    |
+| name                                | my-bionic-s390x                                          |
+| progress                            | 0                                                        |
+| project_id                          | 7d336ee6d56a425aa6550cb1cd160b5c                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2021-04-13T21:37:02Z                                     |
+| user_id                             | 88aa37aa26da4ff2a8e613bdec35e999                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+

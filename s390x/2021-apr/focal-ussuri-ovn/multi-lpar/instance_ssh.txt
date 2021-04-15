@@ -1,0 +1,8 @@
+++ awk '{print $4}'
+++ grep floating_ip_address
+++ openstack floating ip create ext_net
++ ip_addr=10.13.3.129
++ openstack server add floating ip my-bionic-s390x 10.13.3.129
++ ssh 10.13.3.129 -i /home/ubuntu/.ssh/id_rsa echo SSH works
+Warning: Permanently added '10.13.3.129' (ECDSA) to the list of known hosts.
+SSH works
