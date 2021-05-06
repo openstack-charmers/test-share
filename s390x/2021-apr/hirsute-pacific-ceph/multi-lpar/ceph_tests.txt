@@ -1,0 +1,9 @@
++ juju run -u ceph-mon/leader -- sudo ceph osd lspools
+1 device_health_metrics
++ juju run -u ceph-mon/leader -- sudo ceph osd df
+ID  CLASS  WEIGHT   REWEIGHT  SIZE    RAW USE  DATA     OMAP     META     AVAIL   %USE  VAR   PGS  STATUS
+ 0    ssd  0.02010   1.00000  21 GiB  5.5 MiB  232 KiB    1 KiB  5.2 MiB  21 GiB  0.03  1.06    1      up
+ 1    ssd  0.02010   1.00000  21 GiB  5.0 MiB  232 KiB      0 B  4.8 MiB  21 GiB  0.02  0.98    1      up
+ 2    ssd  0.02010   1.00000  21 GiB  5.0 MiB  232 KiB      0 B  4.8 MiB  21 GiB  0.02  0.96    1      up
+                       TOTAL  62 GiB   16 MiB  696 KiB  1.1 KiB   15 MiB  62 GiB  0.02                   
+MIN/MAX VAR: 0.96/1.06  STDDEV: 0.00

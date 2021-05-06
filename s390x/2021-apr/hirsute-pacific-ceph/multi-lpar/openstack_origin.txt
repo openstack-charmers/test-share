@@ -1,0 +1,19 @@
+++ juju config ceph-mon openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-mon source
++ origin=distro-proposed
++ exit_code=0
++ set +x
+++ juju config ceph-osd openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-osd source
++ origin=distro-proposed
++ exit_code=0
++ set +x
+
+ceph-mon: source=distro-proposed
+ceph-osd: source=distro-proposed
