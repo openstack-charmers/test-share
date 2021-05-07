@@ -1,0 +1,24 @@
++ juju status
+Model    Controller        Cloud/Region   Version  SLA          Timestamp
+hirsute  s390x-controller  s390x/default  2.8.10   unsupported  15:33:26Z
+
+App       Version  Status  Scale  Charm     Store       Channel  Rev  OS      Message
+ceph-mon  16.2.1   active      3  ceph-mon  charmstore           465  ubuntu  Unit is ready and clustered
+ceph-osd  16.2.1   active      3  ceph-osd  charmstore           490  ubuntu  Unit is ready (1 OSD)
+
+Unit         Workload  Agent  Machine  Public address  Ports  Message
+ceph-mon/0*  active    idle   0/lxd/0  10.13.3.206            Unit is ready and clustered
+ceph-mon/1   active    idle   1/lxd/0  10.13.3.247            Unit is ready and clustered
+ceph-mon/2   active    idle   2/lxd/0  10.13.3.208            Unit is ready and clustered
+ceph-osd/0*  active    idle   0        10.13.3.7              Unit is ready (1 OSD)
+ceph-osd/1   active    idle   1        10.13.3.8              Unit is ready (1 OSD)
+ceph-osd/2   active    idle   2        10.13.3.9              Unit is ready (1 OSD)
+
+Machine  State    DNS          Inst id              Series   AZ  Message
+0        started  10.13.3.7    manual:10.13.3.7     hirsute      Manually provisioned machine
+0/lxd/0  started  10.13.3.206  juju-540d01-0-lxd-0  hirsute      Container started
+1        started  10.13.3.8    manual:10.13.3.8     hirsute      Manually provisioned machine
+1/lxd/0  started  10.13.3.247  juju-540d01-1-lxd-0  hirsute      Container started
+2        started  10.13.3.9    manual:10.13.3.9     hirsute      Manually provisioned machine
+2/lxd/0  started  10.13.3.208  juju-540d01-2-lxd-0  hirsute      Container started
+
