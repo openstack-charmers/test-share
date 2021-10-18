@@ -1,0 +1,238 @@
+++ juju config ceph-mon openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-mon source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config ceph-osd openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-osd source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config ceph-radosgw openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-radosgw source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config cinder openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config cinder-ceph openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-ceph source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config dashboard-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config dashboard-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config glance openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config glance-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config glance-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config keystone openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config keystone-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config keystone-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config mysql-innodb-cluster openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config mysql-innodb-cluster source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config neutron-api openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config neutron-api-plugin-ovn openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-api-plugin-ovn source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config nova-cloud-controller openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config nova-compute openstack-origin
++ origin=ppa:corey.bryant/focal-xena
++ exit_code=0
++ set +x
+++ juju config nova-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config nova-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config ntp openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ntp source
++ origin=
++ exit_code=0
++ set +x
+++ juju config openstack-dashboard openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config ovn-central openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ovn-central source
++ origin=ppa:corey.bryant/focal-xena
++ exit_code=0
++ set +x
+++ juju config ovn-chassis openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ovn-chassis source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config placement openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config placement-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config placement-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config rabbitmq-server openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config rabbitmq-server source
++ origin=
++ exit_code=0
++ set +x
+++ juju config swift-proxy openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config swift-storage-z1 openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config swift-storage-z2 openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config swift-storage-z3 openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config swift-storage-z4 openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config swift-storage-z5 openstack-origin
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+++ juju config vault openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault-mysql-router source
++ origin=cloud:focal-xena
++ exit_code=0
++ set +x
+
+ceph-mon: source=cloud:focal-xena
+ceph-osd: source=cloud:focal-xena
+ceph-radosgw: source=cloud:focal-xena
+cinder: openstack-origin=cloud:focal-xena
+cinder-mysql-router: source=cloud:focal-xena
+dashboard-mysql-router: source=cloud:focal-xena
+glance: openstack-origin=cloud:focal-xena
+glance-mysql-router: source=cloud:focal-xena
+keystone: openstack-origin=cloud:focal-xena
+keystone-mysql-router: source=cloud:focal-xena
+mysql-innodb-cluster: source=cloud:focal-xena
+neutron-api: openstack-origin=cloud:focal-xena
+neutron-mysql-router: source=cloud:focal-xena
+nova-cloud-controller: openstack-origin=cloud:focal-xena
+nova-compute: openstack-origin=ppa:corey.bryant/focal-xena
+nova-mysql-router: source=cloud:focal-xena
+ntp: source=
+openstack-dashboard: openstack-origin=cloud:focal-xena
+ovn-central: source=ppa:corey.bryant/focal-xena
+placement: openstack-origin=cloud:focal-xena
+placement-mysql-router: source=cloud:focal-xena
+rabbitmq-server: source=
+swift-proxy: openstack-origin=cloud:focal-xena
+swift-storage-z1: openstack-origin=cloud:focal-xena
+swift-storage-z2: openstack-origin=cloud:focal-xena
+swift-storage-z3: openstack-origin=cloud:focal-xena
+swift-storage-z4: openstack-origin=cloud:focal-xena
+swift-storage-z5: openstack-origin=cloud:focal-xena
+vault-mysql-router: source=cloud:focal-xena
