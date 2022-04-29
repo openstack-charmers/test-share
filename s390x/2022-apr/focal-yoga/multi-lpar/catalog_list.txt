@@ -1,0 +1,61 @@
++ openstack catalog list
++-----------+--------------+-------------------------------------------------------------------------------+
+| Name      | Type         | Endpoints                                                                     |
++-----------+--------------+-------------------------------------------------------------------------------+
+| keystone  | identity     | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.249:5000/v3                                         |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.249:35357/v3                                         |
+|           |              | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.249:5000/v3                                       |
+|           |              |                                                                               |
+| glance    | image        | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.200:9292                                             |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.200:9292                                            |
+|           |              | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.200:9292                                          |
+|           |              |                                                                               |
+| placement | placement    | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.213:8778                                            |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.213:8778                                             |
+|           |              | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.213:8778                                          |
+|           |              |                                                                               |
+| neutron   | network      | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.211:9696                                          |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.211:9696                                             |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.211:9696                                            |
+|           |              |                                                                               |
+| cinderv3  | volumev3     | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.246:8776/v3/04e83309d71244de88d522870be84669         |
+|           |              | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.246:8776/v3/04e83309d71244de88d522870be84669      |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.246:8776/v3/04e83309d71244de88d522870be84669        |
+|           |              |                                                                               |
+| s3        | s3           | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.225:8080                                          |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.225:8080                                            |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.225:8080                                             |
+|           |              |                                                                               |
+| swift     | object-store | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.225:8080/v1/AUTH_04e83309d71244de88d522870be84669 |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.225:8080                                             |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.225:8080/v1/AUTH_04e83309d71244de88d522870be84669   |
+|           |              |                                                                               |
+| nova      | compute      | RegionOne                                                                     |
+|           |              |   internal: https://10.13.3.217:8774/v2.1                                     |
+|           |              | RegionOne                                                                     |
+|           |              |   admin: https://10.13.3.217:8774/v2.1                                        |
+|           |              | RegionOne                                                                     |
+|           |              |   public: https://10.13.3.217:8774/v2.1                                       |
+|           |              |                                                                               |
++-----------+--------------+-------------------------------------------------------------------------------+

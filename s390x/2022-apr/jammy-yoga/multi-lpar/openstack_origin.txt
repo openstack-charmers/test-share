@@ -1,0 +1,209 @@
+++ juju config ceph-mon openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-mon source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config ceph-osd openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-osd source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config ceph-radosgw openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-radosgw source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config cinder openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config cinder-ceph openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-ceph source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config dashboard-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config dashboard-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config glance openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config glance-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config glance-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config keystone openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config keystone-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config keystone-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config mysql openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config mysql source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config neutron-api openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config neutron-gateway openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config neutron-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config neutron-openvswitch openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-openvswitch source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config nova-cloud-controller openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config nova-compute openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config nova-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config nova-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config ntp openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ntp source
++ origin=
++ exit_code=0
++ set +x
+++ juju config openstack-dashboard openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config placement openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config placement-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config placement-mysql-router source
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config rabbitmq-server openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config rabbitmq-server source
++ origin=
++ exit_code=0
++ set +x
+++ juju config swift-proxy openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config swift-storage-z1 openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config swift-storage-z2 openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config swift-storage-z3 openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config swift-storage-z4 openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+++ juju config swift-storage-z5 openstack-origin
++ origin=cloud:focal-yoga
++ exit_code=0
++ set +x
+
+ceph-mon: source=cloud:focal-yoga
+ceph-osd: source=cloud:focal-yoga
+ceph-radosgw: source=cloud:focal-yoga
+cinder: openstack-origin=cloud:focal-yoga
+cinder-mysql-router: source=cloud:focal-yoga
+dashboard-mysql-router: source=cloud:focal-yoga
+glance: openstack-origin=cloud:focal-yoga
+glance-mysql-router: source=cloud:focal-yoga
+keystone: openstack-origin=cloud:focal-yoga
+keystone-mysql-router: source=cloud:focal-yoga
+mysql: source=cloud:focal-yoga
+neutron-api: openstack-origin=cloud:focal-yoga
+neutron-gateway: openstack-origin=cloud:focal-yoga
+neutron-mysql-router: source=cloud:focal-yoga
+nova-cloud-controller: openstack-origin=cloud:focal-yoga
+nova-compute: openstack-origin=cloud:focal-yoga
+nova-mysql-router: source=cloud:focal-yoga
+ntp: source=
+openstack-dashboard: openstack-origin=cloud:focal-yoga
+placement: openstack-origin=cloud:focal-yoga
+placement-mysql-router: source=cloud:focal-yoga
+rabbitmq-server: source=
+swift-proxy: openstack-origin=cloud:focal-yoga
+swift-storage-z1: openstack-origin=cloud:focal-yoga
+swift-storage-z2: openstack-origin=cloud:focal-yoga
+swift-storage-z3: openstack-origin=cloud:focal-yoga
+swift-storage-z4: openstack-origin=cloud:focal-yoga
+swift-storage-z5: openstack-origin=cloud:focal-yoga

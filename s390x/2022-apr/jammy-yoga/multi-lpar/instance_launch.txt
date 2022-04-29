@@ -1,0 +1,52 @@
++ openstack keypair create --public-key /home/ubuntu/.ssh/id_rsa.pub mykey
++-------------+-------------------------------------------------+
+| Field       | Value                                           |
++-------------+-------------------------------------------------+
+| created_at  | None                                            |
+| fingerprint | a7:0e:2b:8a:67:f9:62:2d:69:3c:ae:17:78:43:c6:9d |
+| id          | mykey                                           |
+| is_deleted  | None                                            |
+| name        | mykey                                           |
+| type        | ssh                                             |
+| user_id     | 3d816f8c72de401ebc0c4deef063ef4d                |
++-------------+-------------------------------------------------+
+++ openstack network list
+++ awk '{print $2}'
+++ grep private
++ private_network_id=150537be-fa52-4b11-af50-5ce6dee4f937
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=150537be-fa52-4b11-af50-5ce6dee4f937 my-bionic-s390x
+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | s4lp6                                                    |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | s4lp6                                                    |
+| OS-EXT-SRV-ATTR:instance_name       | instance-0000000e                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2022-01-04T15:51:20.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.0.73                                      |
+| adminPass                           | 8XDsfRWiaFPc                                             |
+| config_drive                        |                                                          |
+| created                             | 2022-01-04T15:50:36Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | b589fcb1bf6e67a3ce0a6204212fade60f10277d42648be389b52fc2 |
+| id                                  | 095a141a-2238-4e17-bf78-ba5df5ea6c74                     |
+| image                               | bionic-s390x (ea11caf2-bc1b-42d0-8441-f5098a92802d)      |
+| key_name                            | mykey                                                    |
+| name                                | my-bionic-s390x                                          |
+| progress                            | 0                                                        |
+| project_id                          | f3ac5b14d17948c8b93ac03f395f37f0                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2022-01-04T15:51:21Z                                     |
+| user_id                             | 3d816f8c72de401ebc0c4deef063ef4d                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
