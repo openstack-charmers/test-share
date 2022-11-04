@@ -1,0 +1,23 @@
++ juju run -u ceph-mon/leader -- sudo ceph osd lspools
+1 default.rgw.buckets.data
+2 .mgr
+3 default.rgw.control
+4 default.rgw.data.root
+5 default.rgw.gc
+6 default.rgw.log
+7 default.rgw.intent-log
+8 default.rgw.meta
+9 default.rgw.otp
+10 default.rgw.usage
+11 default.rgw.users.keys
+12 default.rgw.users.email
+13 default.rgw.users.swift
+14 default.rgw.users.uid
+15 default.rgw.buckets.extra
+16 default.rgw.buckets.index
+17 .rgw.root
+18 cinder-ceph
+19 glance
+
++ juju run -u ceph-mon/leader -- sudo ceph osd df
+ERROR timed out waiting for result from: unit ceph-mon/2
