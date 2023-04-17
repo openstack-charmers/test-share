@@ -1,0 +1,225 @@
+++ juju config ceph-mon openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-mon source
++ origin=yoga
++ exit_code=0
++ set +x
+++ juju config ceph-osd openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-osd source
++ origin=yoga
++ exit_code=0
++ set +x
+++ juju config ceph-radosgw openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config ceph-radosgw source
++ origin=yoga
++ exit_code=0
++ set +x
+++ juju config cinder openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config cinder-ceph openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-ceph source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config cinder-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config dashboard-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config dashboard-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config glance openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config glance-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config glance-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config keep openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config keep source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config keystone openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config keystone-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config keystone-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config mysql openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config mysql source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config neutron-api openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config neutron-gateway openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config neutron-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config neutron-openvswitch openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config neutron-openvswitch source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config nova-cloud-controller openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config nova-compute openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config nova-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config nova-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config openstack-dashboard openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config placement openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config placement-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config placement-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+++ juju config rabbitmq-server openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config rabbitmq-server source
++ origin=
++ exit_code=0
++ set +x
+++ juju config swift-proxy openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config swift-storage-z1 openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config swift-storage-z2 openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config swift-storage-z3 openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config swift-storage-z4 openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config swift-storage-z5 openstack-origin
++ origin=cloud:jammy-antelope
++ exit_code=0
++ set +x
+++ juju config vault openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault source
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault-mysql-router openstack-origin
++ origin='{}'
++ exit_code=1
++ set +x
+++ juju config vault-mysql-router source
++ origin=distro
++ exit_code=0
++ set +x
+
+ceph-mon: source=yoga
+ceph-osd: source=yoga
+ceph-radosgw: source=yoga
+cinder: openstack-origin=cloud:jammy-antelope
+cinder-mysql-router: source=distro
+dashboard-mysql-router: source=distro
+glance: openstack-origin=cloud:jammy-antelope
+glance-mysql-router: source=distro
+keystone: openstack-origin=cloud:jammy-antelope
+keystone-mysql-router: source=distro
+mysql: source=distro
+neutron-api: openstack-origin=cloud:jammy-antelope
+neutron-gateway: openstack-origin=cloud:jammy-antelope
+neutron-mysql-router: source=distro
+nova-cloud-controller: openstack-origin=cloud:jammy-antelope
+nova-compute: openstack-origin=cloud:jammy-antelope
+nova-mysql-router: source=distro
+openstack-dashboard: openstack-origin=cloud:jammy-antelope
+placement: openstack-origin=cloud:jammy-antelope
+placement-mysql-router: source=distro
+rabbitmq-server: source=
+swift-proxy: openstack-origin=cloud:jammy-antelope
+swift-storage-z1: openstack-origin=cloud:jammy-antelope
+swift-storage-z2: openstack-origin=cloud:jammy-antelope
+swift-storage-z3: openstack-origin=cloud:jammy-antelope
+swift-storage-z4: openstack-origin=cloud:jammy-antelope
+swift-storage-z5: openstack-origin=cloud:jammy-antelope
+vault-mysql-router: source=distro
