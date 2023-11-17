@@ -1,0 +1,2 @@
++ openstack network agent list
+
