@@ -1,0 +1,43 @@
++ openstack keypair create --public-key /home/ubuntu/.ssh/id_rsa.pub mykey
+ConflictException: 409: Client Error for url: https://10.13.3.112:8774/v2.1/os-keypairs, Key pair 'mykey' already exists.
++ true
+++ awk '{print $2}'
+++ grep private
+++ openstack network list
++ private_network_id=f0bcfa2d-1f77-4062-af64-0117fb72f95c
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=f0bcfa2d-1f77-4062-af64-0117fb72f95c my-bionic-s390x
+
++-------------------------------------+----------------------------------------------------------+
+| Field                               | Value                                                    |
++-------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone         | nova                                                     |
+| OS-EXT-SRV-ATTR:host                | s4lp5                                                    |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | s4lp5                                                    |
+| OS-EXT-SRV-ATTR:instance_name       | instance-0000001b                                        |
+| OS-EXT-STS:power_state              | Running                                                  |
+| OS-EXT-STS:task_state               | None                                                     |
+| OS-EXT-STS:vm_state                 | active                                                   |
+| OS-SRV-USG:launched_at              | 2023-11-21T22:54:32.000000                               |
+| OS-SRV-USG:terminated_at            | None                                                     |
+| accessIPv4                          |                                                          |
+| accessIPv6                          |                                                          |
+| addresses                           | private=172.16.3.133                                     |
+| adminPass                           | PNfUAN9jiws2                                             |
+| config_drive                        |                                                          |
+| created                             | 2023-11-21T22:54:29Z                                     |
+| flavor                              | m1.small (2)                                             |
+| hostId                              | 86151baa7fe2558c18c676f425a565fe1311f3c99ca735786e74b023 |
+| id                                  | 8b205f5e-a146-4e47-8ea2-62fc7df4566d                     |
+| image                               | bionic-s390x (4e0e3fd0-c1e3-4319-a176-dc3d41218a3a)      |
+| key_name                            | mykey                                                    |
+| name                                | my-bionic-s390x                                          |
+| progress                            | 0                                                        |
+| project_id                          | 8f94571532aa4814827a310ff721d2ff                         |
+| properties                          |                                                          |
+| security_groups                     | name='default'                                           |
+| status                              | ACTIVE                                                   |
+| updated                             | 2023-11-21T22:54:32Z                                     |
+| user_id                             | b3b680dd91a449e4a241dc127bc485bf                         |
+| volumes_attached                    |                                                          |
++-------------------------------------+----------------------------------------------------------+
