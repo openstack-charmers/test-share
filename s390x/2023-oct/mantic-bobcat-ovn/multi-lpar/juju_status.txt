@@ -1,0 +1,116 @@
++ juju status
+Model              Controller             Cloud/Region  Version  SLA          Timestamp
+mantic-bobcat-ovn  juju-controller-s390x  manual        3.2.3    unsupported  22:53:25Z
+
+App                     Version          Status  Scale  Charm                   Channel           Rev  Exposed  Message
+ceph-mon                18.2.0           active      3  ceph-mon                reef/candidate    192  no       Unit is ready and clustered
+ceph-osd                18.2.0           active      3  ceph-osd                reef/candidate    577  no       Unit is ready (1 OSD)
+ceph-radosgw            18.2.0           active      1  ceph-radosgw            reef/candidate    566  no       Unit is ready
+cinder                  23.0.0           active      1  cinder                  2023.2/candidate  663  no       Unit is ready
+cinder-ceph             23.0.0           active      1  cinder-ceph             2023.2/candidate  528  no       Unit is ready
+cinder-mysql-router     8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+dashboard-mysql-router  8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+glance                  27.0.0           active      1  glance                  2023.2/candidate  595  no       Unit is ready
+glance-mysql-router     8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+keep                    23.10            active      5  ubuntu                  stable             19  no       
+keystone                24.0.0           active      1  keystone                2023.2/candidate  667  no       Application Ready
+keystone-mysql-router   8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+mysql-innodb-cluster    8.0.35           active      3  mysql-innodb-cluster    latest/edge       101  no       Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+neutron-api             23.0.0           active      1  neutron-api             2023.2/candidate  568  no       Unit is ready
+neutron-api-plugin-ovn  23.0.0           active      1  neutron-api-plugin-ovn  2023.2/candidate  118  no       Unit is ready
+neutron-mysql-router    8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+nova-cloud-controller   28.0.0           active      1  nova-cloud-controller   2023.2/candidate  705  no       Unit is ready
+nova-compute            28.0.0           active      3  nova-compute            2023.2/candidate  703  no       Unit is ready
+nova-mysql-router       8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+openstack-dashboard     23.3.0           active      1  openstack-dashboard     2023.2/candidate  614  no       Unit is ready
+ovn-central             23.09.0          active      3  ovn-central             23.09/candidate   154  no       Unit is ready
+ovn-chassis             23.09.0          active      3  ovn-chassis             23.09/candidate   173  no       Unit is ready
+placement               10.0.0           active      1  placement               2023.2/candidate  100  no       Unit is ready
+placement-mysql-router  8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+rabbitmq-server         3.12.1           active      1  rabbitmq-server         latest/edge       181  no       Unit is ready
+swift-proxy             2.32.0+git20...  active      1  swift-proxy             2023.2/candidate  176  no       Unit is ready
+swift-storage-z1        2.32.0+git20...  active      1  swift-storage           2023.2/candidate  513  no       Unit is ready
+swift-storage-z2        2.32.0+git20...  active      1  swift-storage           2023.2/candidate  513  no       Unit is ready
+swift-storage-z3        2.32.0+git20...  active      1  swift-storage           2023.2/candidate  513  no       Unit is ready
+swift-storage-z4        2.32.0+git20...  active      1  swift-storage           2023.2/candidate  513  no       Unit is ready
+swift-storage-z5        2.32.0+git20...  active      1  swift-storage           2023.2/candidate  513  no       Unit is ready
+vault                   1.8.8            active      1  vault                   latest/edge       170  no       Unit is ready (active: true, mlock: disabled)
+vault-mysql-router      8.0.35           active      1  mysql-router            latest/edge       108  no       Unit is ready
+
+Unit                         Workload  Agent  Machine  Public address  Ports           Message
+ceph-mon/0                   active    idle   0/lxd/0  10.13.3.100                     Unit is ready and clustered
+ceph-mon/1*                  active    idle   1/lxd/0  10.13.3.110                     Unit is ready and clustered
+ceph-mon/2                   active    idle   2/lxd/0  10.13.3.120                     Unit is ready and clustered
+ceph-osd/0*                  active    idle   0        10.13.3.5                       Unit is ready (1 OSD)
+ceph-osd/1                   active    idle   1        10.13.3.6                       Unit is ready (1 OSD)
+ceph-osd/2                   active    idle   2        10.13.3.7                       Unit is ready (1 OSD)
+ceph-radosgw/0*              active    idle   3/lxd/0  10.13.3.130     80/tcp          Unit is ready
+cinder/0*                    active    idle   3/lxd/1  10.13.3.131     8776/tcp        Unit is ready
+  cinder-ceph/0*             active    idle            10.13.3.131                     Unit is ready
+  cinder-mysql-router/0*     active    idle            10.13.3.131                     Unit is ready
+glance/0*                    active    idle   4/lxd/0  10.13.3.140     9292/tcp        Unit is ready
+  glance-mysql-router/0*     active    idle            10.13.3.140                     Unit is ready
+keep/0                       active    idle   0        10.13.3.5                       
+keep/1*                      active    idle   1        10.13.3.6                       
+keep/2                       active    idle   2        10.13.3.7                       
+keep/3                       active    idle   3        10.13.3.8                       
+keep/4                       active    idle   4        10.13.3.9                       
+keystone/0*                  active    idle   3/lxd/2  10.13.3.132     5000/tcp        Unit is ready
+  keystone-mysql-router/0*   active    idle            10.13.3.132                     Unit is ready
+mysql-innodb-cluster/0       active    idle   0/lxd/1  10.13.3.101                     Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+mysql-innodb-cluster/1       active    idle   1/lxd/1  10.13.3.111                     Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+mysql-innodb-cluster/2*      active    idle   2/lxd/1  10.13.3.121                     Unit is ready: Mode: R/W, Cluster is ONLINE and can tolerate up to ONE failure.
+neutron-api/0*               active    idle   4/lxd/1  10.13.3.141     9696/tcp        Unit is ready
+  neutron-api-plugin-ovn/0*  active    idle            10.13.3.141                     Unit is ready
+  neutron-mysql-router/0*    active    idle            10.13.3.141                     Unit is ready
+nova-cloud-controller/0*     active    idle   1/lxd/2  10.13.3.112     8774-8775/tcp   Unit is ready
+  nova-mysql-router/0*       active    idle            10.13.3.112                     Unit is ready
+nova-compute/0*              active    idle   0        10.13.3.5                       Unit is ready
+  ovn-chassis/0*             active    idle            10.13.3.5                       Unit is ready
+nova-compute/1               active    idle   1        10.13.3.6                       Unit is ready
+  ovn-chassis/1              active    idle            10.13.3.6                       Unit is ready
+nova-compute/2               active    idle   2        10.13.3.7                       Unit is ready
+  ovn-chassis/2              active    idle            10.13.3.7                       Unit is ready
+openstack-dashboard/0*       active    idle   4/lxd/2  10.13.3.142     80,443/tcp      Unit is ready
+  dashboard-mysql-router/0*  active    idle            10.13.3.142                     Unit is ready
+ovn-central/0                active    idle   0/lxd/2  10.13.3.102     6641-6642/tcp   Unit is ready
+ovn-central/1*               active    idle   1/lxd/3  10.13.3.113     6641-6642/tcp   Unit is ready (leader: ovnnb_db, ovnsb_db northd: active)
+ovn-central/2                active    idle   2/lxd/2  10.13.3.122     6641-6642/tcp   Unit is ready
+placement/0*                 active    idle   0/lxd/3  10.13.3.103     8778/tcp        Unit is ready
+  placement-mysql-router/0*  active    idle            10.13.3.103                     Unit is ready
+rabbitmq-server/0*           active    idle   3/lxd/3  10.13.3.133     5672,15672/tcp  Unit is ready
+swift-proxy/0*               active    idle   0/lxd/4  10.13.3.104     8080/tcp        Unit is ready
+swift-storage-z1/0*          active    idle   0        10.13.3.5                       Unit is ready
+swift-storage-z2/0*          active    idle   1        10.13.3.6                       Unit is ready
+swift-storage-z3/0*          active    idle   2        10.13.3.7                       Unit is ready
+swift-storage-z4/0*          active    idle   3        10.13.3.8                       Unit is ready
+swift-storage-z5/0*          active    idle   4        10.13.3.9                       Unit is ready
+vault/0*                     active    idle   4/lxd/3  10.13.3.143     8200/tcp        Unit is ready (active: true, mlock: disabled)
+  vault-mysql-router/0*      active    idle            10.13.3.143                     Unit is ready
+
+Machine  State    Address      Inst id              Base          AZ  Message
+0        started  10.13.3.5    manual:10.13.3.5     ubuntu@23.10      Manually provisioned machine
+0/lxd/0  started  10.13.3.100  juju-cbb305-0-lxd-0  ubuntu@23.10      Container started
+0/lxd/1  started  10.13.3.101  juju-cbb305-0-lxd-1  ubuntu@23.10      Container started
+0/lxd/2  started  10.13.3.102  juju-cbb305-0-lxd-2  ubuntu@23.10      Container started
+0/lxd/3  started  10.13.3.103  juju-cbb305-0-lxd-3  ubuntu@23.10      Container started
+0/lxd/4  started  10.13.3.104  juju-cbb305-0-lxd-4  ubuntu@23.10      Container started
+1        started  10.13.3.6    manual:10.13.3.6     ubuntu@23.10      Manually provisioned machine
+1/lxd/0  started  10.13.3.110  juju-cbb305-1-lxd-0  ubuntu@23.10      Container started
+1/lxd/1  started  10.13.3.111  juju-cbb305-1-lxd-1  ubuntu@23.10      Container started
+1/lxd/2  started  10.13.3.112  juju-cbb305-1-lxd-2  ubuntu@23.10      Container started
+1/lxd/3  started  10.13.3.113  juju-cbb305-1-lxd-3  ubuntu@23.10      Container started
+2        started  10.13.3.7    manual:10.13.3.7     ubuntu@23.10      Manually provisioned machine
+2/lxd/0  started  10.13.3.120  juju-cbb305-2-lxd-0  ubuntu@23.10      Container started
+2/lxd/1  started  10.13.3.121  juju-cbb305-2-lxd-1  ubuntu@23.10      Container started
+2/lxd/2  started  10.13.3.122  juju-cbb305-2-lxd-2  ubuntu@23.10      Container started
+3        started  10.13.3.8    manual:10.13.3.8     ubuntu@23.10      Manually provisioned machine
+3/lxd/0  started  10.13.3.130  juju-cbb305-3-lxd-0  ubuntu@23.10      Container started
+3/lxd/1  started  10.13.3.131  juju-cbb305-3-lxd-1  ubuntu@23.10      Container started
+3/lxd/2  started  10.13.3.132  juju-cbb305-3-lxd-2  ubuntu@23.10      Container started
+3/lxd/3  started  10.13.3.133  juju-cbb305-3-lxd-3  ubuntu@23.10      Container started
+4        started  10.13.3.9    manual:10.13.3.9     ubuntu@23.10      Manually provisioned machine
+4/lxd/0  started  10.13.3.140  juju-cbb305-4-lxd-0  ubuntu@23.10      Container started
+4/lxd/1  started  10.13.3.141  juju-cbb305-4-lxd-1  ubuntu@23.10      Container started
+4/lxd/2  started  10.13.3.142  juju-cbb305-4-lxd-2  ubuntu@23.10      Container started
+4/lxd/3  started  10.13.3.143  juju-cbb305-4-lxd-3  ubuntu@23.10      Container started
