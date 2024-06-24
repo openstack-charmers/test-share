@@ -1,0 +1,13 @@
+++ grep floating_ip_address
+++ awk '{print $4}'
+++ openstack floating ip create ext_net
++ ip_addr=10.13.3.228
++ ssh-keygen -f /home/ubuntu/.ssh/known_hosts -R 10.13.3.228
+# Host 10.13.3.228 found: line 30
+/home/ubuntu/.ssh/known_hosts updated.
+Original contents retained as /home/ubuntu/.ssh/known_hosts.old
++ openstack server add floating ip my-bionic-s390x 10.13.3.228
++ sleep 30
++ ssh 10.13.3.228 -i /home/ubuntu/.ssh/id_rsa -oStrictHostKeyChecking=accept-new echo SSH works
+ssh: connect to host 10.13.3.228 port 22: Connection timed out
++ openstack server remove floating ip my-bionic-s390x 10.13.3.228
