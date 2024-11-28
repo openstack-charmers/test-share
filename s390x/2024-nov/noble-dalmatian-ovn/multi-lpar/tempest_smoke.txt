@@ -1,0 +1,175 @@
++ tempest.discover --image https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-s390x.img --flavor-min-disk 10 validation.image_ssh_user ubuntu validation.image_alt_ssh_user ubuntu compute.flavor_ref 2 compute.flavor_ref_alt 3 auth.admin_domain_name admin_domain
+2024-11-28 11:41:56.821 410562 INFO tempest [-] Using tempest config file /home/jamespage/src/s390x/zopenstack/report/etc/tempest.conf
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: barbican_tests
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: cinder_tests
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: designate
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: glance_tests
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: heat
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: ironic_tests
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: keystone_tests
+2024-11-28 11:41:56.845 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: magnum_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: manila_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: neutron_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: octavia-tempest-plugin
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: telemetry_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] Register additional config options from Tempest plugin: watcher_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: barbican_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: cinder_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: designate
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: glance_tests
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: heat
+2024-11-28 11:41:56.846 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: ironic_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: keystone_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: magnum_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: manila_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: neutron_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: octavia-tempest-plugin
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: telemetry_tests
+2024-11-28 11:41:56.847 410562 INFO tempest.test_discover.plugins [-] List additional config options registered by Tempest plugin: watcher_tests
+2024-11-28 11:41:57.577 410562 INFO tempest.lib.common.rest_client [req-27eb8563-1939-4880-9ade-23c2fd64f0b1 req-27eb8563-1939-4880-9ade-23c2fd64f0b1 ] Request (main): 201 POST https://10.13.3.132:5000/v3/auth/tokens 0.477s
+2024-11-28 11:41:57.832 410562 INFO tempest.lib.common.rest_client [req-ea545da6-b5bc-4d98-9e90-f66e08ee63f2 req-ea545da6-b5bc-4d98-9e90-f66e08ee63f2 ] Request (main): 200 GET https://10.13.3.132:5000/v3/projects 0.254s
+2024-11-28 11:41:58.085 410562 INFO tempest.lib.common.rest_client [req-b9b7f357-b1f7-45fd-911f-df307efe585a req-b9b7f357-b1f7-45fd-911f-df307efe585a ] Request (main): 200 GET https://10.13.3.132:5000/v3/services 0.251s
+2024-11-28 11:41:58.957 410562 INFO tempest.lib.common.rest_client [req-18f75509-0e99-4dc7-ba24-ca1ae7720984 req-18f75509-0e99-4dc7-ba24-ca1ae7720984 ] Request (main): 200 GET https://10.13.3.112:8774/v2.1/os-hosts 0.322s
+2024-11-28 11:41:59.803 410562 INFO tempest.lib.common.rest_client [req-49d2a9fe-4390-4cef-be13-fec02696e30d req-49d2a9fe-4390-4cef-be13-fec02696e30d ] Request (main): 200 GET https://10.13.3.140:9292/v2/info/stores 0.354s
+2024-11-28 11:42:00.105 410562 INFO tempest.lib.common.rest_client [req-a7472e89-51cf-4945-8962-b0d8b5d50eac req-a7472e89-51cf-4945-8962-b0d8b5d50eac ] Request (main): 200 GET https://10.13.3.140:9292/v2/images 0.301s
+2024-11-28 11:42:00.933 410562 WARNING config_tempest.constants [-] Object storage info API endpoint not discovered. Error message: Request on service 'object-store' with url 'https://10.13.3.130:443/info' failed with code 404: config_tempest.services.base.ServiceError: Request on service 'object-store' with url 'https://10.13.3.130:443/info' failed with code 404
+2024-11-28 11:42:01.431 410562 INFO tempest.lib.common.rest_client [-] Request (main): 404 GET https://10.13.3.130:443/healthcheck 0.253s
+2024-11-28 11:42:01.431 410562 WARNING config_tempest.constants [-] Healthcheck API not discovered giving Unexpected content type provided
+Details: 404: tempest.lib.exceptions.UnexpectedContentType: Unexpected content type provided
+2024-11-28 11:42:01.674 410562 INFO tempest.lib.common.rest_client [tx0000024f4561136ac3d1d-0067485709-59110-default tx0000024f4561136ac3d1d-0067485709-59110-default ] Request (main): 200 GET https://10.13.3.130:443/swift/healthcheck 0.242s
+2024-11-28 11:42:01.929 410562 INFO tempest.lib.common.rest_client [req-77d4f360-6cac-4a21-b524-f0e289a75caa req-77d4f360-6cac-4a21-b524-f0e289a75caa ] Request (main): 200 GET https://10.13.3.132:5000/v3/roles 0.254s
+2024-11-28 11:42:04.061 410562 INFO tempest.lib.common.rest_client [req-2b05387c-467f-4f6d-8a2a-c48a672e88e8 req-2b05387c-467f-4f6d-8a2a-c48a672e88e8 ] Request (main): 200 GET https://10.13.3.112:8774/v2.1/flavors 0.254s
+2024-11-28 11:42:04.062 410562 INFO config_tempest.constants [-] Found flavor 'm1.small' by it's id '2'
+2024-11-28 11:42:04.063 410562 INFO config_tempest.constants [-] Found flavor 'm1.medium' by it's id '3'
+2024-11-28 11:42:04.365 410562 INFO tempest.lib.common.rest_client [req-b6e14323-5e40-4cf6-8bbe-a562cfe617ba req-b6e14323-5e40-4cf6-8bbe-a562cfe617ba ] Request (main): 200 GET https://10.13.3.140:9292/v2/images 0.302s
+2024-11-28 11:42:04.366 410562 INFO config_tempest.constants [-] (no change) Found image 'noble-server-cloudimg-s390x.img'
+2024-11-28 11:42:04.662 410562 INFO tempest.lib.common.rest_client [req-b1568ce9-16ab-4142-a828-49b2ad5593f8 req-b1568ce9-16ab-4142-a828-49b2ad5593f8 ] Request (main): 200 GET https://10.13.3.140:9292/v2/images 0.295s
+2024-11-28 11:42:04.662 410562 INFO config_tempest.constants [-] (no change) Found image 'noble-server-cloudimg-s390x.img_alt'
+2024-11-28 11:42:04.662 410562 INFO config_tempest.constants [-] Setting up network
+2024-11-28 11:42:04.662 410562 INFO config_tempest.constants [-] No network supplied, trying auto discover for an external network while prioritizing the one called public, if not found, the network discovered last will be used.
+2024-11-28 11:42:04.936 410562 INFO tempest.lib.common.rest_client [req-488ed766-0f58-4062-a7d7-388cfbcc2ca4 req-488ed766-0f58-4062-a7d7-388cfbcc2ca4 ] Request (main): 200 GET https://10.13.3.141:9696/v2.0/networks 0.273s
+2024-11-28 11:42:04.936 410562 INFO config_tempest.constants [-] Setting f0580c0a-588b-4f6d-a73c-5f2c39b80955 as the public network for tempest
+2024-11-28 11:42:05.190 410562 INFO tempest.lib.common.rest_client [req-0fa2c11a-a7e6-48cf-a852-eb55b51db520 req-0fa2c11a-a7e6-48cf-a852-eb55b51db520 ] Request (main): 200 GET https://10.13.3.131:8776/v3/ae9c1e7f156c425db62896d0ecacf8d7/os-services?binary=cinder-backup 0.253s
+/snap/tempest/874/lib/python3.10/site-packages/urllib3/connectionpool.py:1064: InsecureRequestWarning: Unverified HTTPS request is being made to host '10.13.3.132'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+2024-11-28 11:42:05.594 410562 INFO config_tempest.constants [-] Creating configuration file /home/jamespage/src/s390x/zopenstack/report/etc/tempest.conf
++ tempest run --smoke --concurrency 8 --config-file etc/tempest.conf --exclude-list etc/exclude-list.txt
+{0} setUpClass (tempest.scenario.test_dashboard_basic_ops.TestDashboardBasicOps) ... SKIPPED: Horizon support is required
+{3} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_get_flavor [0.401894s] ... ok
+{3} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors [0.513394s] ... ok
+{3} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create [1.887568s] ... ok
+{3} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_list [3.487335s] ... ok
+{4} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_security_groups_create_list_delete [6.379308s] ... ok
+{6} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses [0.275602s] ... ok
+{6} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses_by_network [0.773479s] ... ok
+{5} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_list_servers [0.279614s] ... ok
+{5} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_verify_server_details [0.000190s] ... ok
+{3} tempest.api.compute.test_versions.TestVersions.test_get_version_details [1.123014s] ... ok
+{3} tempest.api.compute.test_versions.TestVersions.test_list_api_versions [0.245828s] ... ok
+{3} tempest.api.image.v2.test_versions.VersionsTest.test_list_versions [0.246204s] ... ok
+{6} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_delete_image [1.288784s] ... ok
+{4} tempest.api.network.test_extensions.ExtensionsTestJSON.test_list_show_extensions [20.371389s] ... ok
+{6} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_register_upload_get_image_file [17.723713s] ... ok
+{6} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_update_image [1.992885s] ... ok
+{2} tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesUnderV243Test.test_add_remove_fixed_ip [83.399960s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_create_update_delete_network_subnet [11.896378s] ... ok
+{3} tempest.api.network.test_routers.RoutersIpV6Test.test_add_multiple_router_interfaces [43.565371s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_external_network_visibility [0.891509s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_list_networks [0.278795s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_list_subnets [0.261208s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_show_network [0.283895s] ... ok
+{4} tempest.api.network.test_networks.NetworksIpV6Test.test_show_subnet [0.256021s] ... ok
+{6} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_floating_ip_specifying_a_fixed_ip_address [1.915489s] ... ok
+{3} tempest.api.network.test_routers.RoutersIpV6Test.test_add_remove_router_interface_with_port_id [15.903888s] ... ok
+{6} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_list_show_update_delete_floating_ip [3.689024s] ... ok
+{7} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_list_servers [0.272860s] ... ok
+{7} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_verify_server_details [0.000191s] ... ok
+{2} tempest.api.network.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group [2.439752s] ... ok
+{5} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_list_servers [0.282867s] ... ok
+{5} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_verify_server_details [0.000236s] ... ok
+{2} tempest.api.network.test_security_groups.SecGroupTest.test_create_show_delete_security_group_rule [6.155470s] ... ok
+{2} tempest.api.network.test_security_groups.SecGroupTest.test_list_security_groups [0.277256s] ... ok
+{3} tempest.api.network.test_routers.RoutersIpV6Test.test_add_remove_router_interface_with_subnet_id [15.963291s] ... ok
+{4} tempest.api.object_storage.test_account_quotas.AccountQuotasTest.test_admin_modify_quota [1.276905s] ... ok
+{4} tempest.api.object_storage.test_account_quotas.AccountQuotasTest.test_upload_valid_object [0.745022s] ... ok
+{3} tempest.api.network.test_routers.RoutersIpV6Test.test_create_show_list_update_delete_router [3.450867s] ... ok
+{5} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_media_types [0.263300s] ... ok
+{5} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_version_resources [0.246933s] ... ok
+{5} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_version_statuses [0.256829s] ... ok
+{5} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_list_api_versions [0.239890s] ... ok
+{4} tempest.api.object_storage.test_account_services.AccountTest.test_list_account_metadata [0.739875s] ... ok
+{4} tempest.api.object_storage.test_account_services.AccountTest.test_list_containers [0.248380s] ... ok
+{6} tempest.api.network.test_ports.PortsTestJSON.test_create_port_in_allowed_allocation_pools [13.444267s] ... ok
+{4} tempest.api.volume.test_versions.VersionsTest.test_list_versions [0.246980s] ... ok
+{6} tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups [13.201139s] ... ok
+{5} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_in_allowed_allocation_pools [13.171389s] ... ok
+{6} tempest.api.network.test_ports.PortsTestJSON.test_create_update_delete_port [1.773025s] ... ok
+{6} tempest.api.network.test_ports.PortsTestJSON.test_list_ports [0.264693s] ... ok
+{6} tempest.api.network.test_ports.PortsTestJSON.test_show_port [0.265462s] ... ok
+{1} tempest.scenario.test_network_basic_ops.TestNetworkBasicOps.test_network_basic_ops [169.774992s] ... ok
+{4} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete [3.991159s] ... ok
+{5} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_with_no_securitygroups [12.781560s] ... ok
+{5} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_update_delete_port [1.688384s] ... ok
+{5} tempest.api.network.test_ports.PortsIpV6TestJSON.test_list_ports [0.263621s] ... ok
+{5} tempest.api.network.test_ports.PortsIpV6TestJSON.test_show_port [0.260610s] ... ok
+{3} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_list_update_show_delete_security_group [4.367876s] ... ok
+{6} tempest.api.object_storage.test_container_services.ContainerTest.test_create_container [6.181955s] ... ok
+{3} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_show_delete_security_group_rule [21.278559s] ... ok
+{3} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_list_security_groups [0.267844s] ... ok
+{6} tempest.api.object_storage.test_container_services.ContainerTest.test_list_container_contents [1.682136s] ... ok
+{0} tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basic_ops [185.812753s] ... ok
+{6} tempest.api.object_storage.test_container_services.ContainerTest.test_list_container_metadata [1.253023s] ... ok
+{6} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list [0.255952s] ... ok
+{4} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete_from_image [63.253141s] ... ok
+{7} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_reboot_server_hard [50.620901s] ... ok
+{3} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_attach_detach_volume_to_instance [20.495961s] ... ok
+{5} tempest.api.network.test_routers.RoutersTest.test_add_multiple_router_interfaces [35.820058s] ... ok
+{5} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_port_id [16.277451s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_network [2.658226s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_port [3.438244s] ... ok
+{5} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_subnet_id [15.477041s] ... ok
+{5} tempest.api.network.test_routers.RoutersTest.test_create_show_list_update_delete_router [3.777736s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_subnet [23.567487s] ... ok
+{6} tempest.scenario.test_server_multinode.TestServerMultinode.test_schedule_to_all_nodes [48.755796s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_network [2.438662s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_port [2.986995s] ... ok
+{7} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_subnet [23.240207s] ... ok
+{5} tempest.api.object_storage.test_container_quotas.ContainerQuotasTest.test_upload_large_object [1.398791s] ... ok
+{5} tempest.api.object_storage.test_container_quotas.ContainerQuotasTest.test_upload_too_many_objects [2.719764s] ... ok
+{5} tempest.api.object_storage.test_container_quotas.ContainerQuotasTest.test_upload_valid_object [1.227837s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_create_update_delete_network_subnet [2.636138s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_external_network_visibility [0.865543s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_list_networks [0.282231s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_list_subnets [0.271593s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_show_network [0.266487s] ... ok
+{7} tempest.api.network.test_networks.NetworksTest.test_show_subnet [0.256317s] ... ok
+{5} tempest.api.object_storage.test_object_services.ObjectTest.test_create_object [0.756278s] ... ok
+{5} tempest.api.object_storage.test_object_services.ObjectTest.test_get_object [0.768862s] ... ok
+{5} tempest.api.object_storage.test_object_services.ObjectTest.test_list_object_metadata [0.498259s] ... ok
+{5} tempest.api.object_storage.test_object_services.ObjectTest.test_update_object_metadata [0.997628s] ... ok
+{7} tempest.api.network.test_subnetpools_extensions.SubnetPoolsTestJSON.test_create_list_show_update_delete_subnetpools [1.647394s] ... ok
+{7} tempest.api.network.test_versions.NetworksApiDiscovery.test_api_version_resources [0.243448s] ... ok
+{7} tempest.api.network.test_versions.NetworksApiDiscovery.test_show_api_v2_details [0.293083s] ... ok
+
+======
+Totals
+======
+Ran: 96 tests in 386.7427 sec.
+ - Passed: 95
+ - Skipped: 1
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 1032.3566 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (2 tests) => 0:03:40.027808
+ - Worker 1 (1 tests) => 0:02:49.774992
+ - Worker 2 (4 tests) => 0:01:52.365487
+ - Worker 3 (15 tests) => 0:04:11.651230
+ - Worker 4 (15 tests) => 0:03:38.875164
+ - Worker 5 (24 tests) => 0:05:15.585987
+ - Worker 6 (17 tests) => 0:04:30.085684
+ - Worker 7 (18 tests) => 0:04:21.410239

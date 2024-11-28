@@ -1,0 +1,9 @@
++ openstack keypair create --public-key /home/jamespage/.ssh/id_rsa.pub mykey
+ConflictException: 409: Client Error for url: https://10.13.3.112:8774/v2.1/os-keypairs, Key pair 'mykey' already exists.
++ true
+++ openstack network list
+++ grep private
+++ awk '{print $2}'
++ private_network_id=7f795164-86ab-41d9-95b3-a1bb77325942
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=7f795164-86ab-41d9-95b3-a1bb77325942 my-bionic-s390x
+No Image found for bionic-s390x

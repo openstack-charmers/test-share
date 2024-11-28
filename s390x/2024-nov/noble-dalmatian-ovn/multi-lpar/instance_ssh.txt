@@ -1,0 +1,12 @@
+++ openstack floating ip create ext_net
+++ grep floating_ip_address
+++ awk '{print $4}'
++ ip_addr=10.13.3.230
++ ssh-keygen -f /home/jamespage/.ssh/known_hosts -R 10.13.3.230
+Host 10.13.3.230 not found in /home/jamespage/.ssh/known_hosts
++ openstack server add floating ip my-bionic-s390x 10.13.3.230
+No Server found for my-bionic-s390x
++ sleep 30
++ ssh 10.13.3.230 -i /home/jamespage/.ssh/id_rsa -oStrictHostKeyChecking=accept-new echo SSH works
+ssh: connect to host 10.13.3.230 port 22: No route to host
++ openstack server remove floating ip my-bionic-s390x 10.13.3.230
