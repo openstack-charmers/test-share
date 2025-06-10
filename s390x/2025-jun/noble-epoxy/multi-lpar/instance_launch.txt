@@ -1,0 +1,9 @@
++ openstack keypair create --public-key /home/ubuntu/.ssh/id_rsa.pub mykey
+Key file /home/ubuntu/.ssh/id_rsa.pub not found: [Errno 2] No such file or directory: '/home/ubuntu/.ssh/id_rsa.pub'
++ true
+++ openstack network list
+++ grep private
+++ awk '{print $2}'
++ private_network_id=c0254802-5354-4cbd-b213-687d7825bd20
++ openstack server create --wait --image bionic-s390x --flavor m1.small --key-name mykey --nic net-id=c0254802-5354-4cbd-b213-687d7825bd20 my-bionic-s390x
+Invalid key_name provided. (HTTP 400) (Request-ID: req-843e8422-71b1-48ec-b104-12d1d3fcc020)

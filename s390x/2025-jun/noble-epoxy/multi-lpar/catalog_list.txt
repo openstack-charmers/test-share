@@ -1,0 +1,61 @@
++ openstack catalog list
++-----------+--------------+--------------------------------------------------------------------------+
+| Name      | Type         | Endpoints                                                                |
++-----------+--------------+--------------------------------------------------------------------------+
+| placement | placement    | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.142:8778                                     |
+|           |              | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.142:8778                                        |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.142:8778                                       |
+|           |              |                                                                          |
+| cinderv3  | volumev3     | RegionOne                                                                |
+|           |              |   public: https://10.13.3.111:8776/v3/4c63b1e10a6044c69d75168b201b7a7c   |
+|           |              | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.111:8776/v3/4c63b1e10a6044c69d75168b201b7a7c |
+|           |              | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.111:8776/v3/4c63b1e10a6044c69d75168b201b7a7c    |
+|           |              |                                                                          |
+| glance    | image        | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.101:9292                                     |
+|           |              | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.101:9292                                        |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.101:9292                                       |
+|           |              |                                                                          |
+| s3        | s3           | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.100:443/                                        |
+|           |              | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.100:443/                                     |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.100:443/                                       |
+|           |              |                                                                          |
+| swift     | object-store | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.100:443/swift                                   |
+|           |              | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.100:443/swift/v1                             |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.100:443/swift/v1                               |
+|           |              |                                                                          |
+| neutron   | network      | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.141:9696                                     |
+|           |              | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.141:9696                                        |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.141:9696                                       |
+|           |              |                                                                          |
+| nova      | compute      | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.121:8774/v2.1                                   |
+|           |              | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.121:8774/v2.1                                |
+|           |              | RegionOne                                                                |
+|           |              |   public: https://10.13.3.121:8774/v2.1                                  |
+|           |              |                                                                          |
+| keystone  | identity     | RegionOne                                                                |
+|           |              |   public: https://10.13.3.102:5000/v3                                    |
+|           |              | RegionOne                                                                |
+|           |              |   internal: https://10.13.3.102:5000/v3                                  |
+|           |              | RegionOne                                                                |
+|           |              |   admin: https://10.13.3.102:35357/v3                                    |
+|           |              |                                                                          |
++-----------+--------------+--------------------------------------------------------------------------+

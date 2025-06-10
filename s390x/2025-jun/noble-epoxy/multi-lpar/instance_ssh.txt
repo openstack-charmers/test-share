@@ -1,0 +1,13 @@
+++ openstack floating ip create ext_net
+++ grep floating_ip_address
+++ awk '{print $4}'
++ ip_addr=10.13.3.221
++ ssh-keygen -f /home/ubuntu/.ssh/known_hosts -R 10.13.3.221
+Host 10.13.3.221 not found in /home/ubuntu/.ssh/known_hosts
++ openstack server add floating ip my-bionic-s390x 10.13.3.221
+No server with a name or ID of 'my-bionic-s390x' exists.
++ sleep 90
++ ssh ubuntu@10.13.3.221 -i /home/ubuntu/.ssh/id_rsa -oStrictHostKeyChecking=accept-new echo SSH works
+Warning: Identity file /home/ubuntu/.ssh/id_rsa not accessible: No such file or directory.
+ssh: connect to host 10.13.3.221 port 22: No route to host
++ openstack server remove floating ip my-bionic-s390x 10.13.3.221
