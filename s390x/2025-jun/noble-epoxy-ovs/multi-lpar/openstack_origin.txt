@@ -111,7 +111,7 @@
 + exit_code=0
 + set +x
 ++ juju config nova-compute openstack-origin
-+ origin=ppa:mylesjp/lp2043987-epoxy
++ origin=cloud:noble-epoxy
 + exit_code=0
 + set +x
 ++ juju config nova-mysql-router openstack-origin
@@ -178,7 +178,7 @@ neutron-api: openstack-origin=cloud:noble-epoxy
 neutron-gateway: openstack-origin=cloud:noble-epoxy
 neutron-mysql-router: source=distro
 nova-cloud-controller: openstack-origin=cloud:noble-epoxy
-nova-compute: openstack-origin=ppa:mylesjp/lp2043987-epoxy
+nova-compute: openstack-origin=cloud:noble-epoxy
 nova-mysql-router: source=distro
 openstack-dashboard: openstack-origin=cloud:noble-epoxy
 placement: openstack-origin=cloud:noble-epoxy

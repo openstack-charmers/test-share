@@ -1,12 +1,9 @@
 + openstack image list
-+--------------------------------------+---------------------------------------------------+--------+
-| ID                                   | Name                                              | Status |
-+--------------------------------------+---------------------------------------------------+--------+
-| 39eea634-23ea-492e-8883-19d0b2eb3d1d | bionic-s390x                                      | active |
-| 7aee7027-9d2d-41d1-8302-77bbad48eb93 | noble-server-cloudimg-s390x.img                   | active |
-| f3639977-a2e8-4be0-bf6e-cf1675f2a6be | noble-server-cloudimg-s390x.img_alt               | active |
-| d7a4b519-b99f-4faf-9f3b-a7e5602dde99 | tempest-ListImageFiltersTestJSON-image-1109346791 | active |
-| 11377e45-e050-4661-9ba4-6f56ebc93c9d | tempest-ListImageFiltersTestJSON-image-268613627  | active |
-| 26ba6b5a-aeeb-4060-9efc-99799a7fe4c1 | tempest-ListImageFiltersTestJSON-image-584152875  | queued |
-| 2990f126-f070-4e77-8ccb-eb5a7095f0c2 | xenial-s390x                                      | active |
-+--------------------------------------+---------------------------------------------------+--------+
++--------------------------------------+-------------------------------------+--------+
+| ID                                   | Name                                | Status |
++--------------------------------------+-------------------------------------+--------+
+| 583fd6a3-f94c-4bd1-915d-883757f83b8b | bionic-s390x                        | active |
+| 596ef693-46da-43bf-bfb4-33e66736d27b | noble-server-cloudimg-s390x.img     | active |
+| a73af486-2c1d-4b6c-8ab5-eddc62884cfc | noble-server-cloudimg-s390x.img_alt | active |
+| c29df8a3-65ee-4f84-a9f0-d1cc84ca1496 | xenial-s390x                        | active |
++--------------------------------------+-------------------------------------+--------+

@@ -1,16 +1,7 @@
 + openstack network list
-+--------------------------------------+----------------------------------------------------------+--------------------------------------+
-| ID                                   | Name                                                     | Subnets                              |
-+--------------------------------------+----------------------------------------------------------+--------------------------------------+
-| 06f456c0-f1b9-4b85-8d59-c6b3840c0344 | tempest-AttachSCSIVolumeTestJSON-442746470-network       | a3998518-5ad5-48d2-be34-784382bffc02 |
-| 0bd4d1f4-bc31-4769-a07d-635d4bf06043 | ext_net                                                  | 857ed917-4e12-486d-9252-73e0d0526449 |
-| 2b618929-4e8c-4c28-bdd2-efae92c731c6 | tempest-ServersTestMultiNic-666494511                    | b8f442ff-9164-4690-ae3b-4acf80c179d0 |
-| 35f87e61-58d5-4183-b60d-cd10970d228d | tempest-AttachSCSIVolumeTestJSON-358551099-network       | a298bbcb-8239-4983-bc75-c0343b74594e |
-| 43494e9f-7a37-4ae9-ba5a-645cf3845710 | tempest-AttachInterfacesUnderV243Test-1011137610-network | f1605e4a-4322-45a5-8d49-0cdcfedfb826 |
-| 60f674f6-5128-40b2-ae56-2e7ab7b401cb | tempest-ServerRescueNegativeTestJSON-1422676170-network  | 6c14e8bd-6c71-4684-bea7-9542ccb20ec1 |
-| 82eeccd9-a310-4cb5-8a17-01f9fcc0d9b2 | tempest-ServersTestMultiNic-1925059542                   | 3be3634d-c57e-4f60-b583-46fcc0f002f4 |
-| a8dfea5e-b314-4325-bd79-474eb3671aee | tempest-ServersTestMultiNic-2031255141-network           | d0674280-aba5-45df-8491-188e5e824c1d |
-| c0254802-5354-4cbd-b213-687d7825bd20 | private                                                  | c402e656-62eb-48b1-8d85-8454880f4142 |
-| d56a2d8e-36b8-42f6-a76f-a72e4eb41c09 | tempest-ImagesTestJSON-490862468-network                 | a1c3de84-21b8-462a-ad12-e56fbecb44fc |
-| f712396c-dd24-4e49-871b-cca8dfa8eb70 | tempest-ServerRescueTestJSON-686906288-network           | e652c201-72cf-4ef8-a053-842c54f40eb2 |
-+--------------------------------------+----------------------------------------------------------+--------------------------------------+
++--------------------------------------+---------+--------------------------------------+
+| ID                                   | Name    | Subnets                              |
++--------------------------------------+---------+--------------------------------------+
+| 62e5a265-aecc-43a0-90a7-237082c1af26 | ext_net | d9b2649a-03a5-4f90-bf9c-d8800a013c5c |
+| d466bf9c-7a4d-4c19-aa11-e3945c32ad87 | private | 6708f66e-f8c5-4c42-916b-3ef27fb95489 |
++--------------------------------------+---------+--------------------------------------+
