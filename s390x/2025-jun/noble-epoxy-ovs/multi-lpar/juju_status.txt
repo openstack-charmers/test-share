@@ -1,0 +1,92 @@
++ juju status
+Model        Controller        Cloud/Region  Version  SLA          Timestamp
+noble-epoxy  s390x-controller  manual        3.6.6    unsupported  22:20:36-04:00
+
+App                     Version  Status  Scale  Charm                  Channel      Rev  Exposed  Message
+ceph-mon                19.2.0   active      3  ceph-mon               latest/edge  345  no       Unit is ready and clustered
+ceph-osd                19.2.0   active      3  ceph-osd               latest/edge  706  no       Unit is ready (1 OSD)
+ceph-radosgw            19.2.0   active      1  ceph-radosgw           latest/edge  671  no       Unit is ready
+cinder                  26.0.0   active      1  cinder                 latest/edge  714  no       Unit is ready
+cinder-ceph             26.0.0   active      1  cinder-ceph            latest/edge  543  no       Unit is ready
+cinder-mysql-router     8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+dashboard-mysql-router  8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+glance                  30.0.0   active      1  glance                 latest/edge  636  no       Unit is ready
+glance-mysql-router     8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+keystone                27.0.0   active      1  keystone               latest/edge  737  no       Application Ready
+keystone-mysql-router   8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+mysql                   8.0.42   active      3  mysql-innodb-cluster   latest/edge  155  no       Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+neutron-api             26.0.0   active      1  neutron-api            latest/edge  616  no       Unit is ready
+neutron-gateway         26.0.0   active      1  neutron-gateway        latest/edge  551  no       Unit is ready
+neutron-mysql-router    8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+neutron-openvswitch     26.0.0   active      4  neutron-openvswitch    latest/edge  563  no       Unit is ready
+nova-cloud-controller   31.0.0   active      1  nova-cloud-controller  latest/edge  788  no       Unit is ready
+nova-compute            31.0.0   active      4  nova-compute           latest/edge  767  no       Unit is ready
+nova-mysql-router       8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+openstack-dashboard     25.3.0   active      1  openstack-dashboard    latest/edge  695  no       Unit is ready
+placement               13.0.0   active      1  placement              latest/edge  117  no       Unit is ready
+placement-mysql-router  8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+rabbitmq-server         3.12.1   active      1  rabbitmq-server        latest/edge  235  no       Unit is ready
+vault                   1.8.8    active      1  vault                  latest/edge  364  no       Unit is ready (active: true, mlock: disabled)
+vault-mysql-router      8.0.42   active      1  mysql-router           latest/edge  253  no       Unit is ready
+
+Unit                         Workload  Agent  Machine  Public address  Ports           Message
+ceph-mon/2*                  active    idle   3/lxd/0  10.13.3.130                     Unit is ready and clustered
+ceph-mon/3                   active    idle   1/lxd/2  10.13.3.112                     Unit is ready and clustered
+ceph-mon/4                   active    idle   2/lxd/2  10.13.3.122                     Unit is ready and clustered
+ceph-osd/0*                  active    idle   1        10.13.3.6                       Unit is ready (1 OSD)
+ceph-osd/1                   active    idle   2        10.13.3.7                       Unit is ready (1 OSD)
+ceph-osd/2                   active    idle   3        10.13.3.8                       Unit is ready (1 OSD)
+ceph-radosgw/0*              active    idle   0/lxd/0  10.13.3.100     80/tcp          Unit is ready
+cinder/0*                    active    idle   1/lxd/1  10.13.3.111     8776/tcp        Unit is ready
+  cinder-ceph/0*             active    idle            10.13.3.111                     Unit is ready
+  cinder-mysql-router/0*     active    idle            10.13.3.111                     Unit is ready
+glance/1*                    active    idle   0/lxd/6  10.13.3.106     9292/tcp        Unit is ready
+  glance-mysql-router/0*     active    idle            10.13.3.106                     Unit is ready
+keystone/0*                  active    idle   0/lxd/2  10.13.3.102     5000/tcp        Unit is ready
+  keystone-mysql-router/0*   active    idle            10.13.3.102                     Unit is ready
+mysql/1                      active    idle   3/lxd/1  10.13.3.131                     Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+mysql/2*                     active    idle   4/lxd/0  10.13.3.140                     Unit is ready: Mode: R/W, Cluster is ONLINE and can tolerate up to ONE failure.
+mysql/3                      active    idle   0/lxd/7  10.13.3.107                     Unit is ready: Mode: R/O, Cluster is ONLINE and can tolerate up to ONE failure.
+neutron-api/1*               active    idle   4/lxd/4  10.13.3.144     9696/tcp        Unit is ready
+  neutron-mysql-router/0*    active    idle            10.13.3.144                     Unit is ready
+neutron-gateway/0*           active    idle   0        10.13.3.5                       Unit is ready
+nova-cloud-controller/0*     active    idle   2/lxd/1  10.13.3.121     8774-8775/tcp   Unit is ready
+  nova-mysql-router/0*       active    idle            10.13.3.121                     Unit is ready
+nova-compute/0               active    idle   1        10.13.3.6                       Unit is ready
+  neutron-openvswitch/2      active    idle            10.13.3.6                       Unit is ready
+nova-compute/1               active    idle   2        10.13.3.7                       Unit is ready
+  neutron-openvswitch/3      active    idle            10.13.3.7                       Unit is ready
+nova-compute/2*              active    idle   3        10.13.3.8                       Unit is ready
+  neutron-openvswitch/1      active    idle            10.13.3.8                       Unit is ready
+nova-compute/3               active    idle   4        10.13.3.9                       Unit is ready
+  neutron-openvswitch/0*     active    idle            10.13.3.9                       Unit is ready
+openstack-dashboard/0*       active    idle   0/lxd/4  10.13.3.104     80,443/tcp      Unit is ready
+  dashboard-mysql-router/0*  active    idle            10.13.3.104                     Unit is ready
+placement/0*                 active    idle   4/lxd/2  10.13.3.142     8778/tcp        Unit is ready
+  placement-mysql-router/0*  active    idle            10.13.3.142                     Unit is ready
+rabbitmq-server/0*           active    idle   0/lxd/5  10.13.3.105     5672,15672/tcp  Unit is ready
+vault/0*                     active    idle   4/lxd/3  10.13.3.143     8200/tcp        Unit is ready (active: true, mlock: disabled)
+  vault-mysql-router/0*      active    idle            10.13.3.143                     Unit is ready
+
+Machine  State    Address      Inst id              Base          AZ  Message
+0        started  10.13.3.5    manual:10.13.3.5     ubuntu@24.04      Manually provisioned machine
+0/lxd/0  started  10.13.3.100  juju-a81254-0-lxd-0  ubuntu@24.04      Container started
+0/lxd/2  started  10.13.3.102  juju-a81254-0-lxd-2  ubuntu@24.04      Container started
+0/lxd/4  started  10.13.3.104  juju-a81254-0-lxd-4  ubuntu@24.04      Container started
+0/lxd/5  started  10.13.3.105  juju-a81254-0-lxd-5  ubuntu@24.04      Container started
+0/lxd/6  started  10.13.3.106  juju-a81254-0-lxd-6  ubuntu@24.04      Container started
+0/lxd/7  started  10.13.3.107  juju-a81254-0-lxd-7  ubuntu@24.04      Container started
+1        started  10.13.3.6    manual:10.13.3.6     ubuntu@24.04      Manually provisioned machine
+1/lxd/1  started  10.13.3.111  juju-a81254-1-lxd-1  ubuntu@24.04      Container started
+1/lxd/2  started  10.13.3.112  juju-a81254-1-lxd-2  ubuntu@24.04      Container started
+2        started  10.13.3.7    manual:10.13.3.7     ubuntu@24.04      Manually provisioned machine
+2/lxd/1  started  10.13.3.121  juju-a81254-2-lxd-1  ubuntu@24.04      Container started
+2/lxd/2  started  10.13.3.122  juju-a81254-2-lxd-2  ubuntu@24.04      Container started
+3        started  10.13.3.8    manual:10.13.3.8     ubuntu@24.04      Manually provisioned machine
+3/lxd/0  started  10.13.3.130  juju-a81254-3-lxd-0  ubuntu@24.04      Container started
+3/lxd/1  started  10.13.3.131  juju-a81254-3-lxd-1  ubuntu@24.04      Container started
+4        started  10.13.3.9    manual:10.13.3.9     ubuntu@24.04      Manually provisioned machine
+4/lxd/0  started  10.13.3.140  juju-a81254-4-lxd-0  ubuntu@24.04      Container started
+4/lxd/2  started  10.13.3.142  juju-a81254-4-lxd-2  ubuntu@24.04      Container started
+4/lxd/3  started  10.13.3.143  juju-a81254-4-lxd-3  ubuntu@24.04      Container started
+4/lxd/4  started  10.13.3.144  juju-a81254-4-lxd-4  ubuntu@24.04      Container started
