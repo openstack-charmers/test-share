@@ -1,0 +1,15 @@
++ openstack network agent list
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+----------------------------+
+| ID                                   | Agent Type                   | Host  | Availability Zone | Alive | State | Binary                     |
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+----------------------------+
+| s4lp8                                | OVN Controller Gateway agent | s4lp8 |                   | :-)   | UP    | ovn-controller             |
+| df0b559e-49ea-5ded-a6b1-5ea24e591cb7 | OVN Metadata agent           | s4lp8 |                   | :-)   | UP    | neutron-ovn-metadata-agent |
+| s4lp6                                | OVN Controller Gateway agent | s4lp6 |                   | :-)   | UP    | ovn-controller             |
+| 434e36df-dd83-5ee5-93c9-05bca5aa7c60 | OVN Metadata agent           | s4lp6 |                   | :-)   | UP    | neutron-ovn-metadata-agent |
+| s4lp7                                | OVN Controller Gateway agent | s4lp7 |                   | :-)   | UP    | ovn-controller             |
+| 266dfd2e-297d-545d-b6af-3df647f751f0 | OVN Metadata agent           | s4lp7 |                   | :-)   | UP    | neutron-ovn-metadata-agent |
+| s4lp9                                | OVN Controller Gateway agent | s4lp9 |                   | :-)   | UP    | ovn-controller             |
+| 03bda42a-9f66-513f-a664-f74d7a9511fb | OVN Metadata agent           | s4lp9 |                   | :-)   | UP    | neutron-ovn-metadata-agent |
+| s4lp5                                | OVN Controller Gateway agent | s4lp5 |                   | :-)   | UP    | ovn-controller             |
+| 333a9498-0eb6-5f89-a970-1c78c768bdac | OVN Metadata agent           | s4lp5 |                   | :-)   | UP    | neutron-ovn-metadata-agent |
++--------------------------------------+------------------------------+-------+-------------------+-------+-------+----------------------------+
