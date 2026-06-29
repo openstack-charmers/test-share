@@ -1,0 +1,64 @@
+# Sunbeam/OpenStack provenance
+
+This file replaces the legacy charm 'openstack-origin' dump. Sunbeam
+charms generally do not expose an 'openstack-origin' config option, so
+the useful provenance is the selected Ubuntu/OpenStack series, Juju charm
+channels/revisions/bases, and machine-side snap/package evidence.
+Operational status is intentionally left to juju_status.txt.
+
+## Validation target
+
+ubuntu-series=resolute
+openstack-series=gazpacho
+target-arch=s390x
+run-id=20260626T150509Z
+charm-source=charmhub
+
+## Juju charm revisions
+
++ juju status -m sunbeam-controller:openstack --format=json
+MODEL      APP                    CHARM                        CHANNEL        REV      BASE        
+-----      ---                    -----                        -------        ---      ----        
+openstack  cinder                 cinder-k8s                   2026.1/edge    276      ubuntu@24.04
+openstack  cinder-router          mysql-router-k8s             8.0/edge       915      ubuntu@22.04
+openstack  glance                 glance-k8s                   2026.1/edge    278      ubuntu@24.04
+openstack  keystone               keystone-k8s                 2026.1/edge    421      ubuntu@24.04
+openstack  mysql                  mysql-k8s                    8.0/stable     401      ubuntu@22.04
+openstack  neutron                neutron-k8s                  2026.1/edge    312      ubuntu@24.04
+openstack  nova                   nova-k8s                     2026.1/edge    305      ubuntu@24.04
+openstack  ovn-central            ovn-central-k8s              26.03/edge     261      ubuntu@24.04
+openstack  ovn-relay              ovn-relay-k8s                26.03/edge     248      ubuntu@24.04
+openstack  placement              placement-k8s                2026.1/edge    247      ubuntu@24.04
+openstack  rabbitmq               rabbitmq-k8s                 -              0        ubuntu@24.04
+openstack  tls-operator           self-signed-certificates     1/edge         327      ubuntu@24.04
+openstack  traefik                traefik-k8s                  latest/edge    345      ubuntu@26.04
+
++ juju status -m sunbeam-controller:machines --format=json
+MODEL      APP                    CHARM                        CHANNEL        REV      BASE        
+-----      ---                    -----                        -------        ---      ----        
+machines   cinder-microceph       cinder-volume-ceph           -              0        ubuntu@26.04
+machines   cinder-volume          cinder-volume                -              3        ubuntu@26.04
+machines   hypervisor             openstack-hypervisor         -              4        ubuntu@26.04
+machines   microceph              microceph                    -              0        ubuntu@26.04
+machines   sunbeam-machine        sunbeam-machine              -              2        ubuntu@26.04
+
+## Machine-side snaps
+
++ snap list juju k8s openstack-hypervisor cinder-volume microceph
+Name                  Version                Rev    Tracking      Publisher    Notes
+cinder-volume         2026.1-90938087+dirty  x1     2026.1/edge   -            held
+juju                  3.6.24                 35255  3/stable      canonical**  -
+k8s                   v1.35.3                5384   latest/edge   canonical**  classic
+microceph             19.2.3+snapcf306793a4  1740   squid/stable  canonical**  held
+openstack-hypervisor  2026.1-b6460598+dirty  x1     2026.1/edge   -            held
+
+## Machine-side OpenStack runtime evidence
+
++ readlink -f /snap/openstack-hypervisor/current
+/snap/openstack-hypervisor/x1
+
++ zgrep -m1 '^nova (' /snap/openstack-hypervisor/current/usr/share/doc/python3-nova/changelog.Debian.gz
+nova (3:33.0.0-0ubuntu3.1) resolute-security; urgency=high
+
++ test -x /snap/openstack-hypervisor/current/usr/bin/qemu-system-s390x
+qemu-system-s390x=present

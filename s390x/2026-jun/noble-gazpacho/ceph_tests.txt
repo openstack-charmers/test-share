@@ -1,0 +1,17 @@
++ sudo microceph.ceph osd lspools
+1 .mgr
+2 cinder-microceph
+
++ sudo microceph.ceph osd df
+ID  CLASS  WEIGHT   REWEIGHT  SIZE   RAW USE  DATA     OMAP     META     AVAIL    %USE  VAR   PGS  STATUS
+ 1         0.00200   1.00000  2 GiB   66 MiB  932 KiB    1 KiB   66 MiB  1.9 GiB  3.25  0.84   84      up
+ 2         0.00200   1.00000  2 GiB   84 MiB  356 KiB    1 KiB   83 MiB  1.9 GiB  4.08  1.05   83      up
+ 3         0.00200   1.00000  2 GiB   88 MiB  352 KiB    1 KiB   87 MiB  1.9 GiB  4.28  1.11   90      up
+                       TOTAL  6 GiB  238 MiB  1.6 MiB  4.7 KiB  236 MiB  5.8 GiB  3.87                   
+MIN/MAX VAR: 0.84/1.11  STDDEV: 0.45
+
++ sudo microceph.rados -p cinder-microceph ls
+rbd_directory
+rbd_info
+rbd_trash
+

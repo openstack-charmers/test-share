@@ -1,0 +1,155 @@
+/usr/lib/python3/dist-packages/watcher_tempest_plugin/tests/client_functional/__init__.py:20: DeprecationWarning: The 'watcher_tempest_plugin.tests.client_functional' module usage is deprecated and will be removed in version '2026.1', please use watcherclient.tests.client_functional instead: The 'watcher_tempest_plugin.tests.client_functional' module is deprecated and will be removed in version 2026.1. We recommend using watcherclient.tests.client_functional for running functional tests. 
+  removals.removed_module(
+/usr/lib/python3/dist-packages/watcher_tempest_plugin/tests/client_functional/__init__.py:20: DeprecationWarning: The 'watcher_tempest_plugin.tests.client_functional' module usage is deprecated and will be removed in version '2026.1', please use watcherclient.tests.client_functional instead: The 'watcher_tempest_plugin.tests.client_functional' module is deprecated and will be removed in version 2026.1. We recommend using watcherclient.tests.client_functional for running functional tests. 
+  removals.removed_module(
+{0} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_get_flavor [0.134599s] ... ok
+{0} tempest.api.compute.flavors.test_flavors.FlavorsV2TestJSON.test_list_flavors [0.226593s] ... ok
+{0} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_create [1.151685s] ... ok
+{0} tempest.api.compute.security_groups.test_security_group_rules.SecurityGroupRulesTestJSON.test_security_group_rules_list [1.580880s] ... ok
+{0} tempest.api.compute.security_groups.test_security_groups.SecurityGroupsTestJSON.test_security_groups_create_list_delete [1.852023s] ... ok
+{0} setUpClass (tempest.api.compute.servers.test_attach_interfaces.AttachInterfacesUnderV243Test) ... SKIPPED: Validation should be enabled to ensure guest OS is running and capable of processing ACPI events.
+{0} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_list_servers [0.057939s] ... ok
+{0} tempest.api.compute.servers.test_create_server.ServersTestBootFromVolume.test_verify_server_details [0.000150s] ... ok
+{0} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_list_servers [0.061662s] ... ok
+{0} tempest.api.compute.servers.test_create_server.ServersTestJSON.test_verify_server_details [0.000150s] ... ok
+{0} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_list_servers [0.029354s] ... ok
+{0} tempest.api.compute.servers.test_create_server.ServersTestManualDisk.test_verify_server_details [0.000179s] ... ok
+{0} tempest.api.compute.servers.test_server_actions.ServerActionsTestJSON.test_reboot_server_hard [8.843581s] ... ok
+{0} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses [0.017808s] ... ok
+{0} tempest.api.compute.servers.test_server_addresses.ServerAddressesTestJSON.test_list_server_addresses_by_network [0.128749s] ... ok
+{0} tempest.api.compute.test_versions.TestVersions.test_get_version_details [0.017599s] ... ok
+{0} tempest.api.compute.test_versions.TestVersions.test_list_api_versions [0.005256s] ... ok
+{0} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_media_types [0.052580s] ... ok
+{0} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_version_resources [0.057394s] ... ok
+{0} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_api_version_statuses [0.051941s] ... ok
+{0} tempest.api.identity.v3.test_api_discovery.TestApiDiscovery.test_list_api_versions [0.001990s] ... ok
+{0} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_delete_image [0.166678s] ... ok
+{0} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_register_upload_get_image_file [0.058022s] ... ok
+{0} tempest.api.image.v2.test_images.BasicOperationsImagesTest.test_update_image [0.041757s] ... ok
+{0} tempest.api.image.v2.test_versions.VersionsTest.test_list_versions [0.002614s] ... ok
+{0} tempest.api.network.test_extensions.ExtensionsTestJSON.test_list_show_extensions [0.812770s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_floating_ip_specifying_a_fixed_ip_address [0.919428s] ... ok
+{0} tempest.api.network.test_floating_ips.FloatingIPTestJSON.test_create_list_show_update_delete_floating_ip [1.275864s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_network [1.461346s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_port [1.306854s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsIpV6Test.test_bulk_create_delete_subnet [21.219015s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_network [1.413411s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_port [1.252504s] ... ok
+{0} tempest.api.network.test_networks.BulkNetworkOpsTest.test_bulk_create_delete_subnet [21.359515s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_create_update_delete_network_subnet [1.219739s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_external_network_visibility [0.323006s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_list_networks [0.029169s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_list_subnets [0.018555s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_show_network [0.024662s] ... ok
+{0} tempest.api.network.test_networks.NetworksIpV6Test.test_show_subnet [0.015970s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_create_update_delete_network_subnet [1.274662s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_external_network_visibility [0.063750s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_networks [0.025166s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_list_subnets [0.026955s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_network [0.022017s] ... ok
+{0} tempest.api.network.test_networks.NetworksTest.test_show_subnet [0.014268s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_in_allowed_allocation_pools [11.310100s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_port_with_no_securitygroups [10.991894s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_create_update_delete_port [0.507287s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_list_ports [0.022941s] ... ok
+{0} tempest.api.network.test_ports.PortsIpV6TestJSON.test_show_port [0.018306s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_port_in_allowed_allocation_pools [11.507972s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_port_with_no_securitygroups [11.292623s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_create_update_delete_port [0.520356s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_list_ports [0.023543s] ... ok
+{0} tempest.api.network.test_ports.PortsTestJSON.test_show_port [0.018370s] ... ok
+{0} tempest.api.network.test_routers.RoutersIpV6Test.test_add_multiple_router_interfaces [29.047630s] ... ok
+{0} tempest.api.network.test_routers.RoutersIpV6Test.test_add_remove_router_interface_with_port_id [12.177586s] ... ok
+{0} tempest.api.network.test_routers.RoutersIpV6Test.test_add_remove_router_interface_with_subnet_id [12.005996s] ... ok
+{0} tempest.api.network.test_routers.RoutersIpV6Test.test_create_show_list_update_delete_router [1.410084s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_multiple_router_interfaces [29.539335s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_port_id [12.514930s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_add_remove_router_interface_with_subnet_id [12.197588s] ... ok
+{0} tempest.api.network.test_routers.RoutersTest.test_create_show_list_update_delete_router [1.369146s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_list_update_show_delete_security_group [0.820045s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_create_show_delete_security_group_rule [1.099126s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupIPv6Test.test_list_security_groups [0.015481s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_list_update_show_delete_security_group [0.809185s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_create_show_delete_security_group_rule [0.796678s] ... ok
+{0} tempest.api.network.test_security_groups.SecGroupTest.test_list_security_groups [0.015412s] ... ok
+{0} tempest.api.network.test_subnetpools_extensions.SubnetPoolsTestJSON.test_create_list_show_update_delete_subnetpools [0.580988s] ... ok
+{0} tempest.api.network.test_versions.NetworksApiDiscovery.test_api_version_resources [0.004309s] ... ok
+{0} tempest.api.network.test_versions.NetworksApiDiscovery.test_show_api_v2_details [0.110776s] ... ok
+{0} setUpClass (tempest.api.object_storage.test_account_quotas.AccountQuotasTest) ... SKIPPED: AccountQuotasTest skipped as swift is not available
+{0} setUpClass (tempest.api.object_storage.test_account_services.AccountTest) ... SKIPPED: AccountTest skipped as swift is not available
+{0} setUpClass (tempest.api.object_storage.test_container_quotas.ContainerQuotasTest) ... SKIPPED: ContainerQuotasTest skipped as swift is not available
+{0} setUpClass (tempest.api.object_storage.test_container_services.ContainerTest) ... SKIPPED: ContainerTest skipped as swift is not available
+{0} setUpClass (tempest.api.object_storage.test_object_services.ObjectTest) ... SKIPPED: ObjectTest skipped as swift is not available
+{0} tempest.api.volume.test_versions.VersionsTest.test_list_versions [0.004891s] ... ok
+{0} tempest.api.volume.test_volumes_actions.VolumesActionsTest.test_attach_detach_volume_to_instance [20.530514s] ... ok
+{0} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete [3.998784s] ... ok
+{0} tempest.api.volume.test_volumes_get.VolumesGetTest.test_volume_create_get_update_delete_from_image [10.163838s] ... ok
+{0} tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list [0.013682s] ... ok
+{0} setUpClass (tempest.scenario.test_dashboard_basic_ops.TestDashboardBasicOps) ... SKIPPED: Horizon support is required
+{0} tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basic_ops [19.308007s] ... ok
+{0} setUpClass (tempest.scenario.test_server_multinode.TestServerMultinode) ... SKIPPED: Less than 2 compute nodes, skipping multinode tests.
+{0} setUpClass (ironic_tempest_plugin.tests.scenario.test_introspection_basic.InspectorBasicTest) ... SKIPPED: Ironic is not enabled.
+{0} setUpClass (manila_tempest_tests.tests.api.admin.test_share_networks.ShareNetworkAdminTest) ... SKIPPED: Manila support is required
+{0} setUpClass (manila_tempest_tests.tests.api.test_share_networks.ShareNetworksTest) ... SKIPPED: Manila support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_action.TestPatchAction) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_action.TestShowListAction) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_action_plan.TestCreateDeleteExecuteActionPlan) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_action_plan.TestShowListActionPlan) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_api_discovery.TestApiDiscovery) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_audit.TestCreateUpdateDeleteAudit) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_audit.TestCreateUpdateDeleteAuditV14) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_audit.TestShowListAudit) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_audit_template.TestAuditTemplate) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_audit_template.TestCreateDeleteAuditTemplate) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_data_model.TestListDataModel) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_data_model.TestNegativeListDataModel) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_goal.TestShowListGoal) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_scoring_engine.TestShowListScoringEngine) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_service.TestShowListService) ... SKIPPED: Watcher support is required
+{0} setUpClass (watcher_tempest_plugin.tests.api.admin.test_strategy.TestShowListStrategy) ... SKIPPED: Watcher support is required
+{0} setUpClass (octavia_tempest_plugin.tests.scenario.v2.test_traffic_ops.TrafficOperationsScenarioTest) ... SKIPPED: Traffic tests will not work without run_validation enabled.
+{0} neutron_tempest_plugin.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_none [1.660411s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_create_rbac_policy_with_target_tenant_too_long_id [0.807180s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_shared_network_extension.RBACSharedNetworksTest.test_network_only_visible_to_policy_target [1.603389s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterFloatingIpTestJSON.test_filter_floatingip_tags [0.284765s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterNetworkTestJSON.test_filter_network_tags [0.281796s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterPortTestJSON.test_filter_port_tags [0.897192s] ... ok
+{0} setUpClass (neutron_tempest_plugin.api.admin.test_tag.TagFilterQosPolicyTestJSON) ... SKIPPED: Skipped because network extension: qos is not enabled
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterRouterTestJSON.test_filter_router_tags [0.350372s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterSecGroupTestJSON.test_filter_security_group_tags [0.189078s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterSubnetTestJSON.test_filter_subnet_tags [0.257197s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterSubnetpoolTestJSON.test_filter_subnetpool_tags [0.106426s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFilterTrunkTestJSON.test_filter_trunk_tags [0.100315s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagFloatingIpTestJSON.test_floatingip_tags [0.763440s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagNetworkTestJSON.test_network_tags [0.757495s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagPortTestJSON.test_port_tags [0.734338s] ... ok
+{0} setUpClass (neutron_tempest_plugin.api.admin.test_tag.TagQosPolicyTestJSON) ... SKIPPED: Skipped because network extension: qos is not enabled
+{0} neutron_tempest_plugin.api.admin.test_tag.TagRouterTestJSON.test_router_tags [1.033820s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagSecGroupTestJSON.test_security_group_tags [0.663861s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagSubnetPoolTestJSON.test_subnetpool_tags [0.613865s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagSubnetTestJSON.test_subnet_tags [0.611995s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.TagTrunkTestJSON.test_trunk_tags [0.308661s] ... ok
+{0} neutron_tempest_plugin.api.admin.test_tag.UpdateTagsTest.test_update_tags_affects_only_updated_resource [1.471184s] ... ok
+{0} setUpClass (neutron_tempest_plugin.vpnaas.api.test_vpnaas.VPNaaSTestJSON) ... SKIPPED: vpnaas extension not enabled.
+{0} setUpClass (designate_tempest_plugin.tests.api.v2.test_recordset.RecordsetsTest) ... SKIPPED: RecordsetsTest skipped as designate is not available
+{0} setUpClass (designate_tempest_plugin.tests.api.v2.test_zones.ZonesTest) ... SKIPPED: ZonesTest skipped as designate is not available
+{0} setUpClass (designate_tempest_plugin.tests.api.v2.test_zones_exports.ZonesExportTest) ... SKIPPED: ZonesExportTest skipped as designate is not available
+{0} setUpClass (designate_tempest_plugin.tests.api.v2.test_zones_imports.ZonesImportTest) ... SKIPPED: ZonesImportTest skipped as designate is not available
+{0} designate_tempest_plugin.tests.scenario.v2.test_designate_multipool.DesignateMultiPoolTest.test_create_zones ... SKIPPED: Multipools feature is being tested with --delete option. It might delete pools that were created in other tests.
+{0} setUpClass (designate_tempest_plugin.tests.scenario.v2.test_zones.ZonesTest) ... SKIPPED: ZonesTest skipped as designate is not available
+
+======
+Totals
+======
+Ran: 135 tests in 951.7489 sec.
+ - Passed: 98
+ - Skipped: 37
+ - Expected Fail: 0
+ - Unexpected Success: 0
+ - Failed: 0
+Sum of execute time for each test: 296.8640 sec.
+
+==============
+Worker Balance
+==============
+ - Worker 0 (135 tests) => 0:15:51.748861

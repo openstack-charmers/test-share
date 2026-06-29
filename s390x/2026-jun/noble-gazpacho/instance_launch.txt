@@ -1,0 +1,83 @@
++ openstack server create --flavor m1.tiny --image ubuntu --network s390x-verify-net --key-name s390x-verify-key --security-group s390x-verify-sg --config-drive true --wait s390x-verify-server
+
++--------------------------------------+----------------------------------------------------------+
+| Field                                | Value                                                    |
++--------------------------------------+----------------------------------------------------------+
+| OS-DCF:diskConfig                    | MANUAL                                                   |
+| OS-EXT-AZ:availability_zone          | nova                                                     |
+| OS-EXT-SRV-ATTR:host                 | special18                                                |
+| OS-EXT-SRV-ATTR:hypervisor_hostname  | special18                                                |
+| OS-EXT-SRV-ATTR:instance_name        | instance-00000036                                        |
+| OS-EXT-STS:power_state               | Running                                                  |
+| OS-EXT-STS:task_state                | None                                                     |
+| OS-EXT-STS:vm_state                  | active                                                   |
+| OS-SRV-USG:launched_at               | 2026-06-25T22:38:56.000000                               |
+| OS-SRV-USG:terminated_at             | None                                                     |
+| accessIPv4                           |                                                          |
+| accessIPv6                           |                                                          |
+| addresses                            | s390x-verify-net=192.168.222.103                         |
+| adminPass                            | <redacted> |
+| config_drive                         | True                                                     |
+| created                              | 2026-06-25T22:38:45Z                                     |
+| flavor                               | m1.tiny (bb79f081-b888-44fa-85ea-287b2b3f5a73)           |
+| hostId                               | c62ecb6622917cba21cbf70ede9f317b30317f1607e40c745dc12d9e |
+| id                                   | b320e4cb-dab3-47be-88b7-f97c6355f477                     |
+| image                                | ubuntu (93601844-b88c-46c8-8d84-eb60b55f9389)            |
+| key_name                             | s390x-verify-key                                         |
+| name                                 | s390x-verify-server                                      |
+| os-extended-volumes:volumes_attached | []                                                       |
+| progress                             | 0                                                        |
+| project_id                           | fd595f10f3e54c83869290a554e8e67e                         |
+| properties                           |                                                          |
+| security_groups                      | name='s390x-verify-sg'                                   |
+| status                               | ACTIVE                                                   |
+| updated                              | 2026-06-25T22:38:57Z                                     |
+| user_id                              | 3d473cba78e5403c95ee797ac836ef9c                         |
++--------------------------------------+----------------------------------------------------------+
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Field                               | Value                                                                                                                                                                                   |
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| OS-DCF:diskConfig                   | MANUAL                                                                                                                                                                                  |
+| OS-EXT-AZ:availability_zone         | nova                                                                                                                                                                                    |
+| OS-EXT-SRV-ATTR:host                | special18                                                                                                                                                                               |
+| OS-EXT-SRV-ATTR:hostname            | s390x-verify-server                                                                                                                                                                     |
+| OS-EXT-SRV-ATTR:hypervisor_hostname | special18                                                                                                                                                                               |
+| OS-EXT-SRV-ATTR:instance_name       | instance-00000036                                                                                                                                                                       |
+| OS-EXT-SRV-ATTR:kernel_id           |                                                                                                                                                                                         |
+| OS-EXT-SRV-ATTR:launch_index        | 0                                                                                                                                                                                       |
+| OS-EXT-SRV-ATTR:ramdisk_id          |                                                                                                                                                                                         |
+| OS-EXT-SRV-ATTR:reservation_id      | r-5n9gy1t0                                                                                                                                                                              |
+| OS-EXT-SRV-ATTR:root_device_name    | /dev/vda                                                                                                                                                                                |
+| OS-EXT-SRV-ATTR:user_data           | None                                                                                                                                                                                    |
+| OS-EXT-STS:power_state              | Running                                                                                                                                                                                 |
+| OS-EXT-STS:task_state               | None                                                                                                                                                                                    |
+| OS-EXT-STS:vm_state                 | active                                                                                                                                                                                  |
+| OS-SRV-USG:launched_at              | 2026-06-25T22:38:56.000000                                                                                                                                                              |
+| OS-SRV-USG:terminated_at            | None                                                                                                                                                                                    |
+| accessIPv4                          |                                                                                                                                                                                         |
+| accessIPv6                          |                                                                                                                                                                                         |
+| addresses                           | s390x-verify-net=192.168.222.103                                                                                                                                                        |
+| config_drive                        | True                                                                                                                                                                                    |
+| created                             | 2026-06-25T22:38:45Z                                                                                                                                                                    |
+| description                         | s390x-verify-server                                                                                                                                                                     |
+| flavor                              | description=, disk='4', ephemeral='0', , id='m1.tiny', is_disabled=, is_public='True', location=, name='m1.tiny', original_name='m1.tiny', ram='512', rxtx_factor=, swap='0', vcpus='1' |
+| hostId                              | c62ecb6622917cba21cbf70ede9f317b30317f1607e40c745dc12d9e                                                                                                                                |
+| host_status                         | UP                                                                                                                                                                                      |
+| id                                  | b320e4cb-dab3-47be-88b7-f97c6355f477                                                                                                                                                    |
+| image                               | ubuntu (93601844-b88c-46c8-8d84-eb60b55f9389)                                                                                                                                           |
+| key_name                            | s390x-verify-key                                                                                                                                                                        |
+| locked                              | False                                                                                                                                                                                   |
+| locked_reason                       | None                                                                                                                                                                                    |
+| name                                | s390x-verify-server                                                                                                                                                                     |
+| progress                            | 0                                                                                                                                                                                       |
+| project_id                          | fd595f10f3e54c83869290a554e8e67e                                                                                                                                                        |
+| properties                          |                                                                                                                                                                                         |
+| security_groups                     | name='s390x-verify-sg'                                                                                                                                                                  |
+| server_groups                       | []                                                                                                                                                                                      |
+| status                              | ACTIVE                                                                                                                                                                                  |
+| tags                                |                                                                                                                                                                                         |
+| trusted_image_certificates          | None                                                                                                                                                                                    |
+| updated                             | 2026-06-25T22:38:57Z                                                                                                                                                                    |
+| user_id                             | 3d473cba78e5403c95ee797ac836ef9c                                                                                                                                                        |
+| volumes_attached                    |                                                                                                                                                                                         |
++-------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+

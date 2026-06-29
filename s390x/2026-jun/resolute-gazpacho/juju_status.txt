@@ -1,0 +1,157 @@
++ juju status
+Model      Controller          Cloud/Region  Version  SLA          Timestamp
+openstack  sunbeam-controller  sunbeam-k8s   3.6.24   unsupported  17:31:51Z
+
+SAAS             Status  Store               URL
+storage-backend  active  sunbeam-controller  admin/machines.storage-backend
+
+App            Version  Status   Scale  Charm                     Channel      Rev  Address         Exposed  Message
+cinder                  active       1  cinder-k8s                2026.1/edge  276  10.152.183.116  no       
+cinder-router  8.0.45   waiting      1  mysql-router-k8s          8.0/edge     915  10.152.183.236  no       Waiting for remote-7275f4225c764a778056b958be077db2 app on database endpoint
+glance                  active       1  glance-k8s                2026.1/edge  278  10.152.183.68   no       
+keystone                active       1  keystone-k8s              2026.1/edge  421  10.152.183.216  no       
+mysql          8.0.44   active       1  mysql-k8s                 8.0/stable   401  10.152.183.21   no       
+neutron                 active       1  neutron-k8s               2026.1/edge  312  10.152.183.44   no       
+nova                    active       1  nova-k8s                  2026.1/edge  305  10.152.183.124  no       
+ovn-central             active       1  ovn-central-k8s           26.03/edge   261  10.152.183.138  no       
+ovn-relay               active       1  ovn-relay-k8s             26.03/edge   248  10.152.183.148  no       
+placement               active       1  placement-k8s             2026.1/edge  247  10.152.183.65   no       
+rabbitmq       3.12.1   active       1  rabbitmq-k8s                             0  10.152.183.213  no       
+tls-operator            active       1  self-signed-certificates  1/edge       327  10.152.183.39   no       
+traefik        2.11.49  active       1  traefik-k8s               latest/edge  345  10.152.183.190  no       Serving at http://10.103.192.243
+
+Unit              Workload  Agent  Address      Ports  Message
+cinder-router/0*  active    idle   10.1.75.146         
+cinder/0*         active    idle   10.1.75.147         
+glance/0*         active    idle   10.1.75.149         
+keystone/0*       active    idle   10.1.75.151         
+mysql/0*          active    idle   10.1.75.148         Primary
+neutron/0*        active    idle   10.1.75.153         
+nova/0*           active    idle   10.1.75.154         
+ovn-central/0*    active    idle   10.1.75.156         
+ovn-relay/0*      active    idle   10.1.75.150         
+placement/0*      active    idle   10.1.75.152         
+rabbitmq/0*       active    idle   10.1.75.155         
+tls-operator/0*   active    idle   10.1.75.158         
+traefik/0*        active    idle   10.1.75.157         Serving at http://10.103.192.243
+
+Offer                 Application    Charm                     Rev  Connected  Endpoint              Interface             Role
+amqp                  rabbitmq       rabbitmq-k8s              0    4/4        amqp                  rabbitmq              provider
+certificates          tls-operator   self-signed-certificates  327  2/2        certificates          tls-certificates      provider
+cinder-database       cinder-router  mysql-router-k8s          915  2/2        database              mysql_client          provider
+identity-credentials  keystone       keystone-k8s              421  4/4        identity-credentials  keystone-credentials  provider
+identity-service      keystone       keystone-k8s              421  0/0        identity-service      keystone              provider
+nova-service          nova           nova-k8s                  305  2/2        nova-service          nova                  provider
+ovsdb-cms             ovn-relay      ovn-relay-k8s             248  2/2        ovsdb-cms-relay       ovsdb-cms             provider
+send-ca-cert          keystone       keystone-k8s              421  6/6        send-ca-cert          certificate_transfer  provider
+
+Integration provider              Requirer                          Interface             Type     Message
+cinder-router:cos                 cinder-router:cos                 cos                   peer     
+cinder-router:database            cinder:database                   mysql_client          regular  
+cinder-router:mysql-router-peers  cinder-router:mysql-router-peers  mysql_router_peers    peer     
+cinder-router:refresh-v-three     cinder-router:refresh-v-three     refresh               peer     
+cinder-router:tls                 cinder-router:tls                 tls                   peer     
+cinder-router:upgrade-version-a   cinder-router:upgrade-version-a   upgrade               peer     
+cinder:peers                      cinder:peers                      cinder-peer           peer     
+glance:image-service              cinder:image-service              glance                regular  
+glance:peers                      glance:peers                      glance-peer           peer     
+keystone:identity-service         cinder:identity-service           keystone              regular  
+keystone:identity-service         glance:identity-service           keystone              regular  
+keystone:identity-service         neutron:identity-service          keystone              regular  
+keystone:identity-service         nova:identity-service             keystone              regular  
+keystone:identity-service         placement:identity-service        keystone              regular  
+keystone:peers                    keystone:peers                    keystone-peer         peer     
+keystone:send-ca-cert             cinder:receive-ca-cert            certificate_transfer  regular  
+keystone:send-ca-cert             glance:receive-ca-cert            certificate_transfer  regular  
+keystone:send-ca-cert             neutron:receive-ca-cert           certificate_transfer  regular  
+keystone:send-ca-cert             nova:receive-ca-cert              certificate_transfer  regular  
+keystone:send-ca-cert             placement:receive-ca-cert         certificate_transfer  regular  
+mysql:database                    cinder-router:backend-database    mysql_client          regular  
+mysql:database                    glance:database                   mysql_client          regular  
+mysql:database                    keystone:database                 mysql_client          regular  
+mysql:database                    neutron:database                  mysql_client          regular  
+mysql:database                    nova:api-database                 mysql_client          regular  
+mysql:database                    nova:cell-database                mysql_client          regular  
+mysql:database                    nova:database                     mysql_client          regular  
+mysql:database                    placement:database                mysql_client          regular  
+mysql:database-peers              mysql:database-peers              mysql_peers           peer     
+mysql:restart                     mysql:restart                     rolling_op            peer     
+mysql:upgrade                     mysql:upgrade                     upgrade               peer     
+neutron:peers                     neutron:peers                     neutron-peer          peer     
+nova:peers                        nova:peers                        nova-peer             peer     
+ovn-central:ovsdb-cms             neutron:ovsdb-cms                 ovsdb-cms             regular  
+ovn-central:ovsdb-cms             ovn-relay:ovsdb-cms               ovsdb-cms             regular  
+ovn-central:peers                 ovn-central:peers                 ovn-central-peer      peer     
+ovn-relay:peers                   ovn-relay:peers                   ovn-relay-peer        peer     
+placement:peers                   placement:peers                   placement-peer        peer     
+placement:placement               nova:placement                    placement             regular  
+rabbitmq:amqp                     cinder:amqp                       rabbitmq              regular  
+rabbitmq:amqp                     glance:amqp                       rabbitmq              regular  
+rabbitmq:amqp                     keystone:amqp                     rabbitmq              regular  
+rabbitmq:amqp                     neutron:amqp                      rabbitmq              regular  
+rabbitmq:amqp                     nova:amqp                         rabbitmq              regular  
+rabbitmq:peers                    rabbitmq:peers                    rabbitmq-peer         peer     
+storage-backend:storage-backend   cinder:storage-backend            cinder-backend        regular  
+tls-operator:certificates         neutron:certificates              tls-certificates      regular  
+tls-operator:certificates         ovn-central:certificates          tls-certificates      regular  
+tls-operator:certificates         ovn-relay:certificates            tls-certificates      regular  
+traefik:ingress                   cinder:ingress-internal           ingress               regular  
+traefik:ingress                   glance:ingress-internal           ingress               regular  
+traefik:ingress                   keystone:ingress-internal         ingress               regular  
+traefik:ingress                   neutron:ingress-internal          ingress               regular  
+traefik:ingress                   nova:ingress-internal             ingress               regular  
+traefik:ingress                   nova:ingress-metadata             ingress               regular  
+traefik:ingress                   placement:ingress-internal        ingress               regular  
+traefik:peers                     traefik:peers                     traefik_peers         peer     
+traefik:traefik-route             nova:traefik-route-internal       traefik_route         regular  
+
++ juju status -m sunbeam-controller:machines
+Model     Controller          Cloud/Region         Version  SLA          Timestamp
+machines  sunbeam-controller  lpar-manual/default  3.6.24   unsupported  17:31:51Z
+
+SAAS                  Status   Store               URL
+amqp                  active   sunbeam-controller  admin/openstack.amqp
+certificates          active   sunbeam-controller  admin/openstack.certificates
+cinder-database       waiting  sunbeam-controller  admin/openstack.cinder-database
+identity-credentials  active   sunbeam-controller  admin/openstack.identity-credentials
+nova-service          active   sunbeam-controller  admin/openstack.nova-service
+ovsdb-cms             active   sunbeam-controller  admin/openstack.ovsdb-cms
+send-ca-cert          active   sunbeam-controller  admin/openstack.send-ca-cert
+
+App               Version  Status  Scale  Charm                 Channel  Rev  Exposed  Message
+cinder-microceph           active      1  cinder-volume-ceph               0  no       
+cinder-volume              active      1  cinder-volume                    3  no       
+hypervisor                 active      1  openstack-hypervisor             4  no       
+microceph                  active      1  microceph                        0  no       
+sunbeam-machine            active      1  sunbeam-machine                  2  no       
+
+Unit                   Workload  Agent  Machine  Public address  Ports  Message
+cinder-volume/0*       active    idle   0        10.1.75.128            
+  cinder-microceph/0*  active    idle            10.1.75.128            
+hypervisor/0*          active    idle   0        10.1.75.128            
+microceph/0*           active    idle   0        10.1.75.128            
+sunbeam-machine/0*     active    idle   0        10.1.75.128            
+
+Machine  State    Address      Inst id                Base          AZ  Message
+0        started  10.1.75.128  manual:10.103.192.219  ubuntu@26.04      Manually provisioned machine
+
+Offer            Application    Charm          Rev  Connected  Endpoint         Interface       Role
+storage-backend  cinder-volume  cinder-volume  3    1/1        storage-backend  cinder-backend  provider
+
+Integration provider                       Requirer                            Interface             Type         Message
+amqp:amqp                                  cinder-volume:amqp                  rabbitmq              regular      
+amqp:amqp                                  hypervisor:amqp                     rabbitmq              regular      
+certificates:certificates                  hypervisor:certificates             tls-certificates      regular      
+cinder-database:database                   cinder-volume:database              mysql_client          regular      
+cinder-microceph:ceph-access               hypervisor:ceph-access              cinder-ceph-key       regular      
+cinder-microceph:peers                     cinder-microceph:peers              cinder-peer           peer         
+cinder-volume:cinder-volume                cinder-microceph:cinder-volume      cinder-volume         subordinate  
+identity-credentials:identity-credentials  cinder-volume:identity-credentials  keystone-credentials  regular      
+identity-credentials:identity-credentials  hypervisor:identity-credentials     keystone-credentials  regular      
+microceph:ceph                             cinder-microceph:ceph               ceph-client           regular      
+microceph:peers                            microceph:peers                     ceph-peer             peer         
+nova-service:nova-service                  hypervisor:nova-service             nova                  regular      
+ovsdb-cms:ovsdb-cms-relay                  hypervisor:ovsdb-cms                ovsdb-cms             regular      
+send-ca-cert:send-ca-cert                  cinder-volume:receive-ca-cert       certificate_transfer  regular      
+send-ca-cert:send-ca-cert                  hypervisor:receive-ca-cert          certificate_transfer  regular      
+send-ca-cert:send-ca-cert                  microceph:receive-ca-cert           certificate_transfer  regular      

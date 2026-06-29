@@ -1,0 +1,18 @@
+++ openstack floating ip create external-network
+++ grep floating_ip_address
+++ awk '{print $4}'
++ ip_addr=172.16.2.198
++ ssh-keygen -f /home/ubuntu/.ssh/known_hosts -R 172.16.2.198
++ openstack server add floating ip s390x-verify-server 172.16.2.198
++ sleep 90
++ ssh ubuntu@172.16.2.198 -i /tmp/s390x-verify-key.pMsZvD -oStrictHostKeyChecking=accept-new echo SSH works
+Warning: Permanently added '172.16.2.198' (ED25519) to the list of known hosts.
+SSH works
+s390x
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
++ openstack server remove floating ip s390x-verify-server 172.16.2.198
