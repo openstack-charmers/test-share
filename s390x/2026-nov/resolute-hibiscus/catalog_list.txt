@@ -1,0 +1,54 @@
++ openstack catalog list
++-----------+---------------+-------------------------------------------------------------------------------------------+
+| Name      | Type          | Endpoints                                                                                 |
++-----------+---------------+-------------------------------------------------------------------------------------------+
+| cinderv3  | volumev3      | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-cinder/v3/8b1280715b694199bbbaf42ac0f638fc |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-cinder/v3/8b1280715b694199bbbaf42ac0f638fc   |
+|           |               | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.139:8776/v3/8b1280715b694199bbbaf42ac0f638fc                   |
+|           |               |                                                                                           |
+| cinder    | block-storage | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.139:8776/v3/8b1280715b694199bbbaf42ac0f638fc                   |
+|           |               | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-cinder/v3/8b1280715b694199bbbaf42ac0f638fc |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-cinder/v3/8b1280715b694199bbbaf42ac0f638fc   |
+|           |               |                                                                                           |
+| keystone  | identity      | RegionOne                                                                                 |
+|           |               |   admin: http://10.103.192.241/openstack-keystone/v3                                      |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241/openstack-keystone/v3                                     |
+|           |               | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241/openstack-keystone/v3                                   |
+|           |               |                                                                                           |
+| neutron   | network       | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-neutron                                      |
+|           |               | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-neutron                                    |
+|           |               | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.217:9696                                                       |
+|           |               |                                                                                           |
+| nova      | compute       | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.162:8774/v2.1                                                  |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-nova/v2.1                                    |
+|           |               | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-nova/v2.1                                  |
+|           |               |                                                                                           |
+| placement | placement     | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-placement                                  |
+|           |               | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.193:8778                                                       |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-placement                                    |
+|           |               |                                                                                           |
+| glance    | image         | RegionOne                                                                                 |
+|           |               |   internal: http://10.103.192.241:80/openstack-glance                                     |
+|           |               | RegionOne                                                                                 |
+|           |               |   public: http://10.103.192.241:80/openstack-glance                                       |
+|           |               | RegionOne                                                                                 |
+|           |               |   admin: http://10.152.183.173:9292                                                       |
+|           |               |                                                                                           |
++-----------+---------------+-------------------------------------------------------------------------------------------+

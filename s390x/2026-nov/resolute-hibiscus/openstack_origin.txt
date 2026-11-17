@@ -1,0 +1,66 @@
+# Sunbeam/OpenStack provenance
+
+This file replaces the legacy charm 'openstack-origin' dump. Sunbeam
+charms generally do not expose an 'openstack-origin' config option, so
+the useful provenance is the selected Ubuntu/OpenStack series, Juju charm
+channels/revisions/bases, and machine-side snap/package evidence.
+Operational status is intentionally left to juju_status.txt.
+
+## Validation target
+
+ubuntu-series=resolute
+openstack-series=hibiscus
+target-arch=s390x
+run-id=20261117T185714Z
+charm-source=hybrid
+
+## Juju charm revisions
+
++ juju status -m sunbeam-controller:openstack --format=json
+MODEL      APP                    CHARM                        CHANNEL        REV      BASE        
+-----      ---                    -----                        -------        ---      ----        
+openstack  cinder                 cinder-k8s                   2026.2/edge    350      ubuntu@26.04
+openstack  cinder-router          mysql-router-k8s             8.0/edge       928      ubuntu@22.04
+openstack  glance                 glance-k8s                   2026.2/edge    337      ubuntu@26.04
+openstack  keystone               keystone-k8s                 2026.2/edge    471      ubuntu@26.04
+openstack  mysql                  mysql-k8s                    8.0/stable     457      ubuntu@22.04
+openstack  neutron                neutron-k8s                  2026.2/edge    389      ubuntu@26.04
+openstack  nova                   nova-k8s                     2026.2/edge    366      ubuntu@26.04
+openstack  placement              placement-k8s                2026.2/edge    297      ubuntu@26.04
+openstack  rabbitmq               rabbitmq-k8s                 -              0        ubuntu@24.04
+openstack  tls-operator           self-signed-certificates     1/edge         327      ubuntu@24.04
+openstack  traefik                traefik-k8s                  latest/edge    511      ubuntu@26.04
+
++ juju status -m sunbeam-controller:machines --format=json
+MODEL      APP                    CHARM                        CHANNEL        REV      BASE        
+-----      ---                    -----                        -------        ---      ----        
+machines   cinder-microceph       cinder-volume-ceph           -              0        ubuntu@26.04
+machines   cinder-volume          cinder-volume                2026.2/edge    217      ubuntu@26.04
+machines   hypervisor             openstack-hypervisor         2026.2/edge    511      ubuntu@26.04
+machines   microceph              microceph                    -              0        ubuntu@26.04
+machines   microcluster-token-distributor microcluster-token-distributor -              0        ubuntu@26.04
+machines   microovn               microovn                     26.03/edge     303      ubuntu@26.04
+machines   openstack-network-agents openstack-network-agents     2026.2/edge    159      ubuntu@26.04
+machines   sunbeam-machine        sunbeam-machine              -              0        ubuntu@26.04
+machines   sunbeam-ovn-proxy      sunbeam-ovn-proxy            2026.2/edge    110      ubuntu@26.04
+
+## Machine-side snaps
+
++ snap list juju k8s openstack-hypervisor cinder-volume microceph
+Name                  Version                Rev    Tracking       Publisher    Notes
+cinder-volume         2026.2-65727229+dirty  x1     -              -            devmode,held
+juju                  3.6.29                 36363  3/stable       canonical**  -
+k8s                   v1.37.1                5909   latest/edge    canonical**  classic
+microceph             20.2.4+snapb605d3ebd1  2158   tentacle/edge  canonical**  held
+openstack-hypervisor  2026.2-a0ef4f9f+dirty  x1     -              -            devmode,held
+
+## Machine-side OpenStack runtime evidence
+
++ readlink -f /snap/openstack-hypervisor/current
+/snap/openstack-hypervisor/x1
+
++ zgrep -m1 '^nova (' /snap/openstack-hypervisor/current/usr/share/doc/python3-nova/changelog.Debian.gz
+nova (3:34.0.0-0ubuntu1+s390x~ppa2) resolute; urgency=medium
+
++ test -x /snap/openstack-hypervisor/current/usr/bin/qemu-system-s390x
+qemu-system-s390x=present
