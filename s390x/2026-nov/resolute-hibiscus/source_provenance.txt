@@ -1,0 +1,44 @@
+=== repository ===
+origin	https://github.com/himax16/zopenstack.git (fetch)
+origin	https://github.com/himax16/zopenstack.git (push)
+HEAD=0769d9b4736d61accd34c2bc36fa50255accb8c7
+STATUS:
+
+=== artifact checksums ===
+2ae2959d30568233a2387209ff2fd0b33dc20f277a3d26c1e683d05ded5a3a8f  /home/ubuntu/zopenstack/sunbeam/charms/cinder-volume-ceph_s390x.charm
+89d76f206248d9b7ebcf5565ddb64e56dd8b25773abd870bbe08b05096131238  /home/ubuntu/zopenstack/sunbeam/charms/microceph_s390x.charm
+8c0b7803ab8a87a9071cd22d957d333273f89b1661b7e0d3f18541f56d4b6d43  /home/ubuntu/zopenstack/sunbeam/charms/microcluster-token-distributor_s390x.charm
+0e4ff813a2c16e13867d60dc256e0d713fa5a2f41b531089e9da46487b62338d  /home/ubuntu/zopenstack/sunbeam/charms/rabbitmq-k8s_s390x.charm
+c3758037b7ac9d0388f8b858cec1708bed07a62167c797d7dff777575fb8b9b9  /home/ubuntu/zopenstack/sunbeam/charms/sunbeam-machine_s390x.charm
+46c44c4bc106b4ac473d66f15c341237f7f5a202848756b8996f9d5bebeb2dff  /home/ubuntu/zopenstack/sunbeam/snaps/cinder-volume_s390x.snap
+58206c8eef8ed0144e35e49e441967105502d8a1abad8da4345cc714b391538b  /home/ubuntu/zopenstack/sunbeam/snaps/openstack-hypervisor_s390x.snap
+
+=== image sources ===
+remote	docker.io/calico/kube-controllers:v3.29.3	sha256:5516ab776c38525fcc985a3030b4f2fd472da68b4170601c23bf6887bfdce703	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	kube-system/calico-kube-controllers-658f444757-f9n8p [calico-kube-controllers]
+remote	docker.io/calico/node:v3.29.3	sha256:eed399f2a727cfc1f374ab5c9cda6123c207e794ed8dc66c7eb6d8db412669e1	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	kube-system/calico-node-gwqx9 [calico-node]
+remote	docker.io/coredns/coredns:1.12.1	sha256:e8c262566636e6bc340ece6473b0eed193cad045384401529721ddbe6463d31c	linux/amd64,linux/arm/v7,linux/arm64,linux/ppc64le,linux/riscv64,linux/s390x	kube-system/coredns-6f76f448fb-dlwtj [coredns]
+remote	ghcr.io/canonical/coredns:1.14.7-ck0	sha256:c7254a16fbfc15fe8e07229b5929dd934be526bf5385433fd8e4158eb88bc7b6	linux/amd64,linux/arm64/v8	kube-system/coredns-58c59bd65f-2h7k6 [coredns], kube-system/coredns-58c59bd65f-kswtp [coredns]
+remote	ghcr.io/canonical/rabbitmq:4.0.5-26.04_edge	sha256:61da155ca98351f7364b1d645c00de8cc902ac6ae11fcd744d006bf0c69910ec	linux/amd64,linux/arm64/v8,linux/s390x	openstack/rabbitmq-0 [rabbitmq]
+remote	ghcr.io/juju/charm-base:ubuntu-22.04	sha256:ea6aa65aa49940b62b193c69f35c1325dd674475a0063a8bbcf7b5269d8975eb	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	openstack/cinder-router-0 [charm], openstack/mysql-0 [charm]
+remote	ghcr.io/juju/charm-base:ubuntu-24.04	sha256:369b0ba2a872142b9ab2166d8d04331ad734eb15ccc5afa1d3afa641601f6171	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	controller-sunbeam-controller/controller-0 [charm], openstack/rabbitmq-0 [charm], openstack/tls-operator-0 [charm]
+remote	ghcr.io/juju/charm-base:ubuntu-26.04	sha256:970b55a42b2a8695449000639ec0bbc78b685514cace79730443779e5564c281	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	openstack/cinder-0 [charm], openstack/glance-0 [charm], openstack/keystone-0 [charm], openstack/neutron-0 [charm], openstack/nova-0 [charm], openstack/placement-0 [charm], openstack/traefik-0 [charm]
+remote	ghcr.io/juju/juju-db:4.4.30	sha256:9acca8652a29cbbb87e3f7e2f71d95015a9fdb2b10de6838944029dedcef68b6	linux/amd64,linux/arm64,linux/ppc64le,linux/s390x	controller-sunbeam-controller/controller-0 [mongodb]
+remote	ghcr.io/juju/jujud-operator:3.6.29	sha256:6c2578bdaf3751c0ce19607fdbcada0808b02398e9e54a05278096f09adf99e9	linux/amd64,linux/arm64/v8,linux/ppc64le,linux/s390x	controller-sunbeam-controller/controller-0 [api-server], controller-sunbeam-controller/modeloperator-7b49576899-7zttd [juju-operator], openstack/modeloperator-7789548f76-96vsl [juju-operator]
+remote	quay.io/metallb/controller:v0.15.3	sha256:6698ccc54c380913816ed1fd0758637ec87dd79da419c4ab170a2c26c158ab89	linux/amd64,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x	metallb-system/metallb-controller-5ffc5ddb77-m82xp [controller]
+remote	quay.io/metallb/speaker:v0.15.3	sha256:c6a5b25b2e1fba610a57b2db4bb8141d7c133569d561a8cc29e38ca5113efbc4	linux/amd64,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x	metallb-system/metallb-speaker-nln82 [speaker]
+remote	registry.jujucharms.com/charm/3cs9bo6mym14ler2zuvzsnqcd8pvucf6cxvlw/traefik-image@sha256:d42fe019ab555a91ef937f5ae0342a134f494a819b8b28151f588d0e458abbb1	sha256:d42fe019ab555a91ef937f5ae0342a134f494a819b8b28151f588d0e458abbb1	linux/amd64,linux/arm64/v8,linux/s390x	openstack/traefik-0 [traefik]
+remote	registry.jujucharms.com/charm/62ptdfbrjpw3n9tcnswjpart30jauc6wc5wbi/mysql-image@sha256:824b302484f83dbbd2cf4506f620a48e53f20053f6ff3c57aa6123e121705bfc	sha256:824b302484f83dbbd2cf4506f620a48e53f20053f6ff3c57aa6123e121705bfc	linux/amd64,linux/arm64,linux/s390x	openstack/mysql-0 [mysql]
+remote	registry.jujucharms.com/charm/68mxyvezznh1q7itiq4fg25lv5j5bod890rug/keystone-image@sha256:7c9964ef09695b810a2df2915dd00203636551541516d50742946d7d60faa45c	sha256:7c9964ef09695b810a2df2915dd00203636551541516d50742946d7d60faa45c	linux/s390x	openstack/keystone-0 [keystone]
+remote	registry.jujucharms.com/charm/6ee1n7u7d1hsnllu86zrjwud33wbyqdrp8cg5/placement-api-image@sha256:54f329aa562145e9bf25aca77b61c60f6d1e23192620080b39cb50556ffd557e	sha256:54f329aa562145e9bf25aca77b61c60f6d1e23192620080b39cb50556ffd557e	linux/s390x	openstack/placement-0 [placement-api]
+remote	registry.jujucharms.com/charm/7bcl96bshrf84qkak5j60i932a8se43skz3l1/glance-api-image@sha256:451768af3bddba8e50415621328b94b1684b5a741d081b85b861c79c8949a97d	sha256:451768af3bddba8e50415621328b94b1684b5a741d081b85b861c79c8949a97d	linux/s390x	openstack/glance-0 [glance-api]
+remote	registry.jujucharms.com/charm/cxpoxnvod1u9zuavqxnfmu8pseyhoa3d2np1q/nova-api-image@sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	linux/s390x	openstack/nova-0 [nova-api]
+remote	registry.jujucharms.com/charm/cxpoxnvod1u9zuavqxnfmu8pseyhoa3d2np1q/nova-conductor-image@sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	linux/s390x	openstack/nova-0 [nova-conductor]
+remote	registry.jujucharms.com/charm/cxpoxnvod1u9zuavqxnfmu8pseyhoa3d2np1q/nova-scheduler-image@sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	linux/s390x	openstack/nova-0 [nova-scheduler]
+remote	registry.jujucharms.com/charm/cxpoxnvod1u9zuavqxnfmu8pseyhoa3d2np1q/nova-spiceproxy-image@sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	sha256:b767938dc8f94fbe848bb55f1ffef40153c28b2c8d0566c4c69a17df4c560edc	linux/s390x	openstack/nova-0 [nova-spiceproxy]
+remote	registry.jujucharms.com/charm/ebs3142hrttofbph7b3nwcdnxsnf9mj4cqefz/cinder-api-image@sha256:f098465c99fc5d8544a45aa481f7fe3a94134dac71fe760de63122f73891fec9	sha256:f098465c99fc5d8544a45aa481f7fe3a94134dac71fe760de63122f73891fec9	linux/s390x	openstack/cinder-0 [cinder-api]
+remote	registry.jujucharms.com/charm/ebs3142hrttofbph7b3nwcdnxsnf9mj4cqefz/cinder-scheduler-image@sha256:f098465c99fc5d8544a45aa481f7fe3a94134dac71fe760de63122f73891fec9	sha256:f098465c99fc5d8544a45aa481f7fe3a94134dac71fe760de63122f73891fec9	linux/s390x	openstack/cinder-0 [cinder-scheduler]
+remote	registry.jujucharms.com/charm/g78qli3013qicvevb3oj4z8u0zhjod1agws2d/mysql-router-image@sha256:824b302484f83dbbd2cf4506f620a48e53f20053f6ff3c57aa6123e121705bfc	sha256:824b302484f83dbbd2cf4506f620a48e53f20053f6ff3c57aa6123e121705bfc	linux/amd64,linux/arm64,linux/s390x	openstack/cinder-router-0 [mysql-router]
+remote	registry.jujucharms.com/charm/hyn7tmdxrcl650kyzozombx0re0xtmqs378xi/neutron-server-image@sha256:5a55bce59f3404c88b36d9a16397bbf2d7b319c1d0962e759ae3a79c165e419d	sha256:5a55bce59f3404c88b36d9a16397bbf2d7b319c1d0962e759ae3a79c165e419d	linux/s390x	openstack/neutron-0 [neutron-server]
+remote	registry.k8s.io/sig-storage/csi-node-driver-registrar:v2.15.0	sha256:cd16544454735c35c4a0f405dd2708ef9fe5a33533898cd19b5d3e646c6cef09	linux/s390x	kube-system/ck-storage-rawfile-csi-node-xqjt6 [node-driver-registrar]
+remote	registry.k8s.io/sig-storage/csi-provisioner:v5.3.0	sha256:9d3d4bb7e1a52605acd5e54e6b0b5184dd9b46a2071705336b567c4f524560d8	linux/s390x	kube-system/ck-storage-rawfile-csi-node-xqjt6 [external-provisioner]
+local	docker.io/library/rawfile-localpv:0.8.3-s390x	sha256:95f27b6a42a8b76eea6cdb82028cd4b3aff59ee20d0ee6edfe3f3ca2a8424bb1	linux/s390x	kube-system/ck-storage-rawfile-csi-controller-0 [csi-driver], kube-system/ck-storage-rawfile-csi-node-xqjt6 [csi-driver]
